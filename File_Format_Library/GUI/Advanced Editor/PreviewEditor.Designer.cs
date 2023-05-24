@@ -53,7 +53,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(549, 398);
             this.Name = "PreviewEditor";
-            this.Text = "PreviewEditor";
+            this.Text = "预览编辑器";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PreviewEditor_FormClosed);
             this.contentContainer.ResumeLayout(false);
             this.ResumeLayout(false);

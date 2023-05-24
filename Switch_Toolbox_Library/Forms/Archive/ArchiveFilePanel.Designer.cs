@@ -64,7 +64,7 @@
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(105, 23);
             this.saveBtn.TabIndex = 2;
-            this.saveBtn.Text = "Save";
+            this.saveBtn.Text = "保存";
             this.saveBtn.UseVisualStyleBackColor = false;
             this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
@@ -75,7 +75,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(44, 13);
             this.stLabel1.TabIndex = 1;
-            this.stLabel1.Text = "Display:";
+            this.stLabel1.Text = "预览:";
             // 
             // stComboBox1
             // 

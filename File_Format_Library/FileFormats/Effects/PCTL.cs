@@ -568,7 +568,7 @@ namespace FirstPlugin
                     case "GRTF":
                         if (section.BinaryDataOffset != NullOffset)
                         {
-                            section.Text = "Textures";
+                            section.Text = "纹理";
 
                             reader.Seek(section.BinaryDataOffset + section.Position, SeekOrigin.Begin);
                             BinaryData = new BNTX();
@@ -588,7 +588,7 @@ namespace FirstPlugin
                         section.Text = reader.ReadString(StringSize, Encoding.ASCII);
                         break;
                     case "GRSN":
-                        section.Text = "Shaders";
+                        section.Text = "着色";
 
                         if (section.BinaryDataOffset != NullOffset)
                         {
@@ -597,7 +597,7 @@ namespace FirstPlugin
                         }
                         break;
                     case "GRSC":
-                        section.Text = "Shaders 2";
+                        section.Text = "着色 2";
                         if (section.BinaryDataOffset != NullOffset)
                         {
                             reader.Seek(section.BinaryDataOffset + section.Position, SeekOrigin.Begin);
@@ -607,7 +607,7 @@ namespace FirstPlugin
                     case "G3PR":
                         if (section.BinaryDataOffset != NullOffset)
                         {
-                            section.Text = "Models";
+                            section.Text = "模型文件夹";
 
                             reader.Seek(section.BinaryDataOffset + section.Position, SeekOrigin.Begin);
                             BinaryData = new BFRES();
@@ -935,7 +935,7 @@ namespace FirstPlugin
 
             public override void SetImageData(Bitmap bitmap, int ArrayLevel)
             {
-                throw new NotImplementedException("Cannot set image data! Operation not implemented!");
+                throw new NotImplementedException("无法设置图像数据！操作未执行!");
             }
 
             public override byte[] GetImageData(int ArrayLevel = 0, int MipLevel = 0, int DepthLevel = 0)

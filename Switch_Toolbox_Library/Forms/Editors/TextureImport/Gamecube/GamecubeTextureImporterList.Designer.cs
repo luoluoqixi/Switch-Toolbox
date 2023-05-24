@@ -105,7 +105,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(79, 33);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Cancel";
+            this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -138,12 +138,12 @@
             // 
             // Name
             // 
-            this.Name.Text = "Name";
+            this.Name.Text = "名称";
             this.Name.Width = 104;
             // 
             // Format
             // 
-            this.Format.Text = "Format";
+            this.Format.Text = "格式";
             this.Format.Width = 133;
             // 
             // label2
@@ -153,7 +153,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 13);
             this.label2.TabIndex = 22;
-            this.label2.Text = "Format";
+            this.label2.Text = "格式";
             // 
             // label1
             // 
@@ -203,7 +203,7 @@
             this.dataSizeLbl.Name = "dataSizeLbl";
             this.dataSizeLbl.Size = new System.Drawing.Size(56, 13);
             this.dataSizeLbl.TabIndex = 31;
-            this.dataSizeLbl.Text = "Data Size:";
+            this.dataSizeLbl.Text = "数据大小:";
             // 
             // stLabel1
             // 
@@ -212,7 +212,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(36, 13);
             this.stLabel1.TabIndex = 32;
-            this.stLabel1.Text = "Image";
+            this.stLabel1.Text = "图像";
             // 
             // stLabel2
             // 
@@ -221,7 +221,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(43, 13);
             this.stLabel2.TabIndex = 33;
-            this.stLabel2.Text = "Palette:";
+            this.stLabel2.Text = "调色板:";
             // 
             // stLabel3
             // 
@@ -230,7 +230,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(42, 13);
             this.stLabel3.TabIndex = 35;
-            this.stLabel3.Text = "Format:";
+            this.stLabel3.Text = "格式:";
             // 
             // paletteFormatCB
             // 
@@ -258,7 +258,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(39, 13);
             this.stLabel4.TabIndex = 37;
-            this.stLabel4.Text = "Colors:";
+            this.stLabel4.Text = "颜色:";
             // 
             // stLabel5
             // 
@@ -267,7 +267,7 @@
             this.stLabel5.Name = "stLabel5";
             this.stLabel5.Size = new System.Drawing.Size(50, 13);
             this.stLabel5.TabIndex = 39;
-            this.stLabel5.Text = "Algorithm";
+            this.stLabel5.Text = "算法";
             // 
             // paletteAlgorithmCB
             // 
@@ -287,7 +287,7 @@
             this.HeightLabel.Name = "HeightLabel";
             this.HeightLabel.Size = new System.Drawing.Size(38, 13);
             this.HeightLabel.TabIndex = 18;
-            this.HeightLabel.Text = "Height";
+            this.HeightLabel.Text = "高度";
             // 
             // WidthLabel
             // 
@@ -296,7 +296,7 @@
             this.WidthLabel.Name = "WidthLabel";
             this.WidthLabel.Size = new System.Drawing.Size(35, 13);
             this.WidthLabel.TabIndex = 19;
-            this.WidthLabel.Text = "Width";
+            this.WidthLabel.Text = "宽度";
             // 
             // GamecubeTextureImporterList
             // 
@@ -304,7 +304,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1096, 560);
             this.KeyPreview = true;
-            this.Text = "Texture Importer";
+            this.Text = "纹理导入器";
             this.Load += new System.EventHandler(this.BinaryTextureImporterList_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.BinaryTextureImporterList_KeyDown);
             this.contentContainer.ResumeLayout(false);

@@ -64,7 +64,7 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 12;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "取消";
             this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // btnSave
@@ -76,7 +76,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 13;
-            this.btnSave.Text = "Save";
+            this.btnSave.Text = "保存";
             this.btnSave.UseVisualStyleBackColor = false;
             // 
             // stPanel1
@@ -96,7 +96,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(549, 408);
             this.Name = "ImageEditorForm";
-            this.Text = "ImageEditorForm";
+            this.Text = "图像编辑器窗体";
             this.contentContainer.ResumeLayout(false);
             this.stPanel1.ResumeLayout(false);
             this.ResumeLayout(false);

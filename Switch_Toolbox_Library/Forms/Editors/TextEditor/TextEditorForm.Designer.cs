@@ -53,7 +53,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(549, 398);
             this.Name = "TextEditorForm";
-            this.Text = "TextEditorForm";
+            this.Text = "文本编辑器窗体";
             this.contentContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 

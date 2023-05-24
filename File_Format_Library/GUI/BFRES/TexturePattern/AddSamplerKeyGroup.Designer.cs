@@ -69,7 +69,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(48, 13);
             this.stLabel1.TabIndex = 1;
-            this.stLabel1.Text = "Sampler:";
+            this.stLabel1.Text = "采样:";
             // 
             // btnEdit
             // 
@@ -78,7 +78,7 @@
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
             this.btnEdit.TabIndex = 2;
-            this.btnEdit.Text = "Edit";
+            this.btnEdit.Text = "编辑";
             this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
@@ -90,7 +90,7 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 9;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "取消";
             this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // btnOK
@@ -111,7 +111,7 @@
             this.constantChkBox.Name = "constantChkBox";
             this.constantChkBox.Size = new System.Drawing.Size(79, 17);
             this.constantChkBox.TabIndex = 11;
-            this.constantChkBox.Text = "Is Constant";
+            this.constantChkBox.Text = "是常量";
             this.constantChkBox.UseVisualStyleBackColor = true;
             // 
             // AddSamplerKeyGroup
@@ -120,7 +120,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(360, 129);
             this.Name = "AddSamplerKeyGroup";
-            this.Text = "Add Texture Key Frame";
+            this.Text = "添加纹理关键帧";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             this.ResumeLayout(false);

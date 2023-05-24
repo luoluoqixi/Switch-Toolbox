@@ -163,7 +163,7 @@
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(85, 23);
             this.btnRemove.TabIndex = 24;
-            this.btnRemove.Text = "Remove Key";
+            this.btnRemove.Text = "去除 Key";
             this.btnRemove.UseVisualStyleBackColor = false;
             // 
             // frameCountLbl
@@ -182,7 +182,7 @@
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(85, 23);
             this.btnInsert.TabIndex = 23;
-            this.btnInsert.Text = "Insert Key";
+            this.btnInsert.Text = "插入 Key";
             this.btnInsert.UseVisualStyleBackColor = false;
             // 
             // currentFrameUD
@@ -204,7 +204,7 @@
             this.stLabel8.Name = "stLabel8";
             this.stLabel8.Size = new System.Drawing.Size(39, 13);
             this.stLabel8.TabIndex = 20;
-            this.stLabel8.Text = "Frame:";
+            this.stLabel8.Text = "格式:";
             // 
             // numericUpDownFloat11
             // 
@@ -318,7 +318,7 @@
             this.stLabel6.Name = "stLabel6";
             this.stLabel6.Size = new System.Drawing.Size(37, 13);
             this.stLabel6.TabIndex = 7;
-            this.stLabel6.Text = "Scale:";
+            this.stLabel6.Text = "中心:";
             // 
             // numericUpDownFloat7
             // 
@@ -351,7 +351,7 @@
             this.stLabel5.Name = "stLabel5";
             this.stLabel5.Size = new System.Drawing.Size(50, 13);
             this.stLabel5.TabIndex = 6;
-            this.stLabel5.Text = "Rotation:";
+            this.stLabel5.Text = "旋转:";
             // 
             // numericUpDownFloat5
             // 
@@ -384,7 +384,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(54, 13);
             this.stLabel4.TabIndex = 5;
-            this.stLabel4.Text = "Translate:";
+            this.stLabel4.Text = "译:";
             // 
             // stLabel3
             // 
@@ -558,7 +558,7 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Frame";
+            this.columnHeader1.Text = "框架";
             // 
             // columnHeader2
             // 

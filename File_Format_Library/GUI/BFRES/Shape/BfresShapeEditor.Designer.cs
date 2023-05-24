@@ -136,7 +136,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(639, 871);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Shape Data";
+            this.tabPage1.Text = "外形数据";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // stFlowLayoutPanel1
@@ -214,7 +214,7 @@
             this.stLabel11.Name = "stLabel11";
             this.stLabel11.Size = new System.Drawing.Size(62, 13);
             this.stLabel11.TabIndex = 7;
-            this.stLabel11.Text = "Skin Count:";
+            this.stLabel11.Text = "皮肤总数:";
             // 
             // lodDisplayCB
             // 
@@ -239,7 +239,7 @@
             this.stLabel10.Name = "stLabel10";
             this.stLabel10.Size = new System.Drawing.Size(69, 13);
             this.stLabel10.TabIndex = 14;
-            this.stLabel10.Text = "Display LOD:";
+            this.stLabel10.Text = "显示LOD:";
             // 
             // stLabel6
             // 
@@ -248,7 +248,7 @@
             this.stLabel6.Name = "stLabel6";
             this.stLabel6.Size = new System.Drawing.Size(36, 13);
             this.stLabel6.TabIndex = 13;
-            this.stLabel6.Text = "Index:";
+            this.stLabel6.Text = "索引:";
             // 
             // shapeIndexUD
             // 
@@ -281,7 +281,7 @@
             this.stLabel7.Name = "stLabel7";
             this.stLabel7.Size = new System.Drawing.Size(38, 13);
             this.stLabel7.TabIndex = 11;
-            this.stLabel7.Text = "Name:";
+            this.stLabel7.Text = "名称:";
             // 
             // nameTB
             // 
@@ -326,7 +326,7 @@
             this.stLabel8.Name = "stLabel8";
             this.stLabel8.Size = new System.Drawing.Size(36, 13);
             this.stLabel8.TabIndex = 15;
-            this.stLabel8.Text = "Index:";
+            this.stLabel8.Text = "索引:";
             // 
             // stLabel2
             // 
@@ -335,7 +335,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(38, 13);
             this.stLabel2.TabIndex = 3;
-            this.stLabel2.Text = "Name:";
+            this.stLabel2.Text = "名称:";
             // 
             // materialIndexUD
             // 
@@ -424,7 +424,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(54, 13);
             this.stLabel4.TabIndex = 14;
-            this.stLabel4.Text = "Bone List:";
+            this.stLabel4.Text = "骨骼列表:";
             // 
             // bonesCB
             // 
@@ -448,7 +448,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(36, 13);
             this.stLabel1.TabIndex = 17;
-            this.stLabel1.Text = "Index:";
+            this.stLabel1.Text = "索引:";
             // 
             // boneIndexUD
             // 
@@ -481,7 +481,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(38, 13);
             this.stLabel3.TabIndex = 15;
-            this.stLabel3.Text = "Name:";
+            this.stLabel3.Text = "名称:";
             // 
             // vertexBufferDropDownPanel
             // 
@@ -536,7 +536,7 @@
             this.stLabel13.Name = "stLabel13";
             this.stLabel13.Size = new System.Drawing.Size(71, 13);
             this.stLabel13.TabIndex = 42;
-            this.stLabel13.Text = "Vertex Count:";
+            this.stLabel13.Text = "顶点总数:";
             // 
             // vertexBufferList1
             // 
@@ -579,7 +579,7 @@
             this.stLabel12.Name = "stLabel12";
             this.stLabel12.Size = new System.Drawing.Size(62, 13);
             this.stLabel12.TabIndex = 40;
-            this.stLabel12.Text = "Skin Count:";
+            this.stLabel12.Text = "皮肤总数:";
             // 
             // stDropDownPanel8
             // 
@@ -646,7 +646,7 @@
             this.stButton3.Name = "stButton3";
             this.stButton3.Size = new System.Drawing.Size(67, 23);
             this.stButton3.TabIndex = 26;
-            this.stButton3.Text = "Remove";
+            this.stButton3.Text = "移除";
             this.stButton3.UseVisualStyleBackColor = false;
             // 
             // btnFacesView
@@ -656,7 +656,7 @@
             this.btnFacesView.Name = "btnFacesView";
             this.btnFacesView.Size = new System.Drawing.Size(103, 23);
             this.btnFacesView.TabIndex = 27;
-            this.btnFacesView.Text = "View Faces";
+            this.btnFacesView.Text = "查看面";
             this.btnFacesView.UseVisualStyleBackColor = false;
             this.btnFacesView.Click += new System.EventHandler(this.btnFacesView_Click);
             // 
@@ -686,7 +686,7 @@
             this.stLabel20.Name = "stLabel20";
             this.stLabel20.Size = new System.Drawing.Size(69, 13);
             this.stLabel20.TabIndex = 38;
-            this.stLabel20.Text = "Sub Meshes:";
+            this.stLabel20.Text = "子网格:";
             // 
             // subMeshesViewBtn
             // 
@@ -705,7 +705,7 @@
             this.stLabel21.Name = "stLabel21";
             this.stLabel21.Size = new System.Drawing.Size(42, 13);
             this.stLabel21.TabIndex = 29;
-            this.stLabel21.Text = "Format:";
+            this.stLabel21.Text = "格式:";
             // 
             // lodPrimativeTypeCB
             // 
@@ -742,7 +742,7 @@
             this.stLabel22.Name = "stLabel22";
             this.stLabel22.Size = new System.Drawing.Size(80, 13);
             this.stLabel22.TabIndex = 35;
-            this.stLabel22.Text = "Primative Type:";
+            this.stLabel22.Text = "原始类型:";
             // 
             // lodVertexSkipUD
             // 
@@ -771,7 +771,7 @@
             this.stLabel23.Name = "stLabel23";
             this.stLabel23.Size = new System.Drawing.Size(65, 13);
             this.stLabel23.TabIndex = 34;
-            this.stLabel23.Text = "Face Count:";
+            this.stLabel23.Text = "面数:";
             // 
             // stLabel24
             // 
@@ -780,7 +780,7 @@
             this.stLabel24.Name = "stLabel24";
             this.stLabel24.Size = new System.Drawing.Size(64, 13);
             this.stLabel24.TabIndex = 32;
-            this.stLabel24.Text = "Vertex Skip:";
+            this.stLabel24.Text = "顶点跳过:";
             // 
             // lodFaceCountUD
             // 
@@ -809,7 +809,7 @@
             this.stButton10.Name = "stButton10";
             this.stButton10.Size = new System.Drawing.Size(67, 23);
             this.stButton10.TabIndex = 25;
-            this.stButton10.Text = "Add";
+            this.stButton10.Text = "添加";
             this.stButton10.UseVisualStyleBackColor = false;
             // 
             // stButton11
@@ -844,17 +844,17 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Name";
+            this.columnHeader1.Text = "名称";
             this.columnHeader1.Width = 85;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Format";
+            this.columnHeader2.Text = "格式";
             this.columnHeader2.Width = 79;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Face Count";
+            this.columnHeader3.Text = "面数";
             this.columnHeader3.Width = 90;
             // 
             // stButton12

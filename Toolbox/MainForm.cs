@@ -17,6 +17,7 @@ using System.Reflection;
 using OpenTK.Graphics.OpenGL;
 using Toolbox.Library.NodeWrappers;
 using Toolbox.Library.Rendering;
+using DKCTF;
 
 namespace Toolbox
 {
@@ -1598,6 +1599,346 @@ namespace Toolbox
                     failedFiles.Add($"{file} \n Error:\n {ex} \n");
                 }
             }
+        }
+
+        private void batchGenerateHairTitleBGToolsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BatchGenerateHairTool();
+        }
+
+
+        private void BatchGenerateHairTool()
+        {
+            bool jump = true;
+            if (jump)
+            {
+                MessageBox.Show("敬请期待");
+                return;
+            }
+
+            string rootPath = "D:\\games\\wiiu\\Cemu\\graphicPacks\\Linkle3_NN_v2.0";
+
+            if (string.IsNullOrEmpty(rootPath) || !Directory.Exists(rootPath))
+            {
+                MessageBox.Show("路径不存在 : " + rootPath);
+                return;
+            }
+            string eyeHairPath = Path.Combine(rootPath, "Eye_Hair_Change/!Hair And Eye Colour");
+            string nnPath = Path.Combine(rootPath, "Linkle3_NN");
+
+            if (!Directory.Exists(eyeHairPath))
+            {
+                MessageBox.Show("路径不存在：" + eyeHairPath);
+                return;
+            }
+            if (!Directory.Exists(nnPath))
+            {
+                MessageBox.Show("路径不存在：" + nnPath);
+                return;
+            }
+
+            string linkTex2Path = @"content\Model\Link.Tex2.sbfres";
+            string titleBGPath = @"content\Pack\TitleBG.pack";
+
+            string titleBGLinkTex2 = "Model/Link.Tex2.sbfres";
+
+            Dictionary<string, string> hairDic = new Dictionary<string, string>
+            {
+                { "EyeBlue", "Blue eyes - " },
+                { "EyeBrown", "Brown eyes - " },
+                { "EyeGreen", "Green eyes - " },
+                { "EyeRed", "Red eyes - " },
+            };
+
+            string[] hairColors = new string[]
+            {
+                "Barbarian hair",
+                "Black hair",
+                "Blonde hair",
+                "Brown hair",
+                "Dark Brown hair",
+                "Evan Black",
+                "Evan Blue",
+                "Evan Brown",
+                "Evan Chrom",
+                "Evan Ginger",
+                "Evan Grey",
+                "Evan Maroon",
+                "Evan Pink",
+                "Evan ProtoLinkle",
+                "Evan Purple",
+                "Evan Red",
+                "Evan White",
+                "Green hair",
+                "Link hair",
+                "Pink hair",
+                "Red hair",
+                "True Black hair",
+                "White hair",
+            };
+
+            string inputTitleBGPath = Path.Combine(nnPath, titleBGPath);
+            if (!File.Exists(inputTitleBGPath))
+            {
+                MessageBox.Show("TTitleBG.pack不存在: " + inputTitleBGPath);
+                return;
+            }
+
+            int count = 0;
+
+            foreach (var hair in hairDic)
+            {
+                string eyeDirName = hair.Key;
+                string hairDirPrefix = hair.Value;
+                string eyePath = Path.Combine(eyeHairPath, eyeDirName);
+                string hairPathPrefix = eyePath + "\\" + hairDirPrefix;
+
+                for (int i = 0; i < hairColors.Length; i++)
+                {
+                    string hairName = hairColors[i];
+                    string hairPath = hairPathPrefix + hairName;
+
+                    string targetHairLinkTex2Path = hairPath + "\\" + linkTex2Path;
+                    string targetTitleBGPath = hairPath + "\\" + titleBGPath;
+
+                    if (!File.Exists(targetHairLinkTex2Path))
+                    {
+                        continue;
+                    }
+
+                    // 打开TitleBG.pack
+                    OpenFile(inputTitleBGPath);
+                    //Check for active object editors
+                    ObjectEditor editor = (ObjectEditor)LibraryGUI.GetActiveForm();
+                    FirstPlugin.SARC activeFile = (FirstPlugin.SARC)editor.GetActiveFile();
+
+                    ArchiveFileInfo titleBGLinkTex2File = null;
+                    foreach (var file in activeFile.Files)
+                    {
+                        if (file.FileName == titleBGLinkTex2)
+                        {
+                            titleBGLinkTex2File = file;
+                            break;
+                        }
+                    }
+                    if (titleBGLinkTex2File == null)
+                    {
+                        MessageBox.Show("TitleBG.pack中不存在" + titleBGLinkTex2);
+                        return;
+                    }
+
+                    // 替换内部数据
+                    if (titleBGLinkTex2File.FileDataStream != null)
+                    {
+                        titleBGLinkTex2File.FileDataStream = new MemoryStream(File.ReadAllBytes(targetHairLinkTex2Path));
+                    }
+                    else
+                    {
+                        titleBGLinkTex2File.FileData = File.ReadAllBytes(targetHairLinkTex2Path);
+                    }
+                    if (titleBGLinkTex2File.FileFormat != null)
+                    {
+                        if (titleBGLinkTex2File.FileFormat != null)
+                            Console.WriteLine($"UpdateEditor {titleBGLinkTex2File.FileFormat.FileName}");
+
+                        ArchiveFilePanel editor2 = (ArchiveFilePanel)LibraryGUI.GetActiveContent(typeof(ArchiveFilePanel));
+                        if (editor2 == null)
+                        {
+                            editor2 = new ArchiveFilePanel();
+                            editor2.Dock = DockStyle.Fill;
+                            LibraryGUI.LoadEditor(editor2);
+                        }
+                        editor2.LoadFile(titleBGLinkTex2File, activeFile);
+                        editor2.UpdateEditor();
+                    }
+
+                    string dir = Path.GetDirectoryName(targetTitleBGPath);
+                    if (!Directory.Exists(dir))
+                        Directory.CreateDirectory(dir);
+                    string FileName = targetTitleBGPath;
+
+                    var format = ((IFileFormat)activeFile);
+                    //Use the export method for particular formats like bfres for special save operations
+                    if (format is STGenericWrapper && !(format is STGenericTexture))
+                    {
+                        ((STGenericWrapper)format).Export(FileName);
+                        return;
+                    }
+                    STFileSaver.SaveFileFormat(((IFileFormat)activeFile), FileName, false, "", false);
+                    editor.Close();
+
+                    if (File.Exists(targetHairLinkTex2Path))
+                    {
+                        try
+                        {
+                            File.Delete(targetHairLinkTex2Path);
+                        }
+                        catch (Exception ee)
+                        {
+                            MessageBox.Show("删除文件失败：" + ee.Message);
+                        }
+                    }
+
+                    count++;
+                }
+            }
+
+            MessageBox.Show("成功处理：" + count + "个");
+        }
+
+
+        // 替换内部文件
+        public void Extend_ReplaceFile_SARC(string inputPath, string localPath, string replacePath, string saveAsPath = null)
+        {
+            // 打开TitleBG.pack
+            OpenFile(inputPath);
+            //Check for active object editors
+            ObjectEditor editor = (ObjectEditor)LibraryGUI.GetActiveForm();
+            FirstPlugin.SARC activeFile = (FirstPlugin.SARC)editor.GetActiveFile();
+
+            string fileName = Path.GetFileName(inputPath);
+
+            ArchiveFileInfo archiveFileInfo = null;
+            foreach (var file in activeFile.Files)
+            {
+                if (file.FileName == localPath)
+                {
+                    archiveFileInfo = file;
+                    break;
+                }
+            }
+            if (archiveFileInfo == null)
+            {
+                MessageBox.Show(fileName + "中不存在: " + localPath);
+                return;
+            }
+
+            // 替换内部数据
+            if (archiveFileInfo.FileDataStream != null)
+            {
+                archiveFileInfo.FileDataStream = new MemoryStream(File.ReadAllBytes(replacePath));
+            }
+            else
+            {
+                archiveFileInfo.FileData = File.ReadAllBytes(replacePath);
+            }
+            if (archiveFileInfo.FileFormat != null)
+            {
+                if (archiveFileInfo.FileFormat != null)
+                    Console.WriteLine($"UpdateEditor {archiveFileInfo.FileFormat.FileName}");
+
+                ArchiveFilePanel editor2 = (ArchiveFilePanel)LibraryGUI.GetActiveContent(typeof(ArchiveFilePanel));
+                if (editor2 == null)
+                {
+                    editor2 = new ArchiveFilePanel();
+                    editor2.Dock = DockStyle.Fill;
+                    LibraryGUI.LoadEditor(editor2);
+                }
+                editor2.LoadFile(archiveFileInfo, activeFile);
+                editor2.UpdateEditor();
+            }
+
+            if (string.IsNullOrEmpty(saveAsPath))
+                saveAsPath = inputPath;
+
+            string dir = Path.GetDirectoryName(saveAsPath);
+            if (!Directory.Exists(dir))
+                Directory.CreateDirectory(dir);
+            string FileName = saveAsPath;
+
+            var format = ((IFileFormat)activeFile);
+            //Use the export method for particular formats like bfres for special save operations
+            if (format is STGenericWrapper && !(format is STGenericTexture))
+            {
+                ((STGenericWrapper)format).Export(FileName);
+                editor.Close();
+                return;
+            }
+            STFileSaver.SaveFileFormat(((IFileFormat)activeFile), FileName, false, "", false);
+            editor.Close();
+        }
+
+        public void Extend_ReplaceFile_BFRES_Texture(string inputPath, string localPath, string replacePath, string saveAsPath = null)
+        {
+            // 打开TitleBG.pack
+            OpenFile(inputPath);
+            //Check for active object editors
+            ObjectEditor editor = (ObjectEditor)LibraryGUI.GetActiveForm();
+
+            FirstPlugin.BFRES activeFile = (FirstPlugin.BFRES)editor.GetActiveFile();
+
+            string fileName = Path.GetFileName(inputPath);
+
+            var texs = activeFile.GetTextures();
+
+            STGenericTexture replaceTexFile = null;
+            foreach (var file in texs)
+            {
+                if (file.FullPath == localPath)
+                {
+                    replaceTexFile = file;
+                    break;
+                }
+            }
+            if (replaceTexFile == null)
+            {
+                MessageBox.Show(fileName + "中不存在: " + localPath);
+                return;
+            }
+
+            if (replaceTexFile is Bfres.Structs.FTEX)
+            {
+                ((Bfres.Structs.FTEX)replaceTexFile).ReplaceNoDialog(replacePath);
+            }
+            else
+            {
+                replaceTexFile.Replace(replacePath);
+            }
+
+            if (string.IsNullOrEmpty(saveAsPath))
+                saveAsPath = inputPath;
+
+            string dir = Path.GetDirectoryName(saveAsPath);
+            if (!Directory.Exists(dir))
+                Directory.CreateDirectory(dir);
+            string FileName = saveAsPath;
+
+            var format = ((IFileFormat)activeFile);
+
+            format.IFileInfo.FileIsCompressed = true;
+
+            //Use the export method for particular formats like bfres for special save operations
+            if (format is STGenericWrapper && !(format is STGenericTexture))
+            {
+                if (format is FirstPlugin.BFRES)
+                {
+                    ((FirstPlugin.BFRES)format).ExportNoDialog(FileName);
+                    editor.Close();
+                    return;
+                }
+                ((STGenericWrapper)format).Export(FileName);
+                editor.Close();
+                return;
+            }
+            STFileSaver.SaveFileFormat(((IFileFormat)activeFile), FileName, false, "", false);
+            editor.Close();
+        }
+
+        private void BatchReplaceEquipIconToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new ExtendTools.ExtendForms.Extend_BatchReplaceEquipIconForm(this);
+            form.Show();
+        }
+        private void BatchReplaceClothImgToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bool jump = true;
+            if (jump)
+            {
+                MessageBox.Show("敬请期待");
+                return;
+            }
+            var form = new ExtendTools.ExtendForms.Extend_BatchReplaceClothIconForm(this);
+            form.Show();
         }
     }
 }

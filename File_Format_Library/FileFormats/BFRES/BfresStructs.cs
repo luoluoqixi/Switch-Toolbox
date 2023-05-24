@@ -39,19 +39,19 @@ namespace Bfres.Structs
             FileHandler = handler;
 
             ContextMenu = new ContextMenu();
-            MenuItem save = new MenuItem("Save");
+            MenuItem save = new MenuItem("保存");
             ContextMenu.MenuItems.Add(save);
             save.Click += Save;
 
-            MenuItem newMenu = new MenuItem("New");
-            MenuItem import = new MenuItem("Import");
+            MenuItem newMenu = new MenuItem("新建");
+            MenuItem import = new MenuItem("导入");
      //       ContextMenu.MenuItems.Add(newMenu);
      //       ContextMenu.MenuItems.Add(import);
 
-            MenuItem rename = new MenuItem("Rename");
+            MenuItem rename = new MenuItem("重命名");
             ContextMenu.MenuItems.Add(rename);
             rename.Click += Rename;
-            MenuItem remove = new MenuItem("Remove");
+            MenuItem remove = new MenuItem("移除");
             ContextMenu.MenuItems.Add(remove);
             remove.Click += Remove;
 
@@ -64,14 +64,14 @@ namespace Bfres.Structs
             }
             else
             {
-                MenuItem model = new MenuItem("Model");
-                MenuItem fska = new MenuItem("Skeletal Animation");
-                MenuItem fmaa = new MenuItem("Material Animation");
-                MenuItem bonevis = new MenuItem("Bone Visual Animation");
-                MenuItem shape = new MenuItem("Shape Animation");
-                MenuItem scene = new MenuItem("Scene Animation");
-                MenuItem embedded = new MenuItem("Embedded File");
-                MenuItem texture = new MenuItem("Texture File");
+                MenuItem model = new MenuItem("模型");
+                MenuItem fska = new MenuItem("骨骼动画");
+                MenuItem fmaa = new MenuItem("材质动画");
+                MenuItem bonevis = new MenuItem("骨骼视觉动画");
+                MenuItem shape = new MenuItem("形变动画");
+                MenuItem scene = new MenuItem("场景动画");
+                MenuItem embedded = new MenuItem("嵌入的文件");
+                MenuItem texture = new MenuItem("材质贴图文件");
                 texture.Click += NewTextureFile;
                 newMenu.MenuItems.Add(model);
                 newMenu .MenuItems.Add(fska);
@@ -82,14 +82,14 @@ namespace Bfres.Structs
                 newMenu.MenuItems.Add(embedded);
                 newMenu.MenuItems.Add(texture);
 
-                MenuItem importmodel = new MenuItem("Model");
-                MenuItem importfska = new MenuItem("Skeletal Animation");
-                MenuItem importfmaa = new MenuItem("Material Animation");
-                MenuItem importbonevis = new MenuItem("Bone Visual Animation");
-                MenuItem importshape = new MenuItem("Shape Animation");
-                MenuItem importscene = new MenuItem("Scene Animation");
-                MenuItem importembedded = new MenuItem("Embedded File");
-                MenuItem importtexture = new MenuItem("Texture File");
+                MenuItem importmodel = new MenuItem("模型");
+                MenuItem importfska = new MenuItem("骨骼动画");
+                MenuItem importfmaa = new MenuItem("材质动画");
+                MenuItem importbonevis = new MenuItem("骨骼视觉动画");
+                MenuItem importshape = new MenuItem("形变动画");
+                MenuItem importscene = new MenuItem("场景动画");
+                MenuItem importembedded = new MenuItem("嵌入的文件");
+                MenuItem importtexture = new MenuItem("材质贴图文件");
                 import.MenuItems.Add(importmodel);
                 import.MenuItems.Add(importfska);
                 import.MenuItems.Add(importfmaa);
@@ -300,7 +300,7 @@ namespace Bfres.Structs
     {
         public FskaFolder()
         {
-            Text = "Skeleton Animations";
+            Text = "骨架动画";
             Name = "FSKA";
         }
         public void LoadAnimations(ResU.ResFile resFile, BFRESRender BFRESRender)
@@ -332,7 +332,7 @@ namespace Bfres.Structs
     {
         public FmdlFolder()
         {
-            Text = "Models";
+            Text = "模型";
             Name = "FMDLFolder";
         }
         public override void OnClick(TreeView treeView)
@@ -344,7 +344,7 @@ namespace Bfres.Structs
     {
         public FmmaFolder()
         {
-            Text = "Material Animations";
+            Text = "材质动画";
             Name = "FMAA";
         }
         public override void OnClick(TreeView treeView)
@@ -356,7 +356,7 @@ namespace Bfres.Structs
     {
         public FshpaFolder()
         {
-            Text = "Shape Animations";
+            Text = "形状动画";
             Name = "FSHPA";
         }
         public override void OnClick(TreeView treeView)
@@ -368,7 +368,7 @@ namespace Bfres.Structs
     {
         public FbnvFolder()
         {
-            Text = "Bone Visabilty Animations";
+            Text = "骨骼可见性动画";
             Name = "FBNV";
         }
         public override void OnClick(TreeView treeView)
@@ -380,7 +380,7 @@ namespace Bfres.Structs
     {
         public FscnFolder()
         {
-            Text = "Scene Animations";
+            Text = "场景动画";
             Name = "FSCN";
         }
         public override void OnClick(TreeView treeView)
@@ -392,7 +392,7 @@ namespace Bfres.Structs
     {
         public EmbeddedFilesFolder()
         {
-            Text = "Embedded Files";
+            Text = "嵌入式文件";
             Name = "EXT";
         }
         public override void OnClick(TreeView treeView)
@@ -404,7 +404,7 @@ namespace Bfres.Structs
     {
         public TexPatFolder()
         {
-            Text = "Texture Pattern Animations";
+            Text = "纹理图案动画";
             Name = "TEXPAT";
         }
         public override void OnClick(TreeView treeView)
@@ -416,7 +416,7 @@ namespace Bfres.Structs
     {
         public TexSrtFolder()
         {
-            Text = "Texture SRT Animations";
+            Text = "纹理SRT动画";
             Name = "TEXSRT";
         }
         public override void OnClick(TreeView treeView)
@@ -428,7 +428,7 @@ namespace Bfres.Structs
     {
         public FshaFolder()
         {
-            Text = "Shader Parameter Animations";
+            Text = "着色器参数动画";
             Name = "FSHA";
         }
         public override void OnClick(TreeView treeView)
@@ -440,7 +440,7 @@ namespace Bfres.Structs
     {
         public FshaColorFolder()
         {
-            Text = "Color Animations";
+            Text = "彩色动画";
             Name = "FSHAColor";
         }
         public override void OnClick(TreeView treeView)
@@ -841,7 +841,7 @@ namespace Bfres.Structs
     {
         public FSHPFolder()
         {
-            Text = "Objects";
+            Text = "对象";
             Name = "FshpFolder";
 
             ContextMenu = new ContextMenu();
@@ -898,7 +898,7 @@ namespace Bfres.Structs
     {
         public FMATFolder()
         {
-            Text = "Materials";
+            Text = "材质";
             Name = "FmatFolder";
 
             ContextMenu = new ContextMenu();
@@ -934,7 +934,7 @@ namespace Bfres.Structs
             public BFRESRender BFRESRender;
             public fsklNode()
             {
-                Text = "Skeleton";
+                Text = "骨骼";
                 ImageKey = "skeleton";
                 SelectedImageKey = "skeleton";
 
@@ -1072,25 +1072,25 @@ namespace Bfres.Structs
             Nodes.Add(new FMATFolder());
 
             ContextMenu = new ContextMenu();
-            MenuItem export = new MenuItem("Export Model");
+            MenuItem export = new MenuItem("导出模型");
             ContextMenu.MenuItems.Add(export);
             export.Click += Export;
-            MenuItem replace = new MenuItem("Replace Model");
+            MenuItem replace = new MenuItem("替换模型");
             ContextMenu.MenuItems.Add(replace);
             replace.Click += Replace;
-            MenuItem calcTansBitans = new MenuItem("Calculate Tangents/Bitangents");
+            MenuItem calcTansBitans = new MenuItem("计算切线/双切线");
             ContextMenu.MenuItems.Add(calcTansBitans);
             calcTansBitans.Click += CalcTansBitansAllShapes;
-            MenuItem normals = new MenuItem("Normals");
+            MenuItem normals = new MenuItem("法线");
             ContextMenu.MenuItems.Add(normals);
-            MenuItem smoothNormals = new MenuItem("Smooth");
+            MenuItem smoothNormals = new MenuItem("平滑");
             normals.MenuItems.Add(smoothNormals);
             smoothNormals.Click += SmoothNormals;
-            MenuItem recalculateNormals = new MenuItem("Recalculate");
+            MenuItem recalculateNormals = new MenuItem("重新计算");
             normals.MenuItems.Add(recalculateNormals);
             recalculateNormals.Click += RecalculateNormals;
 
-            MenuItem rename = new MenuItem("Rename");
+            MenuItem rename = new MenuItem("重命名");
             ContextMenu.MenuItems.Add(rename);
             rename.Click += Rename;
         }
@@ -1148,7 +1148,7 @@ namespace Bfres.Structs
 
                 if (!HasBiTans)
                 {
-                    DialogResult dialogResult2 = MessageBox.Show("Mesh does not have bitangents. Do you want to create them? (will make file size bigger)", "", MessageBoxButtons.YesNo);
+                    DialogResult dialogResult2 = MessageBox.Show("网格没有双切线。是否要创建它们？（将使文件大小更大）", "", MessageBoxButtons.YesNo);
 
                     FSHP.VertexAttribute att2 = new FSHP.VertexAttribute();
                     att2.Name = "_b0";
@@ -1163,7 +1163,7 @@ namespace Bfres.Structs
 
                 if (!HasTans)
                 {
-                    DialogResult dialogResult = MessageBox.Show("Mesh does not have tangets. Do you want to create them? (will make file size bigger)", "", MessageBoxButtons.YesNo);
+                    DialogResult dialogResult = MessageBox.Show("网格没有柄脚。是否要创建它们？（将使文件大小更大）", "", MessageBoxButtons.YesNo);
 
                     FSHP.VertexAttribute att = new FSHP.VertexAttribute();
                     att.Name = "_t0";
@@ -1390,7 +1390,7 @@ namespace Bfres.Structs
 
                     if (csvModel.objects.Count == 0)
                     {
-                        MessageBox.Show("No models found!");
+                        MessageBox.Show("未找到模型!");
                         return;
                     }
                     BfresModelImportSettings csvsettings = new BfresModelImportSettings();
@@ -1432,7 +1432,7 @@ namespace Bfres.Structs
 
                     if (assimp.objects.Count == 0)
                     {
-                        MessageBox.Show("No models found!");
+                        MessageBox.Show("未找到模型!");
                         return;
                     }
                     BfresModelImportSettings settings = new BfresModelImportSettings();
@@ -1669,16 +1669,16 @@ namespace Bfres.Structs
             SelectedImageKey = "material";
 
             ContextMenu = new ContextMenu();
-            MenuItem export = new MenuItem("Export");
+            MenuItem export = new MenuItem("导出");
             ContextMenu.MenuItems.Add(export);
             export.Click += Export;
-            MenuItem replace = new MenuItem("Replace");
+            MenuItem replace = new MenuItem("替换");
             ContextMenu.MenuItems.Add(replace);
             replace.Click += Replace;
-            MenuItem copy = new MenuItem("Copy");
+            MenuItem copy = new MenuItem("拷贝");
             ContextMenu.MenuItems.Add(copy);
             copy.Click += Copy;
-            MenuItem rename = new MenuItem("Rename");
+            MenuItem rename = new MenuItem("重命名");
             ContextMenu.MenuItems.Add(rename);
             rename.Click += Rename;
         }
@@ -2040,38 +2040,38 @@ namespace Bfres.Structs
             SelectedImageKey = "mesh";
 
             ContextMenu = new ContextMenu();
-            MenuItem export = new MenuItem("Export Mesh");
+            MenuItem export = new MenuItem("导出网格");
             ContextMenu.MenuItems.Add(export);
             export.Click += Export;
-            MenuItem replace = new MenuItem("Replace Mesh");
+            MenuItem replace = new MenuItem("替换网格");
             ContextMenu.MenuItems.Add(replace);
             replace.Click += Replace;
-            MenuItem remove = new MenuItem("Delete Mesh");
+            MenuItem remove = new MenuItem("删除网格");
             ContextMenu.MenuItems.Add(remove);
             remove.Click += Remove;
-            MenuItem calcTansBitans = new MenuItem("Recalulate Tangents/Bitangents");
+            MenuItem calcTansBitans = new MenuItem("重新计算切线/双切线");
             ContextMenu.MenuItems.Add(calcTansBitans);
             calcTansBitans.Click += CalcTansBitans;
-            MenuItem flipUVsY = new MenuItem("Flip UVs (Vertical)");
+            MenuItem flipUVsY = new MenuItem("翻转 UVs (垂直)");
             ContextMenu.MenuItems.Add(flipUVsY);
             flipUVsY.Click += FlipUvsVertical;
-            MenuItem flipUVsX = new MenuItem("Flip UVs (Horizontal)");
+            MenuItem flipUVsX = new MenuItem("翻转 UVs (水平)");
             ContextMenu.MenuItems.Add(flipUVsX);
             flipUVsX.Click += FlipUvsHorizontal;
-            MenuItem normals = new MenuItem("Normals");
+            MenuItem normals = new MenuItem("法线");
             ContextMenu.MenuItems.Add(normals);
-            MenuItem smoothNormals = new MenuItem("Smooth");
+            MenuItem smoothNormals = new MenuItem("平滑");
             normals.MenuItems.Add(smoothNormals);
             smoothNormals.Click += SmoothNormals;
-            MenuItem recalculateNormals = new MenuItem("Recalculate");
+            MenuItem recalculateNormals = new MenuItem("重新计算");
             normals.MenuItems.Add(recalculateNormals);
             recalculateNormals.Click += RecalculateNormals;
 
-            MenuItem matEditor = new MenuItem("Open Material Editor");
+            MenuItem matEditor = new MenuItem("打开材质编辑器");
             ContextMenu.MenuItems.Add(matEditor);
             matEditor.Click += OpenMaterialEditor;
 
-            MenuItem rename = new MenuItem("Rename");
+            MenuItem rename = new MenuItem("重命名");
             ContextMenu.MenuItems.Add(rename);
             rename.Click += Rename;
         }
@@ -2126,7 +2126,7 @@ namespace Bfres.Structs
         }
         private void Remove(object sender, EventArgs args)
         {
-            DialogResult dialogResult = MessageBox.Show("Are you sure you want to remove this object? This cannot be undone!", "", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("确实要删除此对象吗？这无法撤消!", "", MessageBoxButtons.YesNo);
 
             if (dialogResult == DialogResult.Yes)
             {
@@ -2221,7 +2221,7 @@ namespace Bfres.Structs
 
             if (!HasBiTans)
             {
-                DialogResult dialogResult2 = MessageBox.Show("Mesh does not have bitangents. Do you want to create them? (will make file size bigger)", "", MessageBoxButtons.YesNo);
+                DialogResult dialogResult2 = MessageBox.Show("网格没有双切线。是否要创建它们？（将使文件大小更大）", "", MessageBoxButtons.YesNo);
 
                 VertexAttribute att2 = new VertexAttribute();
                 att2.Name = "_b0";
@@ -2236,7 +2236,7 @@ namespace Bfres.Structs
 
             if (!HasTans)
             {
-                DialogResult dialogResult = MessageBox.Show("Mesh does not have tangets. Do you want to create them? (will make file size bigger)", "", MessageBoxButtons.YesNo);
+                DialogResult dialogResult = MessageBox.Show("网格没有柄脚。是否要创建它们？（将使文件大小更大）", "", MessageBoxButtons.YesNo);
 
                 VertexAttribute att = new VertexAttribute();
                 att.Name = "_t0";

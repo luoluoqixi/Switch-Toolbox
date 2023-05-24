@@ -79,7 +79,7 @@
             this.showAlphaChk.Name = "showAlphaChk";
             this.showAlphaChk.Size = new System.Drawing.Size(83, 17);
             this.showAlphaChk.TabIndex = 3;
-            this.showAlphaChk.Text = "Show Alpha";
+            this.showAlphaChk.Text = "显示阿尔法";
             this.showAlphaChk.UseVisualStyleBackColor = true;
             this.showAlphaChk.CheckedChanged += new System.EventHandler(this.showAlphaChk_CheckedChanged);
             // 
@@ -90,7 +90,7 @@
             this.stLabel6.Name = "stLabel6";
             this.stLabel6.Size = new System.Drawing.Size(48, 13);
             this.stLabel6.TabIndex = 48;
-            this.stLabel6.Text = "Textures";
+            this.stLabel6.Text = "纹理";
             // 
             // EmitterTexturePanel
             // 

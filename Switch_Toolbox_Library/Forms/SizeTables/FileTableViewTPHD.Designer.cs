@@ -57,12 +57,12 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "File Name";
+            this.columnHeader1.Text = "文件名称";
             this.columnHeader1.Width = 255;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Compressed Size";
+            this.columnHeader2.Text = "压缩尺寸";
             // 
             // stTextBox1
             // 
@@ -75,11 +75,11 @@
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Decompressed Size";
+            this.columnHeader3.Text = "解压尺寸";
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Precentage";
+            this.columnHeader4.Text = "预处理";
             // 
             // FileTableViewTPHD
             // 

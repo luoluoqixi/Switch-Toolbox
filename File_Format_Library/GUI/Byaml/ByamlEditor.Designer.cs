@@ -94,42 +94,42 @@
             // 
             this.CopyNode.Name = "CopyNode";
             this.CopyNode.Size = new System.Drawing.Size(169, 22);
-            this.CopyNode.Text = "Copy node as text";
+            this.CopyNode.Text = "将节点复制为文本";
             this.CopyNode.Click += new System.EventHandler(this.CopyNode_Click);
             // 
             // addNodeToolStripMenuItem
             // 
             this.addNodeToolStripMenuItem.Name = "addNodeToolStripMenuItem";
             this.addNodeToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.addNodeToolStripMenuItem.Text = "Add Node";
+            this.addNodeToolStripMenuItem.Text = "添加节点";
             this.addNodeToolStripMenuItem.Click += new System.EventHandler(this.addNodeToolStripMenuItem_Click);
             // 
             // editValueNodeMenuItem
             // 
             this.editValueNodeMenuItem.Name = "editValueNodeMenuItem";
             this.editValueNodeMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.editValueNodeMenuItem.Text = "Edit value";
+            this.editValueNodeMenuItem.Text = "编辑值";
             this.editValueNodeMenuItem.Click += new System.EventHandler(this.editValueNodeMenuItem_Click);
             // 
             // deleteNodeToolStripMenuItem
             // 
             this.deleteNodeToolStripMenuItem.Name = "deleteNodeToolStripMenuItem";
             this.deleteNodeToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.deleteNodeToolStripMenuItem.Text = "Delete node";
+            this.deleteNodeToolStripMenuItem.Text = "删除节点";
             this.deleteNodeToolStripMenuItem.Click += new System.EventHandler(this.deleteNodeToolStripMenuItem_Click);
             // 
             // exportJsonToolStripMenuItem
             // 
             this.exportJsonToolStripMenuItem.Name = "exportJsonToolStripMenuItem";
             this.exportJsonToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.exportJsonToolStripMenuItem.Text = "Export";
+            this.exportJsonToolStripMenuItem.Text = "输出";
             this.exportJsonToolStripMenuItem.Click += new System.EventHandler(this.exportJsonToolStripMenuItem_Click);
             // 
             // importFromXmlToolStripMenuItem
             // 
             this.importFromXmlToolStripMenuItem.Name = "importFromXmlToolStripMenuItem";
             this.importFromXmlToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.importFromXmlToolStripMenuItem.Text = "Import";
+            this.importFromXmlToolStripMenuItem.Text = "输入";
             this.importFromXmlToolStripMenuItem.Click += new System.EventHandler(this.importFromXmlToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
@@ -141,14 +141,14 @@
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
             this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.saveAsToolStripMenuItem.Text = "Save as..";
+            this.saveAsToolStripMenuItem.Text = "另存为..";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Text = "保存";
             this.saveToolStripMenuItem.Visible = false;
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -189,7 +189,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(541, 349);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Editor";
+            this.tabPage1.Text = "编辑";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // splitContainer1
@@ -243,17 +243,17 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Name";
+            this.columnHeader1.Text = "名称";
             this.columnHeader1.Width = 114;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Type";
+            this.columnHeader2.Text = "类型";
             this.columnHeader2.Width = 93;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Data";
+            this.columnHeader3.Text = "数据";
             this.columnHeader3.Width = 146;
             // 
             // tabPage2
@@ -266,7 +266,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(541, 369);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Text Editor";
+            this.tabPage2.Text = "文本编辑";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // stPanel4
@@ -313,42 +313,42 @@
             // 
             this.addItemToolStripMenuItem.Name = "addItemToolStripMenuItem";
             this.addItemToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.addItemToolStripMenuItem.Text = "Add Item";
+            this.addItemToolStripMenuItem.Text = "添加项目";
             this.addItemToolStripMenuItem.Click += new System.EventHandler(this.addNodeToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.editToolStripMenuItem.Text = "Edit";
+            this.editToolStripMenuItem.Text = "编辑";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.editValueNodeMenuItem_Click);
             // 
             // renameToolStripMenuItem
             // 
             this.renameToolStripMenuItem.Name = "renameToolStripMenuItem";
             this.renameToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.renameToolStripMenuItem.Text = "Rename";
+            this.renameToolStripMenuItem.Text = "重命名";
             this.renameToolStripMenuItem.Click += new System.EventHandler(this.renameToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Text = "删除";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // copyToolStripMenuItem
             // 
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.copyToolStripMenuItem.Text = "Copy item as text";
+            this.copyToolStripMenuItem.Text = "将项目复制为文本";
             this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
             // 
             // copyDataAsTextToolStripMenuItem
             // 
             this.copyDataAsTextToolStripMenuItem.Name = "copyDataAsTextToolStripMenuItem";
             this.copyDataAsTextToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.copyDataAsTextToolStripMenuItem.Text = "Copy data as text";
+            this.copyDataAsTextToolStripMenuItem.Text = "将数据复制为文本";
             this.copyDataAsTextToolStripMenuItem.Click += new System.EventHandler(this.copyDataAsTextToolStripMenuItem_Click);
             // 
             // chkShiftJISEncoding
@@ -358,7 +358,7 @@
             this.chkShiftJISEncoding.Name = "chkShiftJISEncoding";
             this.chkShiftJISEncoding.Size = new System.Drawing.Size(135, 17);
             this.chkShiftJISEncoding.TabIndex = 1;
-            this.chkShiftJISEncoding.Text = "Use Shift JIS Encoding";
+            this.chkShiftJISEncoding.Text = "使用移位 JIS 编码";
             this.chkShiftJISEncoding.UseVisualStyleBackColor = true;
             this.chkShiftJISEncoding.CheckedChanged += new System.EventHandler(this.chkShiftJISEncoding_CheckedChanged);
             // 

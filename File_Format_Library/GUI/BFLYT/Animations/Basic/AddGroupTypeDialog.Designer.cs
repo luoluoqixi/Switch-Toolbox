@@ -63,7 +63,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(34, 13);
             this.stLabel1.TabIndex = 12;
-            this.stLabel1.Text = "Type:";
+            this.stLabel1.Text = "类型:";
             // 
             // stButton1
             // 
@@ -82,7 +82,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 117);
             this.Name = "AddGroupTypeDialog";
-            this.Text = "Add Group Type";
+            this.Text = "添加组类型";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             this.ResumeLayout(false);

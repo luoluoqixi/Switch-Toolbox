@@ -240,7 +240,7 @@
             this.stLabel5.Name = "stLabel5";
             this.stLabel5.Size = new System.Drawing.Size(38, 13);
             this.stLabel5.TabIndex = 51;
-            this.stLabel5.Text = "Down:";
+            this.stLabel5.Text = "下:";
             // 
             // stLabel4
             // 
@@ -249,7 +249,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(24, 13);
             this.stLabel4.TabIndex = 50;
-            this.stLabel4.Text = "Up:";
+            this.stLabel4.Text = "上:";
             // 
             // stLabel1
             // 
@@ -258,7 +258,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(35, 13);
             this.stLabel1.TabIndex = 57;
-            this.stLabel1.Text = "Right:";
+            this.stLabel1.Text = "右:";
             // 
             // stLabel2
             // 
@@ -267,7 +267,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(28, 13);
             this.stLabel2.TabIndex = 56;
-            this.stLabel2.Text = "Left:";
+            this.stLabel2.Text = "左:";
             // 
             // stFlowLayoutPanel1
             // 
@@ -333,7 +333,7 @@
             this.btnResetColors.Name = "btnResetColors";
             this.btnResetColors.Size = new System.Drawing.Size(94, 23);
             this.btnResetColors.TabIndex = 4;
-            this.btnResetColors.Text = "Reset Colors";
+            this.btnResetColors.Text = "重置颜色";
             this.btnResetColors.UseVisualStyleBackColor = false;
             this.btnResetColors.Click += new System.EventHandler(this.btnResetColors_Click);
             // 
@@ -357,7 +357,7 @@
             this.chkUseVtxColorsOnFrames.Name = "chkUseVtxColorsOnFrames";
             this.chkUseVtxColorsOnFrames.Size = new System.Drawing.Size(99, 17);
             this.chkUseVtxColorsOnFrames.TabIndex = 1;
-            this.chkUseVtxColorsOnFrames.Text = "Use On Frames";
+            this.chkUseVtxColorsOnFrames.Text = "在帧上使用";
             this.chkUseVtxColorsOnFrames.UseVisualStyleBackColor = true;
             // 
             // stDropDownPanel3
@@ -386,7 +386,7 @@
             this.chkMaterialForAll.Name = "chkMaterialForAll";
             this.chkMaterialForAll.Size = new System.Drawing.Size(142, 17);
             this.chkMaterialForAll.TabIndex = 3;
-            this.chkMaterialForAll.Text = "Share Top Left Materials";
+            this.chkMaterialForAll.Text = "共享左上角材质";
             this.chkMaterialForAll.UseVisualStyleBackColor = true;
             // 
             // stLabel3
@@ -396,7 +396,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(92, 13);
             this.stLabel3.TabIndex = 2;
-            this.stLabel3.Text = "Texture Rotation::";
+            this.stLabel3.Text = "纹理旋转::";
             // 
             // texRotateCB
             // 

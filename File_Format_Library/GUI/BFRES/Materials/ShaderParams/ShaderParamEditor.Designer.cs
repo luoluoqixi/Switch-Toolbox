@@ -48,7 +48,7 @@
             this.stButton1.Name = "stButton1";
             this.stButton1.Size = new System.Drawing.Size(57, 23);
             this.stButton1.TabIndex = 1;
-            this.stButton1.Text = "Add";
+            this.stButton1.Text = "添加";
             this.stButton1.UseVisualStyleBackColor = false;
             // 
             // stButton2
@@ -58,7 +58,7 @@
             this.stButton2.Name = "stButton2";
             this.stButton2.Size = new System.Drawing.Size(62, 23);
             this.stButton2.TabIndex = 2;
-            this.stButton2.Text = "Remove";
+            this.stButton2.Text = "移除";
             this.stButton2.UseVisualStyleBackColor = false;
             // 
             // btnExport
@@ -68,7 +68,7 @@
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(75, 23);
             this.btnExport.TabIndex = 3;
-            this.btnExport.Text = "Export";
+            this.btnExport.Text = "导出";
             this.btnExport.UseVisualStyleBackColor = false;
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
@@ -79,7 +79,7 @@
             this.btnImport.Name = "btnImport";
             this.btnImport.Size = new System.Drawing.Size(75, 23);
             this.btnImport.TabIndex = 4;
-            this.btnImport.Text = "Import";
+            this.btnImport.Text = "导入";
             this.btnImport.UseVisualStyleBackColor = false;
             this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
             // 
@@ -133,17 +133,17 @@
             // 
             // columnHeader10
             // 
-            this.columnHeader10.Text = "Name";
+            this.columnHeader10.Text = "名称";
             this.columnHeader10.Width = 94;
             // 
             // columnHeader11
             // 
-            this.columnHeader11.Text = "Value";
+            this.columnHeader11.Text = "值";
             this.columnHeader11.Width = 122;
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Color (If Used)";
+            this.columnHeader1.Text = "颜色（如果使用）";
             this.columnHeader1.Width = 120;
             // 
             // columnHeader2

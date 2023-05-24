@@ -286,7 +286,7 @@
             this.stLabel18.Name = "stLabel18";
             this.stLabel18.Size = new System.Drawing.Size(53, 13);
             this.stLabel18.TabIndex = 22;
-            this.stLabel18.Text = "Samplers:";
+            this.stLabel18.Text = "采样器:";
             // 
             // reflectionBSamplerCB
             // 
@@ -307,7 +307,7 @@
             this.stLabel17.Name = "stLabel17";
             this.stLabel17.Size = new System.Drawing.Size(65, 13);
             this.stLabel17.TabIndex = 20;
-            this.stLabel17.Text = "Reflection B";
+            this.stLabel17.Text = "反射 B";
             // 
             // reflectionGSamplerCB
             // 
@@ -328,7 +328,7 @@
             this.stLabel15.Name = "stLabel15";
             this.stLabel15.Size = new System.Drawing.Size(66, 13);
             this.stLabel15.TabIndex = 18;
-            this.stLabel15.Text = "Reflection G";
+            this.stLabel15.Text = "反射 G";
             // 
             // reflectionRSamplerCB
             // 
@@ -349,7 +349,7 @@
             this.stLabel16.Name = "stLabel16";
             this.stLabel16.Size = new System.Drawing.Size(66, 13);
             this.stLabel16.TabIndex = 16;
-            this.stLabel16.Text = "Reflection R";
+            this.stLabel16.Text = "反射 R";
             // 
             // dist1SamplerCB
             // 
@@ -401,7 +401,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(114, 13);
             this.stLabel4.TabIndex = 11;
-            this.stLabel4.Text = "Layer  terms activated:";
+            this.stLabel4.Text = "层术语已激活:";
             // 
             // activatedTermList
             // 
@@ -435,7 +435,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(81, 13);
             this.stLabel3.TabIndex = 8;
-            this.stLabel3.Text = "Lookup Tables:";
+            this.stLabel3.Text = "查找表:";
             // 
             // layerCB
             // 
@@ -457,7 +457,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(36, 13);
             this.stLabel2.TabIndex = 1;
-            this.stLabel2.Text = "Layer:";
+            this.stLabel2.Text = "层:";
             // 
             // stDropDownPanel2
             // 
@@ -522,7 +522,7 @@
             this.stLabel19.Name = "stLabel19";
             this.stLabel19.Size = new System.Drawing.Size(49, 13);
             this.stLabel19.TabIndex = 33;
-            this.stLabel19.Text = "Sources:";
+            this.stLabel19.Text = "来源:";
             // 
             // stLabel6
             // 
@@ -531,7 +531,7 @@
             this.stLabel6.Name = "stLabel6";
             this.stLabel6.Size = new System.Drawing.Size(84, 13);
             this.stLabel6.TabIndex = 0;
-            this.stLabel6.Text = "Alpha Combiner:";
+            this.stLabel6.Text = "透明度组合器:";
             // 
             // stLabel20
             // 
@@ -582,7 +582,7 @@
             this.stLabel22.Name = "stLabel22";
             this.stLabel22.Size = new System.Drawing.Size(56, 13);
             this.stLabel22.TabIndex = 30;
-            this.stLabel22.Text = "Operands:";
+            this.stLabel22.Text = "操作:";
             // 
             // alphaSource1CB
             // 
@@ -694,7 +694,7 @@
             this.stLabel12.Name = "stLabel12";
             this.stLabel12.Size = new System.Drawing.Size(49, 13);
             this.stLabel12.TabIndex = 20;
-            this.stLabel12.Text = "Sources:";
+            this.stLabel12.Text = "来源:";
             // 
             // stLabel11
             // 
@@ -721,7 +721,7 @@
             this.stLabel9.Name = "stLabel9";
             this.stLabel9.Size = new System.Drawing.Size(56, 13);
             this.stLabel9.TabIndex = 17;
-            this.stLabel9.Text = "Operands:";
+            this.stLabel9.Text = "操作:";
             // 
             // stLabel8
             // 
@@ -730,7 +730,7 @@
             this.stLabel8.Name = "stLabel8";
             this.stLabel8.Size = new System.Drawing.Size(37, 13);
             this.stLabel8.TabIndex = 16;
-            this.stLabel8.Text = "Scale:";
+            this.stLabel8.Text = "缩放:";
             // 
             // stLabel7
             // 
@@ -846,7 +846,7 @@
             this.stLabel5.Name = "stLabel5";
             this.stLabel5.Size = new System.Drawing.Size(81, 13);
             this.stLabel5.TabIndex = 0;
-            this.stLabel5.Text = "Color Combiner:";
+            this.stLabel5.Text = "颜色组合:";
             // 
             // btnDupeTevStage
             // 
@@ -855,7 +855,7 @@
             this.btnDupeTevStage.Name = "btnDupeTevStage";
             this.btnDupeTevStage.Size = new System.Drawing.Size(75, 23);
             this.btnDupeTevStage.TabIndex = 5;
-            this.btnDupeTevStage.Text = "Dupe";
+            this.btnDupeTevStage.Text = "复制副本";
             this.btnDupeTevStage.UseVisualStyleBackColor = false;
             // 
             // btnRemoveTevStage
@@ -865,7 +865,7 @@
             this.btnRemoveTevStage.Name = "btnRemoveTevStage";
             this.btnRemoveTevStage.Size = new System.Drawing.Size(75, 23);
             this.btnRemoveTevStage.TabIndex = 4;
-            this.btnRemoveTevStage.Text = "Remove";
+            this.btnRemoveTevStage.Text = "移除";
             this.btnRemoveTevStage.UseVisualStyleBackColor = false;
             // 
             // btnAddTevStage
@@ -875,7 +875,7 @@
             this.btnAddTevStage.Name = "btnAddTevStage";
             this.btnAddTevStage.Size = new System.Drawing.Size(75, 23);
             this.btnAddTevStage.TabIndex = 3;
-            this.btnAddTevStage.Text = "Add";
+            this.btnAddTevStage.Text = "添加";
             this.btnAddTevStage.UseVisualStyleBackColor = false;
             // 
             // stLabel1
@@ -885,7 +885,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(38, 13);
             this.stLabel1.TabIndex = 2;
-            this.stLabel1.Text = "Stage:";
+            this.stLabel1.Text = "阶段:";
             // 
             // tevStagesCB
             // 

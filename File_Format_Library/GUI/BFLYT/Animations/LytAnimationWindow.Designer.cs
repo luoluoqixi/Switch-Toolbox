@@ -142,7 +142,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(635, 576);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Key Editor";
+            this.tabPage1.Text = "Key 编辑器";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // stPropertyGrid1
@@ -162,7 +162,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(635, 576);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Curve Viewer";
+            this.tabPage2.Text = "曲线查看器";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // LytAnimationWindow
@@ -171,7 +171,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(907, 638);
             this.Name = "LytAnimationWindow";
-            this.Text = "Pane Animation Window";
+            this.Text = "窗格动画窗口";
             this.contentContainer.ResumeLayout(false);
             this.stPanel1.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);

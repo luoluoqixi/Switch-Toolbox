@@ -99,7 +99,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(75, 13);
             this.stLabel2.TabIndex = 3;
-            this.stLabel2.Text = "Scaling Mode:";
+            this.stLabel2.Text = "缩放模式:";
             // 
             // rotationModeCB
             // 
@@ -120,7 +120,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(80, 13);
             this.stLabel1.TabIndex = 1;
-            this.stLabel1.Text = "Rotation Mode:";
+            this.stLabel1.Text = "旋转方式:";
             // 
             // stDropDownPanel2
             // 
@@ -180,7 +180,7 @@
             this.stLabel5.Name = "stLabel5";
             this.stLabel5.Size = new System.Drawing.Size(85, 13);
             this.stLabel5.TabIndex = 8;
-            this.stLabel5.Text = "Inverse Matrices";
+            this.stLabel5.Text = "逆矩阵";
             // 
             // stLabel4
             // 
@@ -189,7 +189,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(99, 13);
             this.stLabel4.TabIndex = 7;
-            this.stLabel4.Text = "Rigid Matrix Indices";
+            this.stLabel4.Text = "刚性矩阵索引";
             // 
             // stLabel3
             // 
@@ -198,7 +198,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(111, 13);
             this.stLabel3.TabIndex = 5;
-            this.stLabel3.Text = "Smooth Matrix Indices";
+            this.stLabel3.Text = "平滑矩阵索引";
             // 
             // FSKLEditor
             // 

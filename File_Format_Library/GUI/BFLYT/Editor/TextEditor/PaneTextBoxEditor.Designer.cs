@@ -127,7 +127,7 @@
             this.stLabel10.Name = "stLabel10";
             this.stLabel10.Size = new System.Drawing.Size(83, 13);
             this.stLabel10.TabIndex = 61;
-            this.stLabel10.Text = "Text Box Name:";
+            this.stLabel10.Text = "文本框名称:";
             // 
             // textBoxTB
             // 
@@ -145,7 +145,7 @@
             this.chkSizeRestrict.Name = "chkSizeRestrict";
             this.chkSizeRestrict.Size = new System.Drawing.Size(99, 17);
             this.chkSizeRestrict.TabIndex = 59;
-            this.chkSizeRestrict.Text = "Size Restriction";
+            this.chkSizeRestrict.Text = "大小限制";
             this.chkSizeRestrict.UseVisualStyleBackColor = true;
             this.chkSizeRestrict.CheckedChanged += new System.EventHandler(this.chkSizeRestrict_CheckedChanged);
             // 
@@ -202,7 +202,7 @@
             this.stLabel6.Name = "stLabel6";
             this.stLabel6.Size = new System.Drawing.Size(81, 13);
             this.stLabel6.TabIndex = 58;
-            this.stLabel6.Text = "Linel Alignment:";
+            this.stLabel6.Text = "线条对齐方式:";
             // 
             // stTextBox1
             // 
@@ -253,7 +253,7 @@
             this.stLabel5.Name = "stLabel5";
             this.stLabel5.Size = new System.Drawing.Size(94, 13);
             this.stLabel5.TabIndex = 56;
-            this.stLabel5.Text = "Vertical Alignment:";
+            this.stLabel5.Text = "垂直对齐:";
             // 
             // stLabel4
             // 
@@ -263,7 +263,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(106, 13);
             this.stLabel4.TabIndex = 54;
-            this.stLabel4.Text = "Horizontal Alignment:";
+            this.stLabel4.Text = "水平对齐:";
             // 
             // alighmentVCB
             // 
@@ -358,7 +358,7 @@
             this.stLabel9.Name = "stLabel9";
             this.stLabel9.Size = new System.Drawing.Size(49, 13);
             this.stLabel9.TabIndex = 61;
-            this.stLabel9.Text = "Spacing:";
+            this.stLabel9.Text = "间距:";
             // 
             // spacingXTB
             // 
@@ -410,7 +410,7 @@
             this.stLabel7.Name = "stLabel7";
             this.stLabel7.Size = new System.Drawing.Size(31, 13);
             this.stLabel7.TabIndex = 60;
-            this.stLabel7.Text = "Color";
+            this.stLabel7.Text = "颜色";
             this.stLabel7.Click += new System.EventHandler(this.stLabel7_Click);
             // 
             // fontFileCB
@@ -433,7 +433,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(50, 13);
             this.stLabel1.TabIndex = 2;
-            this.stLabel1.Text = "Font File:";
+            this.stLabel1.Text = "字体文件:";
             // 
             // scaleYUD
             // 
@@ -498,7 +498,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(37, 13);
             this.stLabel2.TabIndex = 4;
-            this.stLabel2.Text = "Scale:";
+            this.stLabel2.Text = "缩放 - Scale:";
             // 
             // scaleXUD
             // 
@@ -601,7 +601,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(62, 13);
             this.stLabel3.TabIndex = 51;
-            this.stLabel3.Text = "Italic Angle:";
+            this.stLabel3.Text = "倾斜角度:";
             // 
             // stDropDownPanel4
             // 
@@ -638,7 +638,7 @@
             this.stLabel8.Name = "stLabel8";
             this.stLabel8.Size = new System.Drawing.Size(31, 13);
             this.stLabel8.TabIndex = 61;
-            this.stLabel8.Text = "Color";
+            this.stLabel8.Text = "颜色";
             // 
             // sliderShadowItalicTilt
             // 
@@ -655,7 +655,7 @@
             this.chkEnableShadows.Name = "chkEnableShadows";
             this.chkEnableShadows.Size = new System.Drawing.Size(62, 17);
             this.chkEnableShadows.TabIndex = 60;
-            this.chkEnableShadows.Text = "Enable:";
+            this.chkEnableShadows.Text = "启用:";
             this.chkEnableShadows.UseVisualStyleBackColor = true;
             // 
             // shadowItalicTiltUD
@@ -708,7 +708,7 @@
             this.stLabel13.Name = "stLabel13";
             this.stLabel13.Size = new System.Drawing.Size(62, 13);
             this.stLabel13.TabIndex = 54;
-            this.stLabel13.Text = "Italic Angle:";
+            this.stLabel13.Text = "倾斜角度:";
             // 
             // shadowOffseYUD
             // 
@@ -759,7 +759,7 @@
             this.stLabel12.Name = "stLabel12";
             this.stLabel12.Size = new System.Drawing.Size(38, 13);
             this.stLabel12.TabIndex = 57;
-            this.stLabel12.Text = "Offset:";
+            this.stLabel12.Text = "差值:";
             // 
             // shadowOffseXUD
             // 
@@ -853,7 +853,7 @@
             this.stLabel11.Name = "stLabel11";
             this.stLabel11.Size = new System.Drawing.Size(37, 13);
             this.stLabel11.TabIndex = 54;
-            this.stLabel11.Text = "Scale:";
+            this.stLabel11.Text = "缩放 - Scale:";
             // 
             // shadowScaleXUD
             // 

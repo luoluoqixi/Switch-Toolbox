@@ -56,7 +56,7 @@
             this.useMagicHeaderCB.Name = "useMagicHeaderCB";
             this.useMagicHeaderCB.Size = new System.Drawing.Size(147, 17);
             this.useMagicHeaderCB.TabIndex = 11;
-            this.useMagicHeaderCB.Text = "Use LZMA Magic Header";
+            this.useMagicHeaderCB.Text = "使用 LZMA 魔术头";
             this.useMagicHeaderCB.UseVisualStyleBackColor = true;
             // 
             // writePropertiesCB
@@ -68,7 +68,7 @@
             this.writePropertiesCB.Name = "writePropertiesCB";
             this.writePropertiesCB.Size = new System.Drawing.Size(101, 17);
             this.writePropertiesCB.TabIndex = 12;
-            this.writePropertiesCB.Text = "Save Properties";
+            this.writePropertiesCB.Text = "保存属性";
             this.writePropertiesCB.UseVisualStyleBackColor = true;
             // 
             // writeDecompSizeCB
@@ -80,7 +80,7 @@
             this.writeDecompSizeCB.Name = "writeDecompSizeCB";
             this.writeDecompSizeCB.Size = new System.Drawing.Size(148, 17);
             this.writeDecompSizeCB.TabIndex = 13;
-            this.writeDecompSizeCB.Text = "Save Decompressed Size";
+            this.writeDecompSizeCB.Text = "保存解压缩大小";
             this.writeDecompSizeCB.UseVisualStyleBackColor = true;
             // 
             // stButton1
@@ -100,7 +100,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(289, 159);
             this.Name = "LzmaSettingsForm";
-            this.Text = "Lzma Settings";
+            this.Text = "Lzma设置";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             this.ResumeLayout(false);

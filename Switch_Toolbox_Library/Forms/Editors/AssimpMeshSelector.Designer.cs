@@ -62,7 +62,7 @@
             this.CancelBtn.Name = "CancelBtn";
             this.CancelBtn.Size = new System.Drawing.Size(75, 23);
             this.CancelBtn.TabIndex = 2;
-            this.CancelBtn.Text = "Cancel";
+            this.CancelBtn.Text = "取消";
             this.CancelBtn.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -73,7 +73,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(201, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Select the mesh you want to replace with";
+            this.label1.Text = "选择要替换的网格";
             // 
             // OkBtn
             // 
@@ -89,7 +89,7 @@
             // 
             // Meshes
             // 
-            this.Meshes.Text = "Meshes";
+            this.Meshes.Text = "网格";
             this.Meshes.Width = 321;
             // 
             // AssimpMeshSelector
@@ -104,7 +104,7 @@
             this.Controls.Add(this.listView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "AssimpMeshSelector";
-            this.Text = "AssimpMeshSelector";
+            this.Text = "关联网格选择器";
             this.ResumeLayout(false);
             this.PerformLayout();
 

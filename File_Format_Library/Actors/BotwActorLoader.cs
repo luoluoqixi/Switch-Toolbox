@@ -160,7 +160,7 @@ namespace UKing.Actors
         public BotwActorLoader()
         {
             editor = new ObjectEditor();
-            editor.Text = "Actor Editor BOTW";
+            editor.Text = "演员编辑器 - Actor Editor BOTW";
             LibraryGUI.CreateMdiWindow(editor);
             editor.SortTreeAscending();
 

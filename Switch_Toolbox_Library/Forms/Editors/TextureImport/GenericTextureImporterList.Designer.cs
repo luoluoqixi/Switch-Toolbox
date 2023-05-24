@@ -86,7 +86,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(79, 33);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Cancel";
+            this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -119,12 +119,12 @@
             // 
             // Name
             // 
-            this.Name.Text = "Name";
+            this.Name.Text = "名称";
             this.Name.Width = 104;
             // 
             // Format
             // 
-            this.Format.Text = "Format";
+            this.Format.Text = "格式";
             this.Format.Width = 133;
             // 
             // label2
@@ -134,7 +134,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 13);
             this.label2.TabIndex = 22;
-            this.label2.Text = "Format";
+            this.label2.Text = "格式";
             // 
             // label1
             // 
@@ -160,7 +160,7 @@
             this.WidthLabel.Name = "WidthLabel";
             this.WidthLabel.Size = new System.Drawing.Size(35, 13);
             this.WidthLabel.TabIndex = 19;
-            this.WidthLabel.Text = "Width";
+            this.WidthLabel.Text = "宽度";
             // 
             // HeightLabel
             // 
@@ -169,7 +169,7 @@
             this.HeightLabel.Name = "HeightLabel";
             this.HeightLabel.Size = new System.Drawing.Size(38, 13);
             this.HeightLabel.TabIndex = 18;
-            this.HeightLabel.Text = "Height";
+            this.HeightLabel.Text = "高度";
             // 
             // pictureBox1
             // 
@@ -214,7 +214,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(100, 13);
             this.stLabel1.TabIndex = 29;
-            this.stLabel1.Text = "Compression Mode:";
+            this.stLabel1.Text = "压缩模式:";
             this.stLabel1.Click += new System.EventHandler(this.stLabel1_Click);
             // 
             // dataSizeLbl
@@ -224,7 +224,7 @@
             this.dataSizeLbl.Name = "dataSizeLbl";
             this.dataSizeLbl.Size = new System.Drawing.Size(56, 13);
             this.dataSizeLbl.TabIndex = 31;
-            this.dataSizeLbl.Text = "Data Size:";
+            this.dataSizeLbl.Text = "数据大小:";
             // 
             // GenericTextureImporterList
             // 

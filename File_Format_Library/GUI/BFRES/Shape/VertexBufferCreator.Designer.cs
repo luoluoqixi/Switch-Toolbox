@@ -91,7 +91,7 @@
             this.stButton2.Name = "stButton2";
             this.stButton2.Size = new System.Drawing.Size(75, 23);
             this.stButton2.TabIndex = 2;
-            this.stButton2.Text = "Cancel";
+            this.stButton2.Text = "取消";
             this.stButton2.UseVisualStyleBackColor = false;
             // 
             // stLabel1
@@ -101,7 +101,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(42, 13);
             this.stLabel1.TabIndex = 3;
-            this.stLabel1.Text = "Format:";
+            this.stLabel1.Text = "格式:";
             // 
             // nameTB
             // 
@@ -119,7 +119,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(38, 13);
             this.stLabel2.TabIndex = 5;
-            this.stLabel2.Text = "Name:";
+            this.stLabel2.Text = "名称:";
             // 
             // stLabel3
             // 
@@ -128,7 +128,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(57, 13);
             this.stLabel3.TabIndex = 11;
-            this.stLabel3.Text = "Inert Data:";
+            this.stLabel3.Text = "插入数据:";
             // 
             // numericUpDownFloat1
             // 
@@ -159,7 +159,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(281, 177);
             this.Name = "VertexBufferCreator";
-            this.Text = "Buffer Creator";
+            this.Text = "缓冲区创建器";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFloat1)).EndInit();

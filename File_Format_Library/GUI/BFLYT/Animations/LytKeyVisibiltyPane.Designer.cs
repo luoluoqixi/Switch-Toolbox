@@ -50,7 +50,7 @@
             this.stLabel6.Name = "stLabel6";
             this.stLabel6.Size = new System.Drawing.Size(37, 13);
             this.stLabel6.TabIndex = 44;
-            this.stLabel6.Text = "Alpha:";
+            this.stLabel6.Text = "阿尔法 - Alpha:";
             // 
             // stLabel2
             // 
@@ -59,7 +59,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(69, 13);
             this.stLabel2.TabIndex = 43;
-            this.stLabel2.Text = "Pane visibile:";
+            this.stLabel2.Text = "窗格可见 - Pane visibile:";
             // 
             // paneVisibleChkBox
             // 

@@ -164,7 +164,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Viewport Shading";
+            this.label1.Text = "视口着色";
             // 
             // chkBoxSpecular
             // 
@@ -173,7 +173,7 @@
             this.chkBoxSpecular.Name = "chkBoxSpecular";
             this.chkBoxSpecular.Size = new System.Drawing.Size(104, 17);
             this.chkBoxSpecular.TabIndex = 3;
-            this.chkBoxSpecular.Text = "Enable Specular";
+            this.chkBoxSpecular.Text = "启用镜面反射";
             this.chkBoxSpecular.UseVisualStyleBackColor = true;
             // 
             // chkBoxNormalMap
@@ -183,7 +183,7 @@
             this.chkBoxNormalMap.Name = "chkBoxNormalMap";
             this.chkBoxNormalMap.Size = new System.Drawing.Size(124, 17);
             this.chkBoxNormalMap.TabIndex = 2;
-            this.chkBoxNormalMap.Text = "Enable Normal Maps";
+            this.chkBoxNormalMap.Text = "启用法线贴图";
             this.chkBoxNormalMap.UseVisualStyleBackColor = true;
             this.chkBoxNormalMap.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -192,7 +192,7 @@
             this.shadingComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.shadingComboBox.FormattingEnabled = true;
             this.shadingComboBox.Location = new System.Drawing.Point(351, 27);
-            this.shadingComboBox.Name = "shadingComboBox";
+            this.shadingComboBox.Name = "阴影组合框";
             this.shadingComboBox.Size = new System.Drawing.Size(165, 21);
             this.shadingComboBox.TabIndex = 1;
             this.shadingComboBox.SelectedIndexChanged += new System.EventHandler(this.shadingComboBox_SelectedIndexChanged);
@@ -283,7 +283,7 @@
             this.displayBoundingBoxeChk.Name = "displayBoundingBoxeChk";
             this.displayBoundingBoxeChk.Size = new System.Drawing.Size(140, 17);
             this.displayBoundingBoxeChk.TabIndex = 31;
-            this.displayBoundingBoxeChk.Text = "Display Bounding Boxes";
+            this.displayBoundingBoxeChk.Text = "显示边界框";
             this.displayBoundingBoxeChk.CheckedChanged += new System.EventHandler(this.displayBoundingBoxeChk_CheckedChanged);
             // 
             // boneXRayChk
@@ -293,7 +293,7 @@
             this.boneXRayChk.Name = "boneXRayChk";
             this.boneXRayChk.Size = new System.Drawing.Size(120, 17);
             this.boneXRayChk.TabIndex = 30;
-            this.boneXRayChk.Text = "Display Bone X Ray";
+            this.boneXRayChk.Text = "显示骨骼X射线";
             this.boneXRayChk.CheckedChanged += new System.EventHandler(this.boneXRayChk_CheckedChanged);
             // 
             // stLabel9
@@ -303,7 +303,7 @@
             this.stLabel9.Name = "stLabel9";
             this.stLabel9.Size = new System.Drawing.Size(103, 13);
             this.stLabel9.TabIndex = 29;
-            this.stLabel9.Text = "Camera Max Speed:";
+            this.stLabel9.Text = "相机最大速度:";
             // 
             // cameraMaxSpeedUD
             // 
@@ -389,7 +389,7 @@
             this.stLabel8.Name = "stLabel8";
             this.stLabel8.Size = new System.Drawing.Size(82, 13);
             this.stLabel8.TabIndex = 23;
-            this.stLabel8.Text = "Bone Point Size";
+            this.stLabel8.Text = "骨骼点大小";
             // 
             // boneSizeUD
             // 
@@ -427,7 +427,7 @@
             this.labelNormalsLine.Name = "labelNormalsLine";
             this.labelNormalsLine.Size = new System.Drawing.Size(81, 13);
             this.labelNormalsLine.TabIndex = 21;
-            this.labelNormalsLine.Text = "Normals Length";
+            this.labelNormalsLine.Text = "法线长度";
             // 
             // normalsLineUD
             // 
@@ -465,7 +465,7 @@
             this.normalPointsCB.Name = "normalPointsCB";
             this.normalPointsCB.Size = new System.Drawing.Size(128, 17);
             this.normalPointsCB.TabIndex = 19;
-            this.normalPointsCB.Text = "Display Normal Points";
+            this.normalPointsCB.Text = "显示法线点";
             this.normalPointsCB.UseVisualStyleBackColor = true;
             this.normalPointsCB.CheckedChanged += new System.EventHandler(this.normalPointsCB_CheckedChanged);
             // 
@@ -476,7 +476,7 @@
             this.vtxColorCB.Name = "vtxColorCB";
             this.vtxColorCB.Size = new System.Drawing.Size(125, 17);
             this.vtxColorCB.TabIndex = 18;
-            this.vtxColorCB.Text = "Display Vertex Colors";
+            this.vtxColorCB.Text = "显示顶点颜色";
             this.vtxColorCB.UseVisualStyleBackColor = true;
             this.vtxColorCB.CheckedChanged += new System.EventHandler(this.vtxColorCB_CheckedChanged);
             // 
@@ -487,7 +487,7 @@
             this.chkBoxEnablePBR.Name = "chkBoxEnablePBR";
             this.chkBoxEnablePBR.Size = new System.Drawing.Size(84, 17);
             this.chkBoxEnablePBR.TabIndex = 17;
-            this.chkBoxEnablePBR.Text = "Enable PBR";
+            this.chkBoxEnablePBR.Text = "启用 PBR";
             this.chkBoxEnablePBR.UseVisualStyleBackColor = true;
             this.chkBoxEnablePBR.CheckedChanged += new System.EventHandler(this.chkBoxEnablePBR_CheckedChanged);
             // 
@@ -498,7 +498,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(75, 13);
             this.label6.TabIndex = 15;
-            this.label6.Text = "Preview Scale";
+            this.label6.Text = "预览比例";
             // 
             // previewScaleUD
             // 
@@ -536,7 +536,7 @@
             this.chkBoxDisplayPolyCount.Name = "chkBoxDisplayPolyCount";
             this.chkBoxDisplayPolyCount.Size = new System.Drawing.Size(114, 17);
             this.chkBoxDisplayPolyCount.TabIndex = 13;
-            this.chkBoxDisplayPolyCount.Text = "Display Poly Count";
+            this.chkBoxDisplayPolyCount.Text = "显示多边形计数";
             this.chkBoxDisplayPolyCount.CheckedChanged += new System.EventHandler(this.chkBoxDisplayPolyCount_CheckedChanged);
             // 
             // label5
@@ -546,7 +546,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 13);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Camera Far";
+            this.label5.Text = "相机Far";
             // 
             // camFarNumUD
             // 
@@ -579,7 +579,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 13);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Camera Near";
+            this.label4.Text = "相机Near";
             // 
             // camNearNumUD
             // 
@@ -617,7 +617,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Camera";
+            this.label3.Text = "摄像机";
             // 
             // camMoveComboBox
             // 
@@ -636,7 +636,7 @@
             this.chkBoxDisplayBones.Name = "chkBoxDisplayBones";
             this.chkBoxDisplayBones.Size = new System.Drawing.Size(93, 17);
             this.chkBoxDisplayBones.TabIndex = 7;
-            this.chkBoxDisplayBones.Text = "Display Bones";
+            this.chkBoxDisplayBones.Text = "显示骨骼";
             this.chkBoxDisplayBones.UseVisualStyleBackColor = true;
             this.chkBoxDisplayBones.CheckedChanged += new System.EventHandler(this.chkBoxDisplayBones_CheckedChanged);
             // 
@@ -647,7 +647,7 @@
             this.chkBoxDisplayWireframe.Name = "chkBoxDisplayWireframe";
             this.chkBoxDisplayWireframe.Size = new System.Drawing.Size(111, 17);
             this.chkBoxDisplayWireframe.TabIndex = 6;
-            this.chkBoxDisplayWireframe.Text = "Display Wireframe";
+            this.chkBoxDisplayWireframe.Text = "显示线框";
             this.chkBoxDisplayWireframe.UseVisualStyleBackColor = true;
             this.chkBoxDisplayWireframe.CheckedChanged += new System.EventHandler(this.chkBoxDisplayWireframe_CheckedChanged);
             // 
@@ -658,7 +658,7 @@
             this.chkBoxDisplayModels.Name = "chkBoxDisplayModels";
             this.chkBoxDisplayModels.Size = new System.Drawing.Size(97, 17);
             this.chkBoxDisplayModels.TabIndex = 5;
-            this.chkBoxDisplayModels.Text = "Display Models";
+            this.chkBoxDisplayModels.Text = "显示模式";
             this.chkBoxDisplayModels.UseVisualStyleBackColor = true;
             this.chkBoxDisplayModels.CheckedChanged += new System.EventHandler(this.chkBoxDisplayModels_CheckedChanged);
             // 
@@ -669,7 +669,7 @@
             this.chkBoxStereoscopy.Name = "chkBoxStereoscopy";
             this.chkBoxStereoscopy.Size = new System.Drawing.Size(121, 17);
             this.chkBoxStereoscopy.TabIndex = 4;
-            this.chkBoxStereoscopy.Text = "Enable Stereoscopy";
+            this.chkBoxStereoscopy.Text = "启用立体视图";
             this.chkBoxStereoscopy.UseVisualStyleBackColor = true;
             this.chkBoxStereoscopy.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
             // 
@@ -680,7 +680,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Viewport Settings";
+            this.label2.Text = "视口设置";
             // 
             // panel1
             // 
@@ -699,7 +699,7 @@
             this.enableVersionCheckCHK.Name = "enableVersionCheckCHK";
             this.enableVersionCheckCHK.Size = new System.Drawing.Size(131, 17);
             this.enableVersionCheckCHK.TabIndex = 16;
-            this.enableVersionCheckCHK.Text = "Enable Version Check";
+            this.enableVersionCheckCHK.Text = "启用版本检查";
             this.enableVersionCheckCHK.UseVisualStyleBackColor = true;
             this.enableVersionCheckCHK.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_2);
             // 
@@ -710,7 +710,7 @@
             this.GLSLVerLabel.Name = "GLSLVerLabel";
             this.GLSLVerLabel.Size = new System.Drawing.Size(72, 13);
             this.GLSLVerLabel.TabIndex = 10;
-            this.GLSLVerLabel.Text = "GLSL Version";
+            this.GLSLVerLabel.Text = "GLSL 版本";
             // 
             // openGLVerLabel
             // 
@@ -719,7 +719,7 @@
             this.openGLVerLabel.Name = "openGLVerLabel";
             this.openGLVerLabel.Size = new System.Drawing.Size(91, 13);
             this.openGLVerLabel.TabIndex = 9;
-            this.openGLVerLabel.Text = "Open GL Version:";
+            this.openGLVerLabel.Text = "打开GL版本:";
             // 
             // btnSave
             // 
@@ -728,7 +728,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(104, 27);
             this.btnSave.TabIndex = 6;
-            this.btnSave.Text = "Save";
+            this.btnSave.Text = "保存";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -739,7 +739,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(123, 13);
             this.label7.TabIndex = 17;
-            this.label7.Text = "Yaz0 Compression Level";
+            this.label7.Text = "Yaz0 压缩级别";
             // 
             // yazoCompressionLevelUD
             // 
@@ -783,7 +783,7 @@
             this.chkBoxMdiMaximized.Name = "chkBoxMdiMaximized";
             this.chkBoxMdiMaximized.Size = new System.Drawing.Size(162, 17);
             this.chkBoxMdiMaximized.TabIndex = 17;
-            this.chkBoxMdiMaximized.Text = "Always Maximized Mdi Forms";
+            this.chkBoxMdiMaximized.Text = "始终最大化Mdi表单";
             this.chkBoxMdiMaximized.UseVisualStyleBackColor = true;
             this.chkBoxMdiMaximized.CheckedChanged += new System.EventHandler(this.chkBoxMdiMaximized_CheckedChanged_3);
             // 
@@ -804,7 +804,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(66, 13);
             this.stLabel1.TabIndex = 22;
-            this.stLabel1.Text = "Form Theme";
+            this.stLabel1.Text = "表单主题";
             // 
             // stTabControl1
             // 
@@ -833,7 +833,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(541, 395);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Main";
+            this.tabPage1.Text = "主要";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
@@ -858,7 +858,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(541, 395);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Editor";
+            this.tabPage2.Text = "编辑";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // chkAlwaysCompressOnSave
@@ -868,7 +868,7 @@
             this.chkAlwaysCompressOnSave.Name = "chkAlwaysCompressOnSave";
             this.chkAlwaysCompressOnSave.Size = new System.Drawing.Size(219, 17);
             this.chkAlwaysCompressOnSave.TabIndex = 19;
-            this.chkAlwaysCompressOnSave.Text = "Always compress on save (if used on file)";
+            this.chkAlwaysCompressOnSave.Text = "保存时始终压缩（如果在文件中使用）";
             this.chkAlwaysCompressOnSave.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.chkAlwaysCompressOnSave.UseVisualStyleBackColor = true;
             this.chkAlwaysCompressOnSave.CheckedChanged += new System.EventHandler(this.chkAlwaysCompressOnSave_CheckedChanged);
@@ -880,7 +880,7 @@
             this.chkFrameCamera.Name = "chkFrameCamera";
             this.chkFrameCamera.Size = new System.Drawing.Size(210, 17);
             this.chkFrameCamera.TabIndex = 18;
-            this.chkFrameCamera.Text = "Center camera to model when selected";
+            this.chkFrameCamera.Text = "选中时将相机置于模型中心";
             this.chkFrameCamera.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.chkFrameCamera.UseVisualStyleBackColor = true;
             this.chkFrameCamera.CheckedChanged += new System.EventHandler(this.chkFrameCamera_CheckedChanged);
@@ -892,7 +892,7 @@
             this.modelLoadArchive.Name = "modelLoadArchive";
             this.modelLoadArchive.Size = new System.Drawing.Size(205, 17);
             this.modelLoadArchive.TabIndex = 17;
-            this.modelLoadArchive.Text = "Load models when an archive is open";
+            this.modelLoadArchive.Text = "打开存档时加载模型";
             this.modelLoadArchive.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.modelLoadArchive.UseVisualStyleBackColor = true;
             this.modelLoadArchive.CheckedChanged += new System.EventHandler(this.modelLoadArchive_CheckedChanged);
@@ -917,7 +917,7 @@
             this.stLabel7.Name = "stLabel7";
             this.stLabel7.Size = new System.Drawing.Size(53, 13);
             this.stLabel7.TabIndex = 15;
-            this.stLabel7.Text = "Grid Color";
+            this.stLabel7.Text = "网格颜色";
             // 
             // gridColorPB
             // 
@@ -935,7 +935,7 @@
             this.stLabel6.Name = "stLabel6";
             this.stLabel6.Size = new System.Drawing.Size(77, 13);
             this.stLabel6.TabIndex = 12;
-            this.stLabel6.Text = "Grid Cell Count";
+            this.stLabel6.Text = "网格单元格计数";
             // 
             // stLabel5
             // 
@@ -944,7 +944,7 @@
             this.stLabel5.Name = "stLabel5";
             this.stLabel5.Size = new System.Drawing.Size(69, 13);
             this.stLabel5.TabIndex = 11;
-            this.stLabel5.Text = "Grid Cell Size";
+            this.stLabel5.Text = "网格单元";
             // 
             // gridCellSizeUD
             // 
@@ -982,7 +982,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(144, 13);
             this.stLabel4.TabIndex = 5;
-            this.stLabel4.Text = "Background Gradient Bottom";
+            this.stLabel4.Text = "背景渐变底部";
             // 
             // bgGradientBottom
             // 
@@ -1000,7 +1000,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(130, 13);
             this.stLabel3.TabIndex = 3;
-            this.stLabel3.Text = "Background Gradient Top";
+            this.stLabel3.Text = "背景渐变顶部";
             // 
             // bgGradientTop
             // 
@@ -1018,7 +1018,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(127, 13);
             this.stLabel2.TabIndex = 1;
-            this.stLabel2.Text = "Preferred Texture Format:";
+            this.stLabel2.Text = "首选纹理格式:";
             // 
             // preferredTexFormatCB
             // 
@@ -1049,7 +1049,7 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(541, 395);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Paths";
+            this.tabPage3.Text = "路径";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // stLabel18
@@ -1059,7 +1059,7 @@
             this.stLabel18.Name = "stLabel18";
             this.stLabel18.Size = new System.Drawing.Size(119, 13);
             this.stLabel18.TabIndex = 11;
-            this.stLabel18.Text = "Pokemon Sword/Shield";
+            this.stLabel18.Text = "口袋妖怪剑/盾";
             // 
             // pathPokemonSwShTB
             // 
@@ -1083,7 +1083,7 @@
             // 
             this.clearSettingToolStripMenuItem.Name = "clearSettingToolStripMenuItem";
             this.clearSettingToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
-            this.clearSettingToolStripMenuItem.Text = "Clear Setting";
+            this.clearSettingToolStripMenuItem.Text = "清除设置";
             this.clearSettingToolStripMenuItem.Click += new System.EventHandler(this.clearSettingToolStripMenuItem_Click);
             // 
             // stLabel13
@@ -1093,7 +1093,7 @@
             this.stLabel13.Name = "stLabel13";
             this.stLabel13.Size = new System.Drawing.Size(98, 13);
             this.stLabel13.TabIndex = 9;
-            this.stLabel13.Text = "Breath Of The Wild";
+            this.stLabel13.Text = "旷野之息";
             // 
             // botwGamePathTB
             // 
@@ -1112,7 +1112,7 @@
             this.stLabel14.Name = "stLabel14";
             this.stLabel14.Size = new System.Drawing.Size(105, 13);
             this.stLabel14.TabIndex = 7;
-            this.stLabel14.Text = "Twilight Princess HD";
+            this.stLabel14.Text = "暮光公主高清";
             // 
             // tpGamePathTB
             // 
@@ -1131,7 +1131,7 @@
             this.stLabel12.Name = "stLabel12";
             this.stLabel12.Size = new System.Drawing.Size(76, 13);
             this.stLabel12.TabIndex = 5;
-            this.stLabel12.Text = "Mario Odyssey";
+            this.stLabel12.Text = "马里奥·奥德赛";
             // 
             // SMOPathTB
             // 
@@ -1150,7 +1150,7 @@
             this.stLabel11.Name = "stLabel11";
             this.stLabel11.Size = new System.Drawing.Size(100, 13);
             this.stLabel11.TabIndex = 3;
-            this.stLabel11.Text = "Mario Kart 8 Deluxe";
+            this.stLabel11.Text = "马里奥卡丁车8豪华版";
             // 
             // mk8DPathTB
             // 
@@ -1169,7 +1169,7 @@
             this.stLabel10.Name = "stLabel10";
             this.stLabel10.Size = new System.Drawing.Size(64, 13);
             this.stLabel10.TabIndex = 1;
-            this.stLabel10.Text = "Mario Kart 8";
+            this.stLabel10.Text = "马里奥地图8";
             // 
             // mk8PathTB
             // 
@@ -1206,7 +1206,7 @@
             this.chkDiffyseSkybox.Name = "chkDiffyseSkybox";
             this.chkDiffyseSkybox.Size = new System.Drawing.Size(173, 17);
             this.chkDiffyseSkybox.TabIndex = 5;
-            this.chkDiffyseSkybox.Text = "Display Diffuse Map on Skybox";
+            this.chkDiffyseSkybox.Text = "在Skybox上显示漫反射贴图";
             this.chkDiffyseSkybox.UseVisualStyleBackColor = true;
             this.chkDiffyseSkybox.CheckedChanged += new System.EventHandler(this.chkDiffyseSkybox_CheckedChanged);
             // 
@@ -1217,7 +1217,7 @@
             this.stLabel16.Name = "stLabel16";
             this.stLabel16.Size = new System.Drawing.Size(150, 13);
             this.stLabel16.TabIndex = 4;
-            this.stLabel16.Text = "Diffuse Cubemap (Irradiance) :";
+            this.stLabel16.Text = "扩散Cubemap（辐照度） :";
             // 
             // diffuseCubemapPathTB
             // 
@@ -1236,7 +1236,7 @@
             this.chkUseSkyobx.Name = "chkUseSkyobx";
             this.chkUseSkyobx.Size = new System.Drawing.Size(83, 17);
             this.chkUseSkyobx.TabIndex = 2;
-            this.chkUseSkyobx.Text = "Use Skybox";
+            this.chkUseSkyobx.Text = "使用天空盒";
             this.chkUseSkyobx.UseVisualStyleBackColor = true;
             this.chkUseSkyobx.CheckedChanged += new System.EventHandler(this.chkUseSkyobx_CheckedChanged);
             // 
@@ -1247,7 +1247,7 @@
             this.stLabel15.Name = "stLabel15";
             this.stLabel15.Size = new System.Drawing.Size(159, 13);
             this.stLabel15.TabIndex = 1;
-            this.stLabel15.Text = "Specular Cubemap {Radiance) :";
+            this.stLabel15.Text = "镜面反射立方体贴图（辐射） :";
             // 
             // specularCubemapPathTB
             // 
@@ -1270,7 +1270,7 @@
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage5.Size = new System.Drawing.Size(541, 395);
             this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "File Size Tables";
+            this.tabPage5.Text = "文件大小表";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // chkTpFileTable
@@ -1280,7 +1280,7 @@
             this.chkTpFileTable.Name = "chkTpFileTable";
             this.chkTpFileTable.Size = new System.Drawing.Size(178, 17);
             this.chkTpFileTable.TabIndex = 3;
-            this.chkTpFileTable.Text = "Twilight Princess HD File Tables";
+            this.chkTpFileTable.Text = "暮光公主HD文件表";
             this.chkTpFileTable.UseVisualStyleBackColor = true;
             this.chkTpFileTable.CheckedChanged += new System.EventHandler(this.chkTpFileTable_CheckedChanged);
             // 
@@ -1293,8 +1293,7 @@
             this.stLabel17.Name = "stLabel17";
             this.stLabel17.Size = new System.Drawing.Size(558, 13);
             this.stLabel17.TabIndex = 2;
-            this.stLabel17.Text = "These options can prevent file size restrictions.  Check these if you want them t" +
-    "o be adjusted when a file gets saved. ";
+            this.stLabel17.Text = "这些选项可以防止文件大小限制。如果您需要，请检查这些" + "这些选项可以防止文件大小限制。如果您需要，请检查这些. ";
             // 
             // chkBotwFileTable
             // 
@@ -1303,7 +1302,7 @@
             this.chkBotwFileTable.Name = "chkBotwFileTable";
             this.chkBotwFileTable.Size = new System.Drawing.Size(195, 17);
             this.chkBotwFileTable.TabIndex = 0;
-            this.chkBotwFileTable.Text = "BOTW Resource File Table (RSTB)";
+            this.chkBotwFileTable.Text = "BOTW资源文件表（RSTB）";
             this.chkBotwFileTable.UseVisualStyleBackColor = true;
             this.chkBotwFileTable.CheckedChanged += new System.EventHandler(this.chkBotwFileTable_CheckedChanged);
             // 
@@ -1314,7 +1313,7 @@
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(104, 27);
             this.btnReset.TabIndex = 20;
-            this.btnReset.Text = "Reset Settings";
+            this.btnReset.Text = "重新设定";
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
@@ -1325,7 +1324,7 @@
             this.ClientSize = new System.Drawing.Size(549, 490);
             this.MaximumSize = new System.Drawing.Size(1920, 1040);
             this.Name = "Settings";
-            this.Text = "Settings";
+            this.Text = "设置";
             this.Load += new System.EventHandler(this.Settings_Load);
             this.Controls.SetChildIndex(this.contentContainer, 0);
             this.contentContainer.ResumeLayout(false);

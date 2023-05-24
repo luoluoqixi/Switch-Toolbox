@@ -35,7 +35,7 @@ namespace Toolbox.Library
                     if (ContextMenuStrip == null)
                         ContextMenuStrip = new STContextMenuStrip();
 
-                    ContextMenuStrip.Items.Add(new STToolStipMenuItem("Delete", null, Delete, Keys.Control | Keys.Delete));
+                    ContextMenuStrip.Items.Add(new STToolStipMenuItem("删除", null, Delete, Keys.Control | Keys.Delete));
                 }
             }
         }

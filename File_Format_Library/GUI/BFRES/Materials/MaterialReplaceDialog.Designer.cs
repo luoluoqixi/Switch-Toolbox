@@ -66,7 +66,7 @@
             this.textureChkBox.Name = "textureChkBox";
             this.textureChkBox.Size = new System.Drawing.Size(91, 17);
             this.textureChkBox.TabIndex = 11;
-            this.textureChkBox.Text = "Texture Maps";
+            this.textureChkBox.Text = "纹理贴图";
             this.textureChkBox.UseVisualStyleBackColor = true;
             this.textureChkBox.CheckedChanged += new System.EventHandler(this.ChkBox_CheckedChanged);
             // 
@@ -77,7 +77,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(192, 13);
             this.stLabel1.TabIndex = 12;
-            this.stLabel1.Text = "Select the sectiions you want replaced:";
+            this.stLabel1.Text = "选择要替换的扇区:";
             // 
             // paramChkBox
             // 
@@ -86,7 +86,7 @@
             this.paramChkBox.Name = "paramChkBox";
             this.paramChkBox.Size = new System.Drawing.Size(98, 17);
             this.paramChkBox.TabIndex = 13;
-            this.paramChkBox.Text = "Shader Params";
+            this.paramChkBox.Text = "着色器参数";
             this.paramChkBox.UseVisualStyleBackColor = true;
             this.paramChkBox.CheckedChanged += new System.EventHandler(this.ChkBox_CheckedChanged);
             // 
@@ -97,7 +97,7 @@
             this.renderInfosChkBox.Name = "renderInfosChkBox";
             this.renderInfosChkBox.Size = new System.Drawing.Size(82, 17);
             this.renderInfosChkBox.TabIndex = 14;
-            this.renderInfosChkBox.Text = "Render Info";
+            this.renderInfosChkBox.Text = "渲染信息";
             this.renderInfosChkBox.UseVisualStyleBackColor = true;
             this.renderInfosChkBox.CheckedChanged += new System.EventHandler(this.ChkBox_CheckedChanged);
             // 
@@ -108,7 +108,7 @@
             this.optionsChkBox.Name = "optionsChkBox";
             this.optionsChkBox.Size = new System.Drawing.Size(99, 17);
             this.optionsChkBox.TabIndex = 15;
-            this.optionsChkBox.Text = "Shader Options";
+            this.optionsChkBox.Text = "着色器选项";
             this.optionsChkBox.UseVisualStyleBackColor = true;
             this.optionsChkBox.CheckedChanged += new System.EventHandler(this.ChkBox_CheckedChanged);
             // 
@@ -119,7 +119,7 @@
             this.UserDataChkBox.Name = "UserDataChkBox";
             this.UserDataChkBox.Size = new System.Drawing.Size(74, 17);
             this.UserDataChkBox.TabIndex = 16;
-            this.UserDataChkBox.Text = "User Data";
+            this.UserDataChkBox.Text = "用户数据";
             this.UserDataChkBox.UseVisualStyleBackColor = true;
             this.UserDataChkBox.CheckedChanged += new System.EventHandler(this.ChkBox_CheckedChanged);
             // 
@@ -131,7 +131,7 @@
             this.stButton1.Name = "stButton1";
             this.stButton1.Size = new System.Drawing.Size(75, 23);
             this.stButton1.TabIndex = 17;
-            this.stButton1.Text = "Cancel";
+            this.stButton1.Text = "取消";
             this.stButton1.UseVisualStyleBackColor = false;
             // 
             // stButton2
@@ -152,7 +152,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(214, 248);
             this.Name = "MaterialReplaceDialog";
-            this.Text = "Material Replace";
+            this.Text = "材质替换";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             this.ResumeLayout(false);

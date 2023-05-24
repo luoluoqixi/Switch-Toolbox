@@ -94,7 +94,7 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 13;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "取消";
             this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // mipcountUD
@@ -129,7 +129,7 @@
             this.stLabel5.Name = "stLabel5";
             this.stLabel5.Size = new System.Drawing.Size(42, 13);
             this.stLabel5.TabIndex = 24;
-            this.stLabel5.Text = "Format:";
+            this.stLabel5.Text = "格式:";
             // 
             // formatCB
             // 
@@ -147,7 +147,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(735, 461);
             this.Name = "ImageReEncodeDialog";
-            this.Text = "ImageResizeDialog";
+            this.Text = "图像大小对话框";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCustom1)).EndInit();

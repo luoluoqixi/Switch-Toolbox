@@ -92,7 +92,7 @@
             this.btnResetColors.Name = "btnResetColors";
             this.btnResetColors.Size = new System.Drawing.Size(94, 23);
             this.btnResetColors.TabIndex = 2;
-            this.btnResetColors.Text = "Reset Colors";
+            this.btnResetColors.Text = "重置颜色";
             this.btnResetColors.UseVisualStyleBackColor = false;
             this.btnResetColors.Click += new System.EventHandler(this.btnResetColors_Click);
             // 
@@ -247,7 +247,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(68, 13);
             this.stLabel2.TabIndex = 56;
-            this.stLabel2.Text = "Bottom Right";
+            this.stLabel2.Text = "右下";
             // 
             // bottomLeftYUD
             // 
@@ -342,7 +342,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(64, 13);
             this.stLabel3.TabIndex = 53;
-            this.stLabel3.Text = "Bottom Left:";
+            this.stLabel3.Text = "左下:";
             // 
             // topRightYUD
             // 
@@ -437,7 +437,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(54, 13);
             this.stLabel1.TabIndex = 50;
-            this.stLabel1.Text = "Top Right";
+            this.stLabel1.Text = "右上";
             // 
             // topLeftYUD
             // 
@@ -532,7 +532,7 @@
             this.stLabel6.Name = "stLabel6";
             this.stLabel6.Size = new System.Drawing.Size(50, 13);
             this.stLabel6.TabIndex = 47;
-            this.stLabel6.Text = "Top Left:";
+            this.stLabel6.Text = "左上:";
             // 
             // btnAdd
             // 

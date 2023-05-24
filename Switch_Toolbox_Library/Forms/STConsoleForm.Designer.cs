@@ -67,7 +67,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(549, 398);
             this.Name = "STConsoleForm";
-            this.Text = "STConsoleForm";
+            this.Text = "ST控制台窗体";
             this.contentContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 

@@ -101,7 +101,7 @@
             this.tabPageData.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageData.Size = new System.Drawing.Size(568, 532);
             this.tabPageData.TabIndex = 0;
-            this.tabPageData.Text = "Emitter Data";
+            this.tabPageData.Text = "发射器数据";
             this.tabPageData.UseVisualStyleBackColor = true;
             // 
             // stPanel2
@@ -173,7 +173,7 @@
             this.stLabel5.Name = "stLabel5";
             this.stLabel5.Size = new System.Drawing.Size(33, 13);
             this.stLabel5.TabIndex = 43;
-            this.stLabel5.Text = "Time:";
+            this.stLabel5.Text = "时间:";
             // 
             // stPanel6
             // 

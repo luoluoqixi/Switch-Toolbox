@@ -86,6 +86,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExtendTools\ExtendForms\Extend_BatchReplaceClothIconForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtendTools\ExtendForms\Extend_BatchReplaceClothIconForm.Designer.cs">
+      <DependentUpon>Extend_BatchReplaceClothIconForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendTools\ExtendForms\Extend_BatchReplaceEquipIconForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtendTools\ExtendForms\Extend_BatchReplaceEquipIconForm.Designer.cs">
+      <DependentUpon>Extend_BatchReplaceEquipIconForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\AF_FileAssociations.cs" />
     <Compile Include="GUI\ApplicationCloseDialog.cs">
       <SubType>Form</SubType>
@@ -153,6 +165,12 @@
     <Compile Include="UpdateProgram.cs" />
     <Compile Include="VersionCheck.cs" />
     <Compile Include="WindowsExplorer\ExplorerContextMeny.cs" />
+    <EmbeddedResource Include="ExtendTools\ExtendForms\Extend_BatchReplaceClothIconForm.resx">
+      <DependentUpon>Extend_BatchReplaceClothIconForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtendTools\ExtendForms\Extend_BatchReplaceEquipIconForm.resx">
+      <DependentUpon>Extend_BatchReplaceEquipIconForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\ApplicationCloseDialog.resx">
       <DependentUpon>ApplicationCloseDialog.cs</DependentUpon>
     </EmbeddedResource>

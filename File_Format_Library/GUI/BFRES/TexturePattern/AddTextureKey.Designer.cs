@@ -80,7 +80,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(46, 13);
             this.stLabel1.TabIndex = 1;
-            this.stLabel1.Text = "Texture:";
+            this.stLabel1.Text = "纹理:";
             // 
             // btnEdit
             // 
@@ -89,7 +89,7 @@
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
             this.btnEdit.TabIndex = 2;
-            this.btnEdit.Text = "Edit";
+            this.btnEdit.Text = "编辑";
             this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
@@ -100,7 +100,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(52, 13);
             this.stLabel2.TabIndex = 4;
-            this.stLabel2.Text = "At Frame:";
+            this.stLabel2.Text = "At 框架:";
             // 
             // currentFrameCountUD
             // 
@@ -143,7 +143,7 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 9;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "取消";
             this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // btnOK
@@ -163,7 +163,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(360, 162);
             this.Name = "AddTextureKey";
-            this.Text = "Edit Texture Key Frame";
+            this.Text = "编辑纹理关键帧";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.currentFrameCountUD)).EndInit();

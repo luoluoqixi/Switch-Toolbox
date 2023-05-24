@@ -124,14 +124,14 @@
             // 
             this.replaceChannelToolStripMenuItem.Name = "replaceChannelToolStripMenuItem";
             this.replaceChannelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.replaceChannelToolStripMenuItem.Text = "Replace Channel";
+            this.replaceChannelToolStripMenuItem.Text = "替换通道";
             this.replaceChannelToolStripMenuItem.Click += new System.EventHandler(this.replaceChannelToolStripMenuItem_Click);
             // 
             // exportChannelToolStripMenuItem
             // 
             this.exportChannelToolStripMenuItem.Name = "exportChannelToolStripMenuItem";
             this.exportChannelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exportChannelToolStripMenuItem.Text = "Export Channel";
+            this.exportChannelToolStripMenuItem.Text = "出口渠道";
             this.exportChannelToolStripMenuItem.Click += new System.EventHandler(this.exportChannelToolStripMenuItem_Click);
             // 
             // ImagePropertiesEditor

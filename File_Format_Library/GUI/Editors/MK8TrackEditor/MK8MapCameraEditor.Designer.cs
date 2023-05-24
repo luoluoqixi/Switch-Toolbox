@@ -53,7 +53,7 @@
             this.leBtnRadio.Size = new System.Drawing.Size(83, 17);
             this.leBtnRadio.TabIndex = 13;
             this.leBtnRadio.TabStop = true;
-            this.leBtnRadio.Text = "Little Endian";
+            this.leBtnRadio.Text = "小字节序";
             this.leBtnRadio.UseVisualStyleBackColor = true;
             // 
             // beBtnRadio
@@ -64,7 +64,7 @@
             this.beBtnRadio.Size = new System.Drawing.Size(76, 17);
             this.beBtnRadio.TabIndex = 14;
             this.beBtnRadio.TabStop = true;
-            this.beBtnRadio.Text = "Big Endian";
+            this.beBtnRadio.Text = "大字节序";
             this.beBtnRadio.UseVisualStyleBackColor = true;
             this.beBtnRadio.CheckedChanged += new System.EventHandler(this.beBtnRadio_CheckedChanged);
             // 
@@ -88,7 +88,7 @@
             this.btnCollisionPreview.Name = "btnCollisionPreview";
             this.btnCollisionPreview.Size = new System.Drawing.Size(149, 23);
             this.btnCollisionPreview.TabIndex = 16;
-            this.btnCollisionPreview.Text = "Open KCL (Mesh Preview)";
+            this.btnCollisionPreview.Text = "打开KCL(网格预览)";
             this.btnCollisionPreview.UseVisualStyleBackColor = false;
             this.btnCollisionPreview.Click += new System.EventHandler(this.btnCollisionPreview_Click);
             // 

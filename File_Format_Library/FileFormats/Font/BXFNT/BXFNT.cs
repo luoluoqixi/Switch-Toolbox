@@ -51,7 +51,7 @@ namespace FirstPlugin
         public BffntEditor OpenForm()
         {
             BffntEditor form = new BffntEditor();
-            form.Text = "Font Editor";
+            form.Text = "字体编辑器";
             form.Dock = DockStyle.Fill;
             return form;
         }

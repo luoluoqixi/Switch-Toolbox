@@ -48,7 +48,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(287, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Loaidng File.....";
+            this.label1.Text = "加载文件.....";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // STProgressBar

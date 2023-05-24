@@ -58,7 +58,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(47, 13);
             this.stLabel1.TabIndex = 1;
-            this.stLabel1.Text = "Material:";
+            this.stLabel1.Text = "材质:";
             // 
             // stFlowLayoutPanel1
             // 
@@ -112,7 +112,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(39, 13);
             this.stLabel2.TabIndex = 3;
-            this.stLabel2.Text = "Group:";
+            this.stLabel2.Text = "组:";
             // 
             // GFLXMeshEditor
             // 

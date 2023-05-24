@@ -89,7 +89,7 @@
             this.generateNormalsChk.Name = "generateNormalsChk";
             this.generateNormalsChk.Size = new System.Drawing.Size(196, 17);
             this.generateNormalsChk.TabIndex = 0;
-            this.generateNormalsChk.Text = "Generate Normals (if none are used)";
+            this.generateNormalsChk.Text = "生成法线（如果未使用）";
             this.generateNormalsChk.UseVisualStyleBackColor = true;
             // 
             // smoothNormalsChk
@@ -100,7 +100,7 @@
             this.smoothNormalsChk.Name = "smoothNormalsChk";
             this.smoothNormalsChk.Size = new System.Drawing.Size(103, 17);
             this.smoothNormalsChk.TabIndex = 1;
-            this.smoothNormalsChk.Text = "Smooth Normals";
+            this.smoothNormalsChk.Text = "平滑法线";
             this.smoothNormalsChk.UseVisualStyleBackColor = true;
             // 
             // flipUVsChk
@@ -113,7 +113,7 @@
             this.flipUVsChk.Name = "flipUVsChk";
             this.flipUVsChk.Size = new System.Drawing.Size(65, 17);
             this.flipUVsChk.TabIndex = 3;
-            this.flipUVsChk.Text = "Flip UVs";
+            this.flipUVsChk.Text = "翻转 UVs";
             this.flipUVsChk.UseVisualStyleBackColor = true;
             // 
             // limtBoneWeightChk
@@ -126,7 +126,7 @@
             this.limtBoneWeightChk.Name = "limtBoneWeightChk";
             this.limtBoneWeightChk.Size = new System.Drawing.Size(113, 17);
             this.limtBoneWeightChk.TabIndex = 5;
-            this.limtBoneWeightChk.Text = "Limit bone weights";
+            this.limtBoneWeightChk.Text = "限制骨骼权重";
             this.limtBoneWeightChk.UseVisualStyleBackColor = true;
             this.limtBoneWeightChk.CheckedChanged += new System.EventHandler(this.limtBoneWeightChk_CheckedChanged);
             // 
@@ -159,7 +159,7 @@
             this.preTransformVerticesChk.Name = "preTransformVerticesChk";
             this.preTransformVerticesChk.Size = new System.Drawing.Size(130, 17);
             this.preTransformVerticesChk.TabIndex = 7;
-            this.preTransformVerticesChk.Text = "PreTransform Vertices";
+            this.preTransformVerticesChk.Text = "预变换顶点";
             this.preTransformVerticesChk.UseVisualStyleBackColor = true;
             // 
             // triangulateChk
@@ -172,7 +172,7 @@
             this.triangulateChk.Name = "triangulateChk";
             this.triangulateChk.Size = new System.Drawing.Size(79, 17);
             this.triangulateChk.TabIndex = 8;
-            this.triangulateChk.Text = "Triangulate";
+            this.triangulateChk.Text = "三角面";
             this.triangulateChk.UseVisualStyleBackColor = true;
             // 
             // joinDupedVertsSk
@@ -185,7 +185,7 @@
             this.joinDupedVertsSk.Name = "joinDupedVertsSk";
             this.joinDupedVertsSk.Size = new System.Drawing.Size(121, 17);
             this.joinDupedVertsSk.TabIndex = 9;
-            this.joinDupedVertsSk.Text = "Join Duped Vertices";
+            this.joinDupedVertsSk.Text = "连接重复顶点";
             this.joinDupedVertsSk.UseVisualStyleBackColor = true;
             // 
             // leftHandedChk
@@ -196,7 +196,7 @@
             this.leftHandedChk.Name = "leftHandedChk";
             this.leftHandedChk.Size = new System.Drawing.Size(109, 17);
             this.leftHandedChk.TabIndex = 10;
-            this.leftHandedChk.Text = "Make left handed";
+            this.leftHandedChk.Text = "使用左手";
             this.leftHandedChk.UseVisualStyleBackColor = true;
             // 
             // useNodeTransform
@@ -209,7 +209,7 @@
             this.useNodeTransform.Name = "useNodeTransform";
             this.useNodeTransform.Size = new System.Drawing.Size(124, 17);
             this.useNodeTransform.TabIndex = 11;
-            this.useNodeTransform.Text = "Use Node Transform";
+            this.useNodeTransform.Text = "使用节点变换";
             this.useNodeTransform.UseVisualStyleBackColor = true;
             // 
             // stButton1
@@ -220,7 +220,7 @@
             this.stButton1.Name = "stButton1";
             this.stButton1.Size = new System.Drawing.Size(75, 23);
             this.stButton1.TabIndex = 12;
-            this.stButton1.Text = "Cancel";
+            this.stButton1.Text = "取消";
             this.stButton1.UseVisualStyleBackColor = false;
             // 
             // stButton2
@@ -242,7 +242,7 @@
             this.rotateBones.Name = "rotateBones";
             this.rotateBones.Size = new System.Drawing.Size(105, 17);
             this.rotateBones.TabIndex = 14;
-            this.rotateBones.Text = "Rotate Bones by";
+            this.rotateBones.Text = "旋转骨骼方式";
             this.rotateBones.UseVisualStyleBackColor = true;
             this.rotateBones.CheckedChanged += new System.EventHandler(this.rotateBonesY90_CheckedChanged);
             // 
@@ -280,7 +280,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(297, 341);
             this.Name = "Assimp_Settings";
-            this.Text = "Import Settings";
+            this.Text = "引入设置";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

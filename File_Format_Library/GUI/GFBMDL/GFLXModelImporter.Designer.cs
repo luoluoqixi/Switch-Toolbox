@@ -104,7 +104,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(40, 13);
             this.stLabel1.TabIndex = 12;
-            this.stLabel1.Text = "Preset:";
+            this.stLabel1.Text = "预设:";
             // 
             // chkUseNormals
             // 
@@ -113,7 +113,7 @@
             this.chkUseNormals.Name = "chkUseNormals";
             this.chkUseNormals.Size = new System.Drawing.Size(86, 17);
             this.chkUseNormals.TabIndex = 14;
-            this.chkUseNormals.Text = "Use Normals";
+            this.chkUseNormals.Text = "使用法线";
             this.chkUseNormals.UseVisualStyleBackColor = true;
             this.chkUseNormals.CheckedChanged += new System.EventHandler(this.ApplySettings);
             // 
@@ -124,7 +124,7 @@
             this.chkHasUv1.Name = "chkHasUv1";
             this.chkHasUv1.Size = new System.Drawing.Size(114, 17);
             this.chkHasUv1.TabIndex = 15;
-            this.chkHasUv1.Text = "Use UV Channel 1";
+            this.chkHasUv1.Text = "使用UV通道 1";
             this.chkHasUv1.UseVisualStyleBackColor = true;
             this.chkHasUv1.CheckedChanged += new System.EventHandler(this.ApplySettings);
             // 
@@ -135,7 +135,7 @@
             this.chkUseBoneIndex.Name = "chkUseBoneIndex";
             this.chkUseBoneIndex.Size = new System.Drawing.Size(110, 17);
             this.chkUseBoneIndex.TabIndex = 16;
-            this.chkUseBoneIndex.Text = "Use Bone Indices";
+            this.chkUseBoneIndex.Text = "使用骨骼索引";
             this.chkUseBoneIndex.UseVisualStyleBackColor = true;
             this.chkUseBoneIndex.CheckedChanged += new System.EventHandler(this.ApplySettings);
             // 
@@ -146,7 +146,7 @@
             this.chkUseColor1.Name = "chkUseColor1";
             this.chkUseColor1.Size = new System.Drawing.Size(123, 17);
             this.chkUseColor1.TabIndex = 17;
-            this.chkUseColor1.Text = "Use Color Channel 1";
+            this.chkUseColor1.Text = "使用颜色通道 1";
             this.chkUseColor1.UseVisualStyleBackColor = true;
             this.chkUseColor1.CheckedChanged += new System.EventHandler(this.ApplySettings);
             // 
@@ -222,7 +222,7 @@
             this.chkHasUv2.Name = "chkHasUv2";
             this.chkHasUv2.Size = new System.Drawing.Size(114, 17);
             this.chkHasUv2.TabIndex = 22;
-            this.chkHasUv2.Text = "Use UV Channel 2";
+            this.chkHasUv2.Text = "使用UV通道 2";
             this.chkHasUv2.UseVisualStyleBackColor = true;
             this.chkHasUv2.CheckedChanged += new System.EventHandler(this.ApplySettings);
             // 
@@ -246,7 +246,7 @@
             this.chkUseColor2.Name = "chkUseColor2";
             this.chkUseColor2.Size = new System.Drawing.Size(123, 17);
             this.chkUseColor2.TabIndex = 24;
-            this.chkUseColor2.Text = "Use Color Channel 2";
+            this.chkUseColor2.Text = "使用颜色通道 2";
             this.chkUseColor2.UseVisualStyleBackColor = true;
             this.chkUseColor2.CheckedChanged += new System.EventHandler(this.ApplySettings);
             // 
@@ -273,7 +273,7 @@
             this.stCheckBox8.Name = "stCheckBox8";
             this.stCheckBox8.Size = new System.Drawing.Size(63, 17);
             this.stCheckBox8.TabIndex = 28;
-            this.stCheckBox8.Text = "Position";
+            this.stCheckBox8.Text = "位置";
             this.stCheckBox8.UseVisualStyleBackColor = true;
             // 
             // stLabel2
@@ -283,7 +283,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(47, 13);
             this.stLabel2.TabIndex = 31;
-            this.stLabel2.Text = "Material:";
+            this.stLabel2.Text = "材质:";
             // 
             // materiialPresetCB
             // 
@@ -381,7 +381,7 @@
             this.chkSetNormalsToColorChannel.Name = "chkSetNormalsToColorChannel";
             this.chkSetNormalsToColorChannel.Size = new System.Drawing.Size(176, 17);
             this.chkSetNormalsToColorChannel.TabIndex = 41;
-            this.chkSetNormalsToColorChannel.Text = "Set Normals to Color Channel  2";
+            this.chkSetNormalsToColorChannel.Text = "将法线设置为颜色通道  2";
             this.chkSetNormalsToColorChannel.UseVisualStyleBackColor = true;
             this.chkSetNormalsToColorChannel.CheckedChanged += new System.EventHandler(this.ApplySettings);
             // 
@@ -405,7 +405,7 @@
             this.chkTangents.Name = "chkTangents";
             this.chkTangents.Size = new System.Drawing.Size(93, 17);
             this.chkTangents.TabIndex = 39;
-            this.chkTangents.Text = "Use Tangents";
+            this.chkTangents.Text = "使用切线";
             this.chkTangents.UseVisualStyleBackColor = true;
             this.chkTangents.CheckedChanged += new System.EventHandler(this.ApplySettings);
             // 
@@ -416,7 +416,7 @@
             this.chkUseBoneWeights.Name = "chkUseBoneWeights";
             this.chkUseBoneWeights.Size = new System.Drawing.Size(115, 17);
             this.chkUseBoneWeights.TabIndex = 38;
-            this.chkUseBoneWeights.Text = "Use Bone Weights";
+            this.chkUseBoneWeights.Text = "使用骨骼权重";
             this.chkUseBoneWeights.UseVisualStyleBackColor = true;
             this.chkUseBoneWeights.CheckedChanged += new System.EventHandler(this.ApplySettings);
             // 
@@ -427,7 +427,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(77, 13);
             this.stLabel3.TabIndex = 37;
-            this.stLabel3.Text = "Mesh Settings:";
+            this.stLabel3.Text = "网格设置:";
             // 
             // bitangentFormatCB
             // 
@@ -449,7 +449,7 @@
             this.chkBitangents.Name = "chkBitangents";
             this.chkBitangents.Size = new System.Drawing.Size(98, 17);
             this.chkBitangents.TabIndex = 26;
-            this.chkBitangents.Text = "Use Bitangents";
+            this.chkBitangents.Text = "使用双切线";
             this.chkBitangents.UseVisualStyleBackColor = true;
             this.chkBitangents.CheckedChanged += new System.EventHandler(this.ApplySettings);
             // 
@@ -460,7 +460,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(81, 13);
             this.stLabel4.TabIndex = 38;
-            this.stLabel4.Text = "Global Settings:";
+            this.stLabel4.Text = "全局设置:";
             // 
             // rotateModel90YUD
             // 
@@ -493,7 +493,7 @@
             this.stLabel5.Name = "stLabel5";
             this.stLabel5.Size = new System.Drawing.Size(52, 13);
             this.stLabel5.TabIndex = 40;
-            this.stLabel5.Text = "Rotate Y:";
+            this.stLabel5.Text = "旋转 Y:";
             // 
             // stPanel2
             // 
@@ -518,7 +518,7 @@
             this.chkMatchAttributes.Name = "chkMatchAttributes";
             this.chkMatchAttributes.Size = new System.Drawing.Size(141, 17);
             this.chkMatchAttributes.TabIndex = 44;
-            this.chkMatchAttributes.Text = "Match Original Attributes";
+            this.chkMatchAttributes.Text = "匹配原始属性";
             this.chkMatchAttributes.UseVisualStyleBackColor = true;
             this.chkMatchAttributes.CheckedChanged += new System.EventHandler(this.chkMatchAttributes_CheckedChanged);
             // 
@@ -531,7 +531,7 @@
             this.chkUseOriginalBones.Name = "chkUseOriginalBones";
             this.chkUseOriginalBones.Size = new System.Drawing.Size(116, 17);
             this.chkUseOriginalBones.TabIndex = 43;
-            this.chkUseOriginalBones.Text = "Use Original Bones";
+            this.chkUseOriginalBones.Text = "使用原始骨骼";
             this.chkUseOriginalBones.UseVisualStyleBackColor = true;
             // 
             // chkFlipUVsVertical
@@ -541,7 +541,7 @@
             this.chkFlipUVsVertical.Name = "chkFlipUVsVertical";
             this.chkFlipUVsVertical.Size = new System.Drawing.Size(103, 17);
             this.chkFlipUVsVertical.TabIndex = 41;
-            this.chkFlipUVsVertical.Text = "Flip UVs Vertical";
+            this.chkFlipUVsVertical.Text = "垂直翻转UV";
             this.chkFlipUVsVertical.UseVisualStyleBackColor = true;
             this.chkFlipUVsVertical.CheckedChanged += new System.EventHandler(this.ApplySettings);
             // 
@@ -563,7 +563,7 @@
             this.chkResetTexTransforms.Name = "chkResetTexTransforms";
             this.chkResetTexTransforms.Size = new System.Drawing.Size(167, 17);
             this.chkResetTexTransforms.TabIndex = 45;
-            this.chkResetTexTransforms.Text = "Reset Material UV Transforms";
+            this.chkResetTexTransforms.Text = "重置材质UV变换";
             this.chkResetTexTransforms.UseVisualStyleBackColor = true;
             this.chkResetTexTransforms.CheckedChanged += new System.EventHandler(this.ApplySettings);
             // 
@@ -573,7 +573,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(611, 624);
             this.Name = "GFLXModelImporter";
-            this.Text = "GFBMDL Importer";
+            this.Text = "GFBMDL 载入器";
             this.contentContainer.ResumeLayout(false);
             this.stPanel1.ResumeLayout(false);
             this.stPanel1.PerformLayout();

@@ -129,7 +129,7 @@
             this.selectedColorLabel.Name = "selectedColorLabel";
             this.selectedColorLabel.Size = new System.Drawing.Size(116, 13);
             this.selectedColorLabel.TabIndex = 1;
-            this.selectedColorLabel.Text = "Selected Color : NONE";
+            this.selectedColorLabel.Text = "选择颜色 : NONE";
             // 
             // stFlowLayoutPanel1
             // 

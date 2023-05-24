@@ -116,7 +116,7 @@ namespace Bfres.Structs
 
         public override void Delete()
         {
-            DialogResult dialogResult = MessageBox.Show("Are you sure you want to remove this model? This cannot be undone!", "", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("您确定要移除这个模型吗?这是无法挽回的", "", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 Skeleton.bones.Clear();
@@ -1231,7 +1231,7 @@ namespace Bfres.Structs
                         {
                             //Force material creation if there is none present
                             FMAT fmat = new FMAT();
-                            fmat.Text = "NewMaterial";
+                            fmat.Text = "创建材质";
                             materials.Add(fmat.Text, fmat);
                             Nodes["FmatFolder"].Nodes.Add(fmat);
 

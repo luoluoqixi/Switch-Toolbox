@@ -80,7 +80,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(27, 13);
             this.stLabel1.TabIndex = 3;
-            this.stLabel1.Text = "Hue";
+            this.stLabel1.Text = "色调";
             // 
             // stLabel2
             // 
@@ -89,7 +89,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(55, 13);
             this.stLabel2.TabIndex = 11;
-            this.stLabel2.Text = "Saturation";
+            this.stLabel2.Text = "饱和度";
             // 
             // stLabel3
             // 
@@ -98,7 +98,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(56, 13);
             this.stLabel3.TabIndex = 12;
-            this.stLabel3.Text = "Brightness";
+            this.stLabel3.Text = "亮度";
             // 
             // HueSaturationAdjuster
             // 
@@ -112,7 +112,7 @@
             this.Controls.Add(this.saturationTrackBar);
             this.Controls.Add(this.hueTrackBar);
             this.Name = "HueSaturationAdjuster";
-            this.Text = "HueSaturationAdjuster";
+            this.Text = "骨骼调节器";
             this.Controls.SetChildIndex(this.contentContainer, 0);
             this.Controls.SetChildIndex(this.hueTrackBar, 0);
             this.Controls.SetChildIndex(this.saturationTrackBar, 0);

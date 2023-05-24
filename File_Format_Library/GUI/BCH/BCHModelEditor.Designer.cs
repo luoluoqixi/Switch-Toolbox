@@ -551,7 +551,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(41, 13);
             this.stLabel2.TabIndex = 69;
-            this.stLabel2.Text = "Priority:";
+            this.stLabel2.Text = "优先级:";
             // 
             // renderPriorityUD
             // 
@@ -603,7 +603,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(36, 13);
             this.stLabel1.TabIndex = 3;
-            this.stLabel1.Text = "Layer:";
+            this.stLabel1.Text = "层:";
             // 
             // meshLayerCB
             // 
@@ -642,26 +642,26 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Order";
+            this.columnHeader1.Text = "顺序";
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Material";
+            this.columnHeader2.Text = "材质";
             this.columnHeader2.Width = 76;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Mesh";
+            this.columnHeader3.Text = "网格";
             this.columnHeader3.Width = 106;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Layer";
+            this.columnHeader4.Text = "层";
             this.columnHeader4.Width = 108;
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "Priority";
+            this.columnHeader5.Text = "优先级";
             this.columnHeader5.Width = 244;
             // 
             // stTabControl1
@@ -684,7 +684,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(606, 484);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Model Data";
+            this.tabPage1.Text = "模型数据";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
@@ -695,7 +695,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(606, 484);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "User Data";
+            this.tabPage2.Text = "用户数据";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // bchUserDataEditor1

@@ -98,7 +98,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Remove";
+            this.button1.Text = "移除";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -109,7 +109,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Add";
+            this.button2.Text = "添加";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // panel2
@@ -165,7 +165,7 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(57, 13);
             this.label15.TabIndex = 0;
-            this.label15.Text = "Boundings";
+            this.label15.Text = "边界";
             // 
             // label2
             // 
@@ -174,7 +174,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Center:";
+            this.label2.Text = "中心:";
             // 
             // centXUD
             // 
@@ -291,7 +291,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(40, 13);
             this.label9.TabIndex = 9;
-            this.label9.Text = "Extent:";
+            this.label9.Text = "面积:";
             // 
             // extXUD
             // 
@@ -426,7 +426,7 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(69, 13);
             this.label14.TabIndex = 30;
-            this.label14.Text = "Sub Meshes:";
+            this.label14.Text = "子网格:";
             // 
             // subMeshListView
             // 
@@ -445,12 +445,12 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Offset";
+            this.columnHeader1.Text = "差值";
             this.columnHeader1.Width = 93;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Count";
+            this.columnHeader2.Text = "总数";
             this.columnHeader2.Width = 81;
             // 
             // formatCB
@@ -469,7 +469,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(42, 13);
             this.label13.TabIndex = 27;
-            this.label13.Text = "Format:";
+            this.label13.Text = "格式:";
             // 
             // label12
             // 
@@ -478,7 +478,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(65, 13);
             this.label12.TabIndex = 26;
-            this.label12.Text = "Face Count:";
+            this.label12.Text = "面总数:";
             // 
             // label11
             // 
@@ -487,7 +487,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(61, 13);
             this.label11.TabIndex = 25;
-            this.label11.Text = "Face Type:";
+            this.label11.Text = "面类型:";
             // 
             // faceTypeCB
             // 
@@ -527,7 +527,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "LOD Mesh";
+            this.label1.Text = "LOD网格";
             // 
             // label10
             // 
@@ -536,7 +536,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(88, 13);
             this.label10.TabIndex = 2;
-            this.label10.Text = "Bounding Radius";
+            this.label10.Text = "边界半径";
             // 
             // radiusUD
             // 
@@ -589,7 +589,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.meshListView);
             this.Name = "BfresLODMeshEditor";
-            this.Text = "LOD Meshes";
+            this.Text = "LOD网格";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);

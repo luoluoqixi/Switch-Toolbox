@@ -87,7 +87,7 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(57, 23);
             this.btnAdd.TabIndex = 12;
-            this.btnAdd.Text = "Add";
+            this.btnAdd.Text = "添加";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -98,7 +98,7 @@
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(64, 23);
             this.btnRemove.TabIndex = 13;
-            this.btnRemove.Text = "Remove";
+            this.btnRemove.Text = "移除";
             this.btnRemove.UseVisualStyleBackColor = false;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
@@ -109,7 +109,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(52, 13);
             this.stLabel1.TabIndex = 14;
-            this.stLabel1.Text = "Materials:";
+            this.stLabel1.Text = "材质:";
             // 
             // stLabel2
             // 
@@ -118,7 +118,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(38, 13);
             this.stLabel2.TabIndex = 15;
-            this.stLabel2.Text = "Name:";
+            this.stLabel2.Text = "名称:";
             // 
             // nameTB
             // 
@@ -137,7 +137,7 @@
             this.stButton1.Name = "stButton1";
             this.stButton1.Size = new System.Drawing.Size(75, 23);
             this.stButton1.TabIndex = 19;
-            this.stButton1.Text = "Cancel";
+            this.stButton1.Text = "取消";
             this.stButton1.UseVisualStyleBackColor = false;
             // 
             // stButton2
@@ -157,7 +157,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(433, 234);
             this.Name = "TexPatternMaterialEditor";
-            this.Text = "TexPatternMaterialEditor";
+            this.Text = "Tex图案材质编辑器";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             this.ResumeLayout(false);

@@ -58,7 +58,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(43, 13);
             this.stLabel1.TabIndex = 2;
-            this.stLabel1.Text = "Stages:";
+            this.stLabel1.Text = "舞台 - Stages:";
             // 
             // tevColorModeCB
             // 
@@ -80,7 +80,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(78, 13);
             this.stLabel2.TabIndex = 4;
-            this.stLabel2.Text = "Color Blending:";
+            this.stLabel2.Text = "颜色混合:";
             // 
             // stLabel3
             // 
@@ -89,7 +89,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(81, 13);
             this.stLabel3.TabIndex = 6;
-            this.stLabel3.Text = "Alpha Blending:";
+            this.stLabel3.Text = "透明混合处理:";
             // 
             // tevAlphaModeCB
             // 

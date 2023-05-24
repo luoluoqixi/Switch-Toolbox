@@ -74,7 +74,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(534, 771);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Shader Data";
+            this.tabPage1.Text = "着色器数据";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage3
@@ -86,7 +86,7 @@
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(534, 771);
             this.tabPage3.TabIndex = 7;
-            this.tabPage3.Text = "Vertex Shader";
+            this.tabPage3.Text = "顶点着色器";
             // 
             // hexVertexData
             // 
@@ -122,7 +122,7 @@
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Size = new System.Drawing.Size(534, 771);
             this.tabPage2.TabIndex = 8;
-            this.tabPage2.Text = "Fragment Shader";
+            this.tabPage2.Text = "片段着色器";
             // 
             // hexPixelData
             // 
@@ -158,7 +158,7 @@
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(534, 771);
             this.tabPage4.TabIndex = 9;
-            this.tabPage4.Text = "Geometry Shader";
+            this.tabPage4.Text = "几何着色";
             // 
             // hexGeomData
             // 

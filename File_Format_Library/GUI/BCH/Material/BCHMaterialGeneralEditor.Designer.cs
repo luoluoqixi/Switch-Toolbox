@@ -75,7 +75,7 @@
             this.chkEnableOcclusion.Name = "chkEnableOcclusion";
             this.chkEnableOcclusion.Size = new System.Drawing.Size(168, 17);
             this.chkEnableOcclusion.TabIndex = 8;
-            this.chkEnableOcclusion.Text = "Enable Hemisphere Occlusion";
+            this.chkEnableOcclusion.Text = "启用半球遮挡";
             this.chkEnableOcclusion.UseVisualStyleBackColor = true;
             // 
             // chkEnableHemiLighting
@@ -85,7 +85,7 @@
             this.chkEnableHemiLighting.Name = "chkEnableHemiLighting";
             this.chkEnableHemiLighting.Size = new System.Drawing.Size(158, 17);
             this.chkEnableHemiLighting.TabIndex = 7;
-            this.chkEnableHemiLighting.Text = "Enable Hemisphere Lighting";
+            this.chkEnableHemiLighting.Text = "启用半球照明";
             this.chkEnableHemiLighting.UseVisualStyleBackColor = true;
             // 
             // chkEnableVertLighting
@@ -95,7 +95,7 @@
             this.chkEnableVertLighting.Name = "chkEnableVertLighting";
             this.chkEnableVertLighting.Size = new System.Drawing.Size(132, 17);
             this.chkEnableVertLighting.TabIndex = 6;
-            this.chkEnableVertLighting.Text = "Enable Vertex Lighting";
+            this.chkEnableVertLighting.Text = "启用顶点照明";
             this.chkEnableVertLighting.UseVisualStyleBackColor = true;
             // 
             // chkEnableFragLighting
@@ -105,7 +105,7 @@
             this.chkEnableFragLighting.Name = "chkEnableFragLighting";
             this.chkEnableFragLighting.Size = new System.Drawing.Size(146, 17);
             this.chkEnableFragLighting.TabIndex = 5;
-            this.chkEnableFragLighting.Text = "Enable Fragment Lighting";
+            this.chkEnableFragLighting.Text = "启用片段照明";
             this.chkEnableFragLighting.UseVisualStyleBackColor = true;
             // 
             // stFlowLayoutPanel1
@@ -160,7 +160,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(68, 13);
             this.stLabel1.TabIndex = 1;
-            this.stLabel1.Text = "Face Culling:";
+            this.stLabel1.Text = "面部剔除:";
             // 
             // stDropDownPanel3
             // 
@@ -205,7 +205,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(57, 13);
             this.stLabel2.TabIndex = 3;
-            this.stLabel2.Text = "Fog Index:";
+            this.stLabel2.Text = "雾指数:";
             // 
             // chkEnableFog
             // 
@@ -214,7 +214,7 @@
             this.chkEnableFog.Name = "chkEnableFog";
             this.chkEnableFog.Size = new System.Drawing.Size(83, 17);
             this.chkEnableFog.TabIndex = 2;
-            this.chkEnableFog.Text = "Enable Fog:";
+            this.chkEnableFog.Text = "启用雾:";
             this.chkEnableFog.UseVisualStyleBackColor = true;
             // 
             // BCHMaterialGeneralEditor

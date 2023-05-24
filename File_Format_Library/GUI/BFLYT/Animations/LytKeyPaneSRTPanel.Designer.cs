@@ -51,7 +51,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(54, 13);
             this.stLabel1.TabIndex = 1;
-            this.stLabel1.Text = "Translate:";
+            this.stLabel1.Text = "移动 - Translate:";
             // 
             // stLabel3
             // 
@@ -60,7 +60,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(42, 13);
             this.stLabel3.TabIndex = 4;
-            this.stLabel3.Text = "Rotate:";
+            this.stLabel3.Text = "旋转 - Rotate:";
             // 
             // stLabel4
             // 
@@ -69,7 +69,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(37, 13);
             this.stLabel4.TabIndex = 5;
-            this.stLabel4.Text = "Scale:";
+            this.stLabel4.Text = "缩放 - Scale:";
             // 
             // stLabel5
             // 
@@ -78,7 +78,7 @@
             this.stLabel5.Name = "stLabel5";
             this.stLabel5.Size = new System.Drawing.Size(30, 13);
             this.stLabel5.TabIndex = 6;
-            this.stLabel5.Text = "Size:";
+            this.stLabel5.Text = "大小 - Size:";
             // 
             // tranXUD
             // 

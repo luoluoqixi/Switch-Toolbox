@@ -63,7 +63,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(66, 13);
             this.stLabel1.TabIndex = 1;
-            this.stLabel1.Text = "Bone Name:";
+            this.stLabel1.Text = "骨骼名称:";
             // 
             // stButton1
             // 
@@ -72,7 +72,7 @@
             this.stButton1.Name = "stButton1";
             this.stButton1.Size = new System.Drawing.Size(75, 23);
             this.stButton1.TabIndex = 11;
-            this.stButton1.Text = "Cancel";
+            this.stButton1.Text = "取消";
             this.stButton1.UseVisualStyleBackColor = false;
             // 
             // btnOk
@@ -93,7 +93,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(275, 114);
             this.Name = "VisObjectAddDialog";
-            this.Text = "Add Bone";
+            this.Text = "添加骨骼";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             this.ResumeLayout(false);

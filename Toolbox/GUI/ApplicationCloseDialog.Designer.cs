@@ -42,7 +42,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(286, 26);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Are you sure you want to close the program? You may lose unsaved progress!";
+            this.label1.Text = "是否确实要关闭程序？您可能会丢失未保存的进度！";
             // 
             // button1
             // 
@@ -51,7 +51,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Cancel";
+            this.button1.Text = "取消";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -71,7 +71,7 @@
             this.chkHideDialog.Name = "chkHideDialog";
             this.chkHideDialog.Size = new System.Drawing.Size(108, 17);
             this.chkHideDialog.TabIndex = 3;
-            this.chkHideDialog.Text = "Don\'t show again";
+            this.chkHideDialog.Text = "不再显示";
             this.chkHideDialog.UseVisualStyleBackColor = true;
             this.chkHideDialog.CheckedChanged += new System.EventHandler(this.chkHideDialog_CheckedChanged);
             // 

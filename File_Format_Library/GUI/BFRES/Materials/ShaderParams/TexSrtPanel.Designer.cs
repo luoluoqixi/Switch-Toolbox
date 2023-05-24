@@ -60,7 +60,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(75, 13);
             this.stLabel1.TabIndex = 1;
-            this.stLabel1.Text = "Scaling Mode:";
+            this.stLabel1.Text = "缩放模式:";
             // 
             // scaYUD
             // 
@@ -114,7 +114,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(37, 13);
             this.stLabel2.TabIndex = 2;
-            this.stLabel2.Text = "Scale:";
+            this.stLabel2.Text = "缩放:";
             // 
             // stLabel3
             // 
@@ -123,7 +123,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(50, 13);
             this.stLabel3.TabIndex = 3;
-            this.stLabel3.Text = "Rotation:";
+            this.stLabel3.Text = "旋转:";
             // 
             // stLabel4
             // 
@@ -132,7 +132,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(62, 13);
             this.stLabel4.TabIndex = 4;
-            this.stLabel4.Text = "Translation:";
+            this.stLabel4.Text = "移动:";
             // 
             // scaXUD
             // 

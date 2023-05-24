@@ -66,7 +66,7 @@
             this.setProdKeyPath.Name = "setProdKeyPath";
             this.setProdKeyPath.Size = new System.Drawing.Size(53, 23);
             this.setProdKeyPath.TabIndex = 6;
-            this.setProdKeyPath.Text = "Set";
+            this.setProdKeyPath.Text = "位置";
             this.setProdKeyPath.UseVisualStyleBackColor = false;
             this.setProdKeyPath.Click += new System.EventHandler(this.setProdKeyPath_Click);
             // 
@@ -77,7 +77,7 @@
             this.setTitleKeyPath.Name = "setTitleKeyPath";
             this.setTitleKeyPath.Size = new System.Drawing.Size(53, 23);
             this.setTitleKeyPath.TabIndex = 5;
-            this.setTitleKeyPath.Text = "Set";
+            this.setTitleKeyPath.Text = "位置";
             this.setTitleKeyPath.UseVisualStyleBackColor = false;
             this.setTitleKeyPath.Click += new System.EventHandler(this.setTitleKeyPath_Click);
             // 
@@ -101,7 +101,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(53, 13);
             this.stLabel2.TabIndex = 3;
-            this.stLabel2.Text = "Title Keys";
+            this.stLabel2.Text = "标题关键字";
             // 
             // TextBoxTitleKey
             // 
@@ -120,7 +120,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(55, 13);
             this.stLabel1.TabIndex = 1;
-            this.stLabel1.Text = "Prod Keys";
+            this.stLabel1.Text = "生成 Keys";
             // 
             // TextBoxProdKeyPath
             // 
@@ -149,7 +149,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(436, 193);
             this.Name = "SwitchKeySelectionForm";
-            this.Text = "Select Key Files";
+            this.Text = "选择关键文件";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             this.ResumeLayout(false);

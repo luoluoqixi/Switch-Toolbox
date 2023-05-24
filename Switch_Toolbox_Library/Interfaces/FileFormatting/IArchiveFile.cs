@@ -164,6 +164,35 @@ namespace Toolbox.Library
             }
         }
 
+        public virtual void ExportText()
+        {
+            string fileName = Path.GetFileName(FileName.RemoveIllegaleFolderNameCharacters()) + ".txt";
+
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.FileName = fileName;
+            sfd.DefaultExt = Path.GetExtension(fileName);
+            sfd.Filter = "Txt File(*.txt)|*.txt";
+
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                string text = null;
+                var f = FileFormat;
+                if (f == null)
+                    f = OpenFile();
+                if (f != null && typeof(IConvertableTextFormat).IsAssignableFrom(f.GetType()))
+                    text = ((IConvertableTextFormat)f).ConvertToString();
+
+                if (!string.IsNullOrEmpty(text))
+                {
+                    File.WriteAllText(sfd.FileName, text);
+                }
+                else
+                {
+                    MessageBox.Show("该文件不支持导出文本");
+                }
+            }
+        }
+
         public virtual string FileSize { get {return STMath.GetFileSize(
             FileDataStream != null ? FileDataStream.Length : FileData.Length, 4); } }
 
@@ -309,16 +338,19 @@ namespace Toolbox.Library
         {
             var ToolStrips = new ToolStripItem[]
 {
-                    new STToolStripItem("Save", SaveAction) { Enabled = ((IFileFormat)ArchiveFile).CanSave},
+                    new STToolStripItem("保存", SaveAction) { Enabled = ((IFileFormat)ArchiveFile).CanSave},
                     new STToolStripSeparator(),
-                    new STToolStripItem("Repack", RepackAction){ Enabled = ArchiveFile.CanAddFiles },
-                    new STToolStripItem("Extract All", ExtractAllAction),
+                    new STToolStripItem("重新打包", RepackAction){ Enabled = ArchiveFile.CanAddFiles },
+                    new STToolStripItem("全部提取", ExtractAllAction),
                     new STToolStripSeparator(),
-                    new STToolStripItem("Preview Archive", PreviewAction),
+                    new STToolStripItem("预览档案", PreviewAction),
                     new STToolStripSeparator(),
-                    new STToolStripItem("Add Folder", AddFolderAction) { Enabled = ArchiveFile.CanAddFiles},
-                    new STToolStripItem("Add File", AddFileAction) { Enabled = ArchiveFile.CanAddFiles},
-                    new STToolStripItem("Clear Files", ClearAction) { Enabled = ArchiveFile.CanDeleteFiles},
+                    new STToolStripItem("添加文件夹", AddFolderAction) { Enabled = ArchiveFile.CanAddFiles},
+                    new STToolStripItem("添加文件", AddFileAction) { Enabled = ArchiveFile.CanAddFiles},
+                    new STToolStripItem("清除文件", ClearAction) { Enabled = ArchiveFile.CanDeleteFiles},
+                    new STToolStripSeparator(),
+                    new STToolStripItem("提取全部文本/Yaml/Text (扩展)", ExtractAllTextAction),
+                    new STToolStripSeparator(),
             };
 
             var toolStripList = ToolStrips.ToList();
@@ -446,6 +478,17 @@ namespace Toolbox.Library
                 ParentPath = node.Parent.FullPath;
 
             TreeHelper.ExtractAllFiles(ParentPath, Nodes);
+        }
+
+        private void ExtractAllTextAction(object sender, EventArgs args)
+        {
+            TreeNode node = this;
+
+            var ParentPath = string.Empty;
+            if (node.Parent != null) //Archive can be attached to another archive
+                ParentPath = node.Parent.FullPath;
+
+            TreeHelper.ExtractAllFilesText(ParentPath, Nodes);
         }
 
         private void RepackAction(object sender, EventArgs args)
@@ -687,14 +730,14 @@ namespace Toolbox.Library
         {
             return new ToolStripItem[]
             {
-                new STToolStripItem("Rename", RenameAction) { Enabled = ArchiveFile.CanRenameFiles },
-                new STToolStripItem("Extract Folder", ExtractAction),
-                new STToolStripItem("Replace Folder", ReplaceAction) { Enabled = ArchiveFile.CanReplaceFiles && ArchiveFile.CanAddFiles },
-                new STToolStripItem("Delete Folder", DeleteAction) { Enabled = ArchiveFile.CanDeleteFiles },
+                new STToolStripItem("重命名", RenameAction) { Enabled = ArchiveFile.CanRenameFiles },
+                new STToolStripItem("提取文件夹", ExtractAction),
+                new STToolStripItem("替换文件夹", ReplaceAction) { Enabled = ArchiveFile.CanReplaceFiles && ArchiveFile.CanAddFiles },
+                new STToolStripItem("删除折叠页", DeleteAction) { Enabled = ArchiveFile.CanDeleteFiles },
                 new STToolStripSeparator(),
-                new STToolStripItem("Add Folder", AddFolderAction) { Enabled = ArchiveFile.CanAddFiles },
-                new STToolStripItem("Add File", AddFileAction) { Enabled = ArchiveFile.CanAddFiles },
-                new STToolStripItem("Clear Files", ClearAction) { Enabled = ArchiveFile.CanDeleteFiles },
+                new STToolStripItem("新增文件夹", AddFolderAction) { Enabled = ArchiveFile.CanAddFiles },
+                new STToolStripItem("添加文件", AddFileAction) { Enabled = ArchiveFile.CanAddFiles },
+                new STToolStripItem("清除文件", ClearAction) { Enabled = ArchiveFile.CanDeleteFiles },
             };
         }
 
@@ -912,14 +955,16 @@ namespace Toolbox.Library
         {
             return new ToolStripItem[]
             {
-                new STToolStripItem("Rename", RenameAction) { Enabled = ArchiveFile.CanRenameFiles },
-                new STToolStripItem("Export Raw Data", ExtractAction),
-                new STToolStipMenuItem("Export Raw Data to File Location", null, ExportToFileLocAction, Keys.Control | Keys.F),
-                new STToolStripItem("Replace Raw Data", ReplaceAction) { Enabled = ArchiveFile.CanReplaceFiles },
+                new STToolStripItem("重命名", RenameAction) { Enabled = ArchiveFile.CanRenameFiles },
+                new STToolStripItem("导出原始数据", ExtractAction),
+                new STToolStipMenuItem("将原始数据导出到文件位置", null, ExportToFileLocAction, Keys.Control | Keys.F),
+                new STToolStripItem("替换原始数据", ReplaceAction) { Enabled = ArchiveFile.CanReplaceFiles },
                 new STToolStripSeparator(),
-                new STToolStipMenuItem("Open With Text Editor", null, OpenTextEditorAction, Keys.Control | Keys.T),
+                new STToolStipMenuItem("使用文本编辑器打开", null, OpenTextEditorAction, Keys.Control | Keys.T),
                 new STToolStripSeparator(),
-                new STToolStripItem("Delete", DeleteAction) { Enabled = ArchiveFile.CanDeleteFiles },
+                new STToolStripItem("删除", DeleteAction) { Enabled = ArchiveFile.CanDeleteFiles },
+                new STToolStripSeparator(),
+                new STToolStripItem("导出文本/Yaml/Text (扩展)", ExtractTextAction),
             };
         }
 
@@ -939,6 +984,11 @@ namespace Toolbox.Library
         private void ExtractAction(object sender, EventArgs args)
         {
             ArchiveFileInfo.Export();
+        }
+
+        private void ExtractTextAction(object sender, EventArgs args)
+        {
+            ArchiveFileInfo.ExportText();
         }
 
         private void ExportToFileLocAction(object sender, EventArgs args)

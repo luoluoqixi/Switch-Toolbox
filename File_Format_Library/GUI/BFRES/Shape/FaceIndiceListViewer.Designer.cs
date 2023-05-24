@@ -64,7 +64,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(269, 398);
             this.Name = "FaceIndiceListViewer";
-            this.Text = "FaceIndiceListViewer";
+            this.Text = "面指示器列表查看器";
             this.contentContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 

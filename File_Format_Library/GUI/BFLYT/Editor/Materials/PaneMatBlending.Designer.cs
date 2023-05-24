@@ -195,7 +195,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(37, 13);
             this.stLabel2.TabIndex = 55;
-            this.stLabel2.Text = "Value:";
+            this.stLabel2.Text = "值:";
             // 
             // stLabel1
             // 
@@ -204,7 +204,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(82, 13);
             this.stLabel1.TabIndex = 54;
-            this.stLabel1.Text = "Compare Mode:";
+            this.stLabel1.Text = "对比模式:";
             // 
             // chkAlphaDefaults
             // 
@@ -213,7 +213,7 @@
             this.chkAlphaDefaults.Name = "chkAlphaDefaults";
             this.chkAlphaDefaults.Size = new System.Drawing.Size(83, 17);
             this.chkAlphaDefaults.TabIndex = 1;
-            this.chkAlphaDefaults.Text = "Use default:";
+            this.chkAlphaDefaults.Text = "使用默认:";
             this.chkAlphaDefaults.UseVisualStyleBackColor = true;
             this.chkAlphaDefaults.CheckedChanged += new System.EventHandler(this.chkAlphaDefaults_CheckedChanged);
             // 
@@ -258,7 +258,7 @@
             this.stCheckBox1.Name = "stCheckBox1";
             this.stCheckBox1.Size = new System.Drawing.Size(61, 17);
             this.stCheckBox1.TabIndex = 57;
-            this.stCheckBox1.Text = "Disable";
+            this.stCheckBox1.Text = "禁用";
             this.stCheckBox1.UseVisualStyleBackColor = true;
             this.stCheckBox1.Click += new System.EventHandler(this.colorBlend_ValueChanged);
             // 
@@ -282,7 +282,7 @@
             this.stLabel6.Name = "stLabel6";
             this.stLabel6.Size = new System.Drawing.Size(93, 13);
             this.stLabel6.TabIndex = 63;
-            this.stLabel6.Text = "Logical Operation:";
+            this.stLabel6.Text = "逻辑操作:";
             // 
             // stLabel3
             // 
@@ -291,7 +291,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(44, 13);
             this.stLabel3.TabIndex = 56;
-            this.stLabel3.Text = "Source:";
+            this.stLabel3.Text = "源:";
             // 
             // colorBlendLogicCB
             // 
@@ -326,7 +326,7 @@
             this.stLabel5.Name = "stLabel5";
             this.stLabel5.Size = new System.Drawing.Size(63, 13);
             this.stLabel5.TabIndex = 61;
-            this.stLabel5.Text = "Destination:";
+            this.stLabel5.Text = "作为目的地的(旅馆、商店、饭店等):";
             // 
             // stLabel4
             // 
@@ -335,7 +335,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(56, 13);
             this.stLabel4.TabIndex = 59;
-            this.stLabel4.Text = "Operation:";
+            this.stLabel4.Text = "操作:";
             // 
             // colorBlendDestCB
             // 
@@ -357,7 +357,7 @@
             this.chkColorBlendDefaults.Name = "chkColorBlendDefaults";
             this.chkColorBlendDefaults.Size = new System.Drawing.Size(83, 17);
             this.chkColorBlendDefaults.TabIndex = 2;
-            this.chkColorBlendDefaults.Text = "Use default:";
+            this.chkColorBlendDefaults.Text = "使用默认:";
             this.chkColorBlendDefaults.UseVisualStyleBackColor = true;
             this.chkColorBlendDefaults.CheckedChanged += new System.EventHandler(this.chkColorBlendDefaults_CheckedChanged);
             // 

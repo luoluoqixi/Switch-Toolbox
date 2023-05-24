@@ -72,7 +72,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(41, 13);
             this.stLabel1.TabIndex = 1;
-            this.stLabel1.Text = "Source";
+            this.stLabel1.Text = "源";
             // 
             // stLabel2
             // 
@@ -81,7 +81,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(62, 13);
             this.stLabel2.TabIndex = 2;
-            this.stLabel2.Text = "Copy To -->";
+            this.stLabel2.Text = "拷贝到 -->";
             // 
             // destCB
             // 
@@ -103,7 +103,7 @@
             this.stButton1.Name = "stButton1";
             this.stButton1.Size = new System.Drawing.Size(75, 23);
             this.stButton1.TabIndex = 4;
-            this.stButton1.Text = "Cancel";
+            this.stButton1.Text = "取消";
             this.stButton1.UseVisualStyleBackColor = false;
             // 
             // stButton2
@@ -123,7 +123,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(394, 92);
             this.Name = "CopyUVChannelDialog";
-            this.Text = "Copy UV Channel";
+            this.Text = "拷贝UV通道";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             this.ResumeLayout(false);

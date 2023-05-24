@@ -88,7 +88,7 @@
             this.addbtn.Name = "addbtn";
             this.addbtn.Size = new System.Drawing.Size(59, 23);
             this.addbtn.TabIndex = 1;
-            this.addbtn.Text = "Add";
+            this.addbtn.Text = "添加";
             this.addbtn.UseVisualStyleBackColor = false;
             this.addbtn.Click += new System.EventHandler(this.addbtn_Click);
             // 
@@ -99,7 +99,7 @@
             this.removebtn.Name = "removebtn";
             this.removebtn.Size = new System.Drawing.Size(59, 23);
             this.removebtn.TabIndex = 2;
-            this.removebtn.Text = "Remove";
+            this.removebtn.Text = "移除";
             this.removebtn.UseVisualStyleBackColor = false;
             this.removebtn.Click += new System.EventHandler(this.removebtn_Click);
             // 
@@ -110,7 +110,7 @@
             this.editBtn.Name = "editBtn";
             this.editBtn.Size = new System.Drawing.Size(59, 23);
             this.editBtn.TabIndex = 3;
-            this.editBtn.Text = "Edit";
+            this.editBtn.Text = "编辑";
             this.editBtn.UseVisualStyleBackColor = false;
             this.editBtn.Click += new System.EventHandler(this.editBtn_Click);
             // 
@@ -266,7 +266,7 @@
             this.stLabel8.Name = "stLabel8";
             this.stLabel8.Size = new System.Drawing.Size(38, 13);
             this.stLabel8.TabIndex = 15;
-            this.stLabel8.Text = "Name:";
+            this.stLabel8.Text = "名字:";
             // 
             // shrinkCB
             // 
@@ -288,7 +288,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(65, 13);
             this.stLabel3.TabIndex = 13;
-            this.stLabel3.Text = "Filter Shrink:";
+            this.stLabel3.Text = "过滤器收缩:";
             // 
             // expandCB
             // 
@@ -310,7 +310,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(71, 13);
             this.stLabel4.TabIndex = 11;
-            this.stLabel4.Text = "Filter Expand:";
+            this.stLabel4.Text = "过滤器展开:";
             // 
             // wrapModeVCB
             // 
@@ -332,7 +332,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(76, 13);
             this.stLabel2.TabIndex = 9;
-            this.stLabel2.Text = "Wrap Mode V:";
+            this.stLabel2.Text = "Wrap模式 V:";
             // 
             // wrapModeUCB
             // 
@@ -354,7 +354,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(77, 13);
             this.stLabel1.TabIndex = 7;
-            this.stLabel1.Text = "Wrap Mode U:";
+            this.stLabel1.Text = "Wrap模式 U:";
             // 
             // stDropDownPanel3
             // 
@@ -404,7 +404,7 @@
             this.stLabel11.Name = "stLabel11";
             this.stLabel11.Size = new System.Drawing.Size(95, 13);
             this.stLabel11.TabIndex = 62;
-            this.stLabel11.Text = "Projection Params:";
+            this.stLabel11.Text = "投影参数:";
             // 
             // barSlider5
             // 
@@ -581,7 +581,7 @@
             this.stLabel12.Name = "stLabel12";
             this.stLabel12.Size = new System.Drawing.Size(37, 13);
             this.stLabel12.TabIndex = 64;
-            this.stLabel12.Text = "Scale:";
+            this.stLabel12.Text = "缩放 - Scale:";
             // 
             // stLabel10
             // 
@@ -590,7 +590,7 @@
             this.stLabel10.Name = "stLabel10";
             this.stLabel10.Size = new System.Drawing.Size(54, 13);
             this.stLabel10.TabIndex = 66;
-            this.stLabel10.Text = "Translate:";
+            this.stLabel10.Text = "移动 - Translate:";
             // 
             // stLabel9
             // 
@@ -599,7 +599,7 @@
             this.stLabel9.Name = "stLabel9";
             this.stLabel9.Size = new System.Drawing.Size(34, 13);
             this.stLabel9.TabIndex = 60;
-            this.stLabel9.Text = "Type:";
+            this.stLabel9.Text = "类型:";
             // 
             // transformTypeCB
             // 
@@ -750,7 +750,7 @@
             this.stLabel7.Name = "stLabel7";
             this.stLabel7.Size = new System.Drawing.Size(54, 13);
             this.stLabel7.TabIndex = 55;
-            this.stLabel7.Text = "Translate:";
+            this.stLabel7.Text = "移动 - Translate:";
             // 
             // stLabel6
             // 
@@ -759,7 +759,7 @@
             this.stLabel6.Name = "stLabel6";
             this.stLabel6.Size = new System.Drawing.Size(42, 13);
             this.stLabel6.TabIndex = 54;
-            this.stLabel6.Text = "Rotate:";
+            this.stLabel6.Text = "旋转 - Rotate:";
             // 
             // stLabel5
             // 
@@ -768,7 +768,7 @@
             this.stLabel5.Name = "stLabel5";
             this.stLabel5.Size = new System.Drawing.Size(37, 13);
             this.stLabel5.TabIndex = 53;
-            this.stLabel5.Text = "Scale:";
+            this.stLabel5.Text = "缩放 - Scale:";
             // 
             // scaleYUD
             // 

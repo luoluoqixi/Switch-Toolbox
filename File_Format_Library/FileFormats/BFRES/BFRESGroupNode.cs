@@ -63,29 +63,29 @@ namespace Bfres.Structs
         {
             List<ToolStripItem> Items = new List<ToolStripItem>();
 
-            Items.Add(new STToolStipMenuItem("New", null, NewAction, Keys.Control | Keys.N) { Enabled = ShowNewContextMenu });
-            Items.Add(new STToolStipMenuItem("Import", null, ImportAction, Keys.Control | Keys.I));
-            Items.Add(new ToolStripMenuItem("Export All", null, ExportAllAction, Keys.Control | Keys.E));
-            Items.Add(new ToolStripMenuItem("Replace (From Folder)", null, ReplaceAllAction, Keys.Control | Keys.R));
+            Items.Add(new STToolStipMenuItem("新建", null, NewAction, Keys.Control | Keys.N) { Enabled = ShowNewContextMenu });
+            Items.Add(new STToolStipMenuItem("导入", null, ImportAction, Keys.Control | Keys.I));
+            Items.Add(new ToolStripMenuItem("导出全部", null, ExportAllAction, Keys.Control | Keys.E));
+            Items.Add(new ToolStripMenuItem("替换（从文件夹）", null, ReplaceAllAction, Keys.Control | Keys.R));
             Items.Add(new STToolStripSeparator());
-            Items.Add(new STToolStipMenuItem("Sort", null, SortAction, Keys.Control | Keys.S));
-            Items.Add(new STToolStipMenuItem("Clear", null, ClearAction, Keys.Control | Keys.C));
+            Items.Add(new STToolStipMenuItem("排序", null, SortAction, Keys.Control | Keys.S));
+            Items.Add(new STToolStipMenuItem("清除", null, ClearAction, Keys.Control | Keys.C));
 
             if (Type == BRESGroupType.Textures)
             {
                 Items.Add(new STToolStripSeparator());
-                Items.Add(new STToolStipMenuItem("Batch Generate Mipmaps", null, BatchGenerateMipmapsAction, Keys.Control | Keys.M));
+                Items.Add(new STToolStipMenuItem("批量生成Mipmaps", null, BatchGenerateMipmapsAction, Keys.Control | Keys.M));
             }
             if (Type == BRESGroupType.Models)
             {
                 Items.Add(new STToolStripSeparator());
-                Items.Add(new STToolStipMenuItem("Show All Models", null, ShowAllModelsAction, Keys.Control | Keys.A));
-                Items.Add(new STToolStipMenuItem("Hide All Models", null, HideAllModelsAction, Keys.Control | Keys.H));
+                Items.Add(new STToolStipMenuItem("显示所有模型", null, ShowAllModelsAction, Keys.Control | Keys.A));
+                Items.Add(new STToolStipMenuItem("隐藏所有模型", null, HideAllModelsAction, Keys.Control | Keys.H));
             }
             if (Type == BRESGroupType.SkeletalAnim)
             {
                 Items.Add(new STToolStripSeparator());
-                Items.Add(new STToolStipMenuItem("Batch Edit Base Data", null, BatchEditBaseAnimDataAction, Keys.Control | Keys.A));
+                Items.Add(new STToolStipMenuItem("批量编辑基础数据", null, BatchEditBaseAnimDataAction, Keys.Control | Keys.A));
             }
 
             return Items.ToArray();
@@ -611,7 +611,7 @@ namespace Bfres.Structs
         public void AddNode(STGenericWrapper node)
         {
             if (node.Text == string.Empty)
-                throw new System.Exception("Text invalid. Must not be empty! ");
+                throw new System.Exception("文本无效。不得为空! ");
 
             Nodes.Add(node);
             ResourceNodes.Add(node.Text, node);
@@ -626,7 +626,7 @@ namespace Bfres.Structs
 
         public override void Clear()
         {
-            var result = MessageBox.Show("Are you sure you want to clear this section? This cannot be undone!",
+            var result = MessageBox.Show("是否确实要清除此分区？这无法撤消!",
                 "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
@@ -668,19 +668,19 @@ namespace Bfres.Structs
         {
             switch (Type)
             {
-                case BRESGroupType.Models: return "Models";
-                case BRESGroupType.Textures: return "Textures";
-                case BRESGroupType.SkeletalAnim: return "Skeletal Animations";
-                case BRESGroupType.ShaderParamAnim: return "Shader Param Animations";
-                case BRESGroupType.ColorAnim: return "Color Animations";
-                case BRESGroupType.TexSrtAnim: return "Texture SRT Animations";
-                case BRESGroupType.TexPatAnim: return "Texture Pattern Animations";
-                case BRESGroupType.BoneVisAnim: return "Bone Visibilty Animations";
-                case BRESGroupType.MatVisAnim: return "Material Visibilty Animations";
-                case BRESGroupType.ShapeAnim: return "Shape Animations";
-                case BRESGroupType.SceneAnim: return "Scene Animations";
-                case BRESGroupType.Embedded: return "Embedded Files";
-                case BRESGroupType.MaterialAnim: return "Material Animations";
+                case BRESGroupType.Models: return "模型文件";
+                case BRESGroupType.Textures: return "纹理";
+                case BRESGroupType.SkeletalAnim: return "骨骼动画";
+                case BRESGroupType.ShaderParamAnim: return "着色器参数动画";
+                case BRESGroupType.ColorAnim: return "彩色动画";
+                case BRESGroupType.TexSrtAnim: return "纹理SRT动画";
+                case BRESGroupType.TexPatAnim: return "纹理图案动画";
+                case BRESGroupType.BoneVisAnim: return "骨骼可见性动画";
+                case BRESGroupType.MatVisAnim: return "材质可见性动画";
+                case BRESGroupType.ShapeAnim: return "形状动画";
+                case BRESGroupType.SceneAnim: return "场景动画";
+                case BRESGroupType.Embedded: return "嵌入式文件";
+                case BRESGroupType.MaterialAnim: return "材质动画";
                 default:
                     throw new System.Exception("Unknown type? " + Type);
             }
@@ -690,27 +690,27 @@ namespace Bfres.Structs
         {
             var child = GetFirstChild();
 
-            if (Text == "Models" || child is FMDL)
+            if (Text == "模型" || child is FMDL)
                 Type = BRESGroupType.Models;
-            if (Text == "Textures" || child is FTEX)
+            if (Text == "纹理" || child is FTEX)
                 Type = BRESGroupType.Textures;
-            if (Text == "Skeleton Animations" || child is FSKA)
+            if (Text == "骨架动画" || child is FSKA)
                 Type = BRESGroupType.SkeletalAnim;
-            if (Text == "Material Animations" || child is FMAA)
+            if (Text == "材质动画" || child is FMAA)
                 Type = BRESGroupType.MaterialAnim;
-            if (Text == "Shader Param Animations" || child is FSHU)
+            if (Text == "着色器参数动画" || child is FSHU)
                 Type = BRESGroupType.ShaderParamAnim;
-            if (Text == "Color Animations" || child is FSHU)
+            if (Text == "彩色动画" || child is FSHU)
                 Type = BRESGroupType.ColorAnim;
-            if (Text == "Texture Srt Animations" || child is FSHU)
+            if (Text == "纹理Srt动画" || child is FSHU)
                 Type = BRESGroupType.TexSrtAnim;
-            if (Text == "Texture Pattern Animations" || child is FTXP)
+            if (Text == "Texture模式动画" || child is FTXP)
                 Type = BRESGroupType.TexPatAnim;
-            if (Text == "Bone Visibilty Animations" || child is FVIS)
+            if (Text == "骨骼可见性动画" || child is FVIS)
                 Type = BRESGroupType.BoneVisAnim;
-            if (Text == "Material Visibilty Animations" || child is FVIS)
+            if (Text == "材质可见性动画" || child is FVIS)
                 Type = BRESGroupType.MatVisAnim;
-            if (Text == "Embedded Files" || child is ExternalFileData)
+            if (Text == "嵌入式文件" || child is ExternalFileData)
                 Type = BRESGroupType.Embedded;
         }
 

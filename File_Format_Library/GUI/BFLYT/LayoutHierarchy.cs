@@ -187,11 +187,11 @@ namespace LayoutBXLYT
         {
             TreeNode matNode = new TreeNode(tex);
             matNode.ContextMenuStrip = new ContextMenuStrip();
-            matNode.ContextMenuStrip.Items.Add(new STToolStipMenuItem("Rename", null, (o, e) =>
+            matNode.ContextMenuStrip.Items.Add(new STToolStipMenuItem("重命名", null, (o, e) =>
             {
                 RenameTextureAction(matNode, i);
             }));
-            matNode.ContextMenuStrip.Items.Add(new STToolStipMenuItem("Remove", null, (o, e) =>
+            matNode.ContextMenuStrip.Items.Add(new STToolStipMenuItem("移除", null, (o, e) =>
             {
                 ActiveLayout.TextureFolder.Nodes.Remove(matNode);
                 ActiveLayout.Textures.Remove(matNode.Text);
@@ -231,11 +231,11 @@ namespace LayoutBXLYT
         {
             TreeNode matNode = new TreeNode(font);
             matNode.ContextMenuStrip = new ContextMenuStrip();
-            matNode.ContextMenuStrip.Items.Add(new STToolStipMenuItem("Rename", null, (o, e) =>
+            matNode.ContextMenuStrip.Items.Add(new STToolStipMenuItem("重命名", null, (o, e) =>
             {
                 RenameFont(matNode, i);
             }));
-            matNode.ContextMenuStrip.Items.Add(new STToolStipMenuItem("Remove", null, (o, e) =>
+            matNode.ContextMenuStrip.Items.Add(new STToolStipMenuItem("移除", null, (o, e) =>
             {
                 ActiveLayout.FontFolder.Nodes.Remove(matNode);
                 ActiveLayout.Fonts.Remove(matNode.Text);

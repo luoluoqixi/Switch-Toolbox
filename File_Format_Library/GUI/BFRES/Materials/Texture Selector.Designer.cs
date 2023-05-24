@@ -85,7 +85,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Preview";
+            this.label1.Text = "预览";
             // 
             // addTextureBtn
             // 
@@ -95,7 +95,7 @@
             this.addTextureBtn.Name = "addTextureBtn";
             this.addTextureBtn.Size = new System.Drawing.Size(75, 23);
             this.addTextureBtn.TabIndex = 3;
-            this.addTextureBtn.Text = "Add";
+            this.addTextureBtn.Text = "添加";
             this.addTextureBtn.UseVisualStyleBackColor = true;
             this.addTextureBtn.Click += new System.EventHandler(this.addTextureBtn_Click);
             // 
@@ -107,7 +107,7 @@
             this.RemoveTextureBtn.Name = "RemoveTextureBtn";
             this.RemoveTextureBtn.Size = new System.Drawing.Size(75, 23);
             this.RemoveTextureBtn.TabIndex = 4;
-            this.RemoveTextureBtn.Text = "Remove";
+            this.RemoveTextureBtn.Text = "移除";
             this.RemoveTextureBtn.UseVisualStyleBackColor = true;
             this.RemoveTextureBtn.Click += new System.EventHandler(this.RemoveTextureBtn_Click);
             // 
@@ -120,7 +120,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 5;
-            this.button3.Text = "Save";
+            this.button3.Text = "保存";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // stTextBox1
@@ -138,7 +138,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(77, 13);
             this.stLabel1.TabIndex = 7;
-            this.stLabel1.Text = "Texture Name:";
+            this.stLabel1.Text = "纹理名称:";
             // 
             // Texture_Selector
             // 
@@ -156,7 +156,7 @@
             this.Controls.Add(this.pictureBoxCustom1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Texture_Selector";
-            this.Text = "Texture Selector";
+            this.Text = "纹理选择器";
             this.Load += new System.EventHandler(this.Texture_Selector_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCustom1)).EndInit();
             this.ResumeLayout(false);

@@ -43,7 +43,7 @@
             this.btnRemoveKeyShape.Name = "btnRemoveKeyShape";
             this.btnRemoveKeyShape.Size = new System.Drawing.Size(75, 23);
             this.btnRemoveKeyShape.TabIndex = 31;
-            this.btnRemoveKeyShape.Text = "Remove";
+            this.btnRemoveKeyShape.Text = "移除";
             this.btnRemoveKeyShape.UseVisualStyleBackColor = false;
             // 
             // btnAddKeyShape
@@ -53,7 +53,7 @@
             this.btnAddKeyShape.Name = "btnAddKeyShape";
             this.btnAddKeyShape.Size = new System.Drawing.Size(75, 23);
             this.btnAddKeyShape.TabIndex = 30;
-            this.btnAddKeyShape.Text = "Add";
+            this.btnAddKeyShape.Text = "添加";
             this.btnAddKeyShape.UseVisualStyleBackColor = false;
             // 
             // keyShapeListView
@@ -74,7 +74,7 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Name";
+            this.columnHeader1.Text = "名称";
             this.columnHeader1.Width = 290;
             // 
             // btnMoveKeyShapeDown

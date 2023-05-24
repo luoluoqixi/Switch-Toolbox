@@ -49,7 +49,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(57, 13);
             this.stLabel1.TabIndex = 0;
-            this.stLabel1.Text = "Swap Red";
+            this.stLabel1.Text = "交换红色";
             // 
             // swapRedCB
             // 
@@ -98,7 +98,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(58, 13);
             this.stLabel2.TabIndex = 3;
-            this.stLabel2.Text = "Swap Blue";
+            this.stLabel2.Text = "交换蓝色";
             // 
             // stPanel3
             // 
@@ -134,7 +134,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(64, 13);
             this.stLabel3.TabIndex = 9;
-            this.stLabel3.Text = "Swap Alpha";
+            this.stLabel3.Text = "交换阿尔法";
             // 
             // swapBlueCB
             // 
@@ -156,7 +156,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(66, 13);
             this.stLabel4.TabIndex = 6;
-            this.stLabel4.Text = "Swap Green";
+            this.stLabel4.Text = "交换绿色";
             // 
             // SwapTableEntryControl
             // 

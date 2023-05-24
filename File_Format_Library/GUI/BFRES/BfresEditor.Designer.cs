@@ -145,7 +145,7 @@
             this.timelineTabPage.Padding = new System.Windows.Forms.Padding(3);
             this.timelineTabPage.Size = new System.Drawing.Size(432, 117);
             this.timelineTabPage.TabIndex = 3;
-            this.timelineTabPage.Text = "Timeline";
+            this.timelineTabPage.Text = "时间线";
             this.timelineTabPage.UseVisualStyleBackColor = true;
             // 
             // tabPage5
@@ -156,7 +156,7 @@
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage5.Size = new System.Drawing.Size(432, 117);
             this.tabPage5.TabIndex = 2;
-            this.tabPage5.Text = "Textures";
+            this.tabPage5.Text = "纹理";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // textureLoader1

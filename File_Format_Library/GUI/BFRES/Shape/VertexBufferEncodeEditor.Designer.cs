@@ -84,7 +84,7 @@
             this.stButton2.Name = "stButton2";
             this.stButton2.Size = new System.Drawing.Size(75, 23);
             this.stButton2.TabIndex = 2;
-            this.stButton2.Text = "Cancel";
+            this.stButton2.Text = "取消";
             this.stButton2.UseVisualStyleBackColor = false;
             // 
             // stLabel1
@@ -94,7 +94,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(42, 13);
             this.stLabel1.TabIndex = 3;
-            this.stLabel1.Text = "Format:";
+            this.stLabel1.Text = "格式:";
             // 
             // nameTB
             // 
@@ -112,7 +112,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(38, 13);
             this.stLabel2.TabIndex = 5;
-            this.stLabel2.Text = "Name:";
+            this.stLabel2.Text = "名称:";
             // 
             // VertexBufferEncodeEditor
             // 
@@ -120,7 +120,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(281, 141);
             this.Name = "VertexBufferEncodeEditor";
-            this.Text = "Buffer Encoder";
+            this.Text = "缓冲编码器";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             this.ResumeLayout(false);

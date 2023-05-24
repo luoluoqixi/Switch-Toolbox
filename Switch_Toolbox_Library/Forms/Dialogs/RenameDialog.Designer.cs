@@ -52,7 +52,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(70, 23);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Cancel";
+            this.button1.Text = "取消";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -78,7 +78,7 @@
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "TextDialog";
-            this.Text = "Rename";
+            this.Text = "重命名";
             this.Load += new System.EventHandler(this.RenameDialog_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

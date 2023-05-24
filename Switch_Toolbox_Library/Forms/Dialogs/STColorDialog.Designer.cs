@@ -204,7 +204,7 @@
             this.stLabel5.Name = "stLabel5";
             this.stLabel5.Size = new System.Drawing.Size(26, 13);
             this.stLabel5.TabIndex = 13;
-            this.stLabel5.Text = "Hex";
+            this.stLabel5.Text = "十六进制";
             // 
             // stLabel6
             // 
@@ -213,7 +213,7 @@
             this.stLabel6.Name = "stLabel6";
             this.stLabel6.Size = new System.Drawing.Size(31, 13);
             this.stLabel6.TabIndex = 14;
-            this.stLabel6.Text = "Color";
+            this.stLabel6.Text = "颜色";
             // 
             // stLabel7
             // 
@@ -222,7 +222,7 @@
             this.stLabel7.Name = "stLabel7";
             this.stLabel7.Size = new System.Drawing.Size(34, 13);
             this.stLabel7.TabIndex = 15;
-            this.stLabel7.Text = "Alpha";
+            this.stLabel7.Text = "阿尔法";
             // 
             // hexTB
             // 

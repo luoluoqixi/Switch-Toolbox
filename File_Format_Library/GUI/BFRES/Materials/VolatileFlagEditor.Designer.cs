@@ -78,7 +78,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(348, 398);
             this.Name = "VolatileFlagEditor";
-            this.Text = "Volatile Flag Editor";
+            this.Text = "易失性标志编辑器";
             this.contentContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 

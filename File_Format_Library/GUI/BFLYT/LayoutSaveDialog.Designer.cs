@@ -67,7 +67,7 @@
             this.stButton1.Name = "stButton1";
             this.stButton1.Size = new System.Drawing.Size(75, 23);
             this.stButton1.TabIndex = 0;
-            this.stButton1.Text = "Save";
+            this.stButton1.Text = "保存";
             this.stButton1.UseVisualStyleBackColor = false;
             // 
             // treeView1
@@ -91,7 +91,7 @@
             this.saveArchiveRadioBtn.Size = new System.Drawing.Size(105, 17);
             this.saveArchiveRadioBtn.TabIndex = 2;
             this.saveArchiveRadioBtn.TabStop = true;
-            this.saveArchiveRadioBtn.Text = "Save To Archive";
+            this.saveArchiveRadioBtn.Text = "保存到存档";
             this.saveArchiveRadioBtn.UseVisualStyleBackColor = true;
             // 
             // saveNewArchiveRadioBtn
@@ -102,7 +102,7 @@
             this.saveNewArchiveRadioBtn.Name = "saveNewArchiveRadioBtn";
             this.saveNewArchiveRadioBtn.Size = new System.Drawing.Size(129, 17);
             this.saveNewArchiveRadioBtn.TabIndex = 3;
-            this.saveNewArchiveRadioBtn.Text = "Save As New Archive";
+            this.saveNewArchiveRadioBtn.Text = "另存为新存档";
             this.saveNewArchiveRadioBtn.UseVisualStyleBackColor = true;
             // 
             // saveFolderRadioBtn
@@ -113,7 +113,7 @@
             this.saveFolderRadioBtn.Name = "saveFolderRadioBtn";
             this.saveFolderRadioBtn.Size = new System.Drawing.Size(119, 17);
             this.saveFolderRadioBtn.TabIndex = 4;
-            this.saveFolderRadioBtn.Text = "Save To File/Folder";
+            this.saveFolderRadioBtn.Text = "保存到文件/文件夹";
             this.saveFolderRadioBtn.UseVisualStyleBackColor = true;
             // 
             // radioButton4
@@ -125,7 +125,7 @@
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(90, 17);
             this.radioButton4.TabIndex = 5;
-            this.radioButton4.Text = "Save As XML";
+            this.radioButton4.Text = "另存为XML";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // radioButton5
@@ -137,7 +137,7 @@
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(97, 17);
             this.radioButton5.TabIndex = 6;
-            this.radioButton5.Text = "Save As YAML";
+            this.radioButton5.Text = "另存为YAML";
             this.radioButton5.UseVisualStyleBackColor = true;
             // 
             // radioButton6
@@ -152,7 +152,7 @@
             this.radioButton6.Size = new System.Drawing.Size(97, 17);
             this.radioButton6.TabIndex = 11;
             this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Save As Binary";
+            this.radioButton6.Text = "另存为二进制";
             this.radioButton6.UseVisualStyleBackColor = true;
             // 
             // LayoutSaveDialog
@@ -161,7 +161,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(501, 432);
             this.Name = "LayoutSaveDialog";
-            this.Text = "Layout Save Dialog";
+            this.Text = "布局保存对话框";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             this.ResumeLayout(false);

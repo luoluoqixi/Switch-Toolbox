@@ -65,7 +65,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(541, 711);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "General";
+            this.tabPage1.Text = "通用";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
@@ -76,7 +76,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(541, 711);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Textures";
+            this.tabPage2.Text = "纹理";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabPage6
@@ -85,7 +85,7 @@
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Size = new System.Drawing.Size(541, 711);
             this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Colors";
+            this.tabPage6.Text = "颜色";
             // 
             // tabPage3
             // 
@@ -94,7 +94,7 @@
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(541, 711);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Fragment";
+            this.tabPage3.Text = "片段";
             // 
             // tabPage4
             // 
@@ -103,7 +103,7 @@
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(541, 711);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Blending";
+            this.tabPage4.Text = "混合";
             // 
             // tabPage5
             // 
@@ -112,7 +112,7 @@
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(541, 711);
             this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Shaders";
+            this.tabPage5.Text = "着色";
             // 
             // tabPage7
             // 
@@ -121,7 +121,7 @@
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage7.Size = new System.Drawing.Size(541, 711);
             this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "User Data";
+            this.tabPage7.Text = "用户数据";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // BCHMaterialEditor

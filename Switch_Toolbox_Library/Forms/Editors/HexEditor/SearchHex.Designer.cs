@@ -71,7 +71,7 @@
             this.chkMatchCase.Name = "chkMatchCase";
             this.chkMatchCase.Size = new System.Drawing.Size(84, 17);
             this.chkMatchCase.TabIndex = 2;
-            this.chkMatchCase.Text = "Check Case";
+            this.chkMatchCase.Text = "检查大小写";
             this.chkMatchCase.UseVisualStyleBackColor = true;
             // 
             // btnOK
@@ -103,7 +103,7 @@
             this.radioBtnText.Size = new System.Drawing.Size(46, 17);
             this.radioBtnText.TabIndex = 5;
             this.radioBtnText.TabStop = true;
-            this.radioBtnText.Text = "Text";
+            this.radioBtnText.Text = "文本";
             this.radioBtnText.UseVisualStyleBackColor = true;
             this.radioBtnText.CheckedChanged += new System.EventHandler(this.radioBtn_CheckedChanged);
             this.radioBtnText.Enter += new System.EventHandler(this.radioBtnText_Enter);
@@ -116,7 +116,7 @@
             this.raditnHex.Size = new System.Drawing.Size(44, 17);
             this.raditnHex.TabIndex = 6;
             this.raditnHex.TabStop = true;
-            this.raditnHex.Text = "Hex";
+            this.raditnHex.Text = "十六进制";
             this.raditnHex.UseVisualStyleBackColor = true;
             this.raditnHex.CheckedChanged += new System.EventHandler(this.radioBtn_CheckedChanged);
             this.raditnHex.Enter += new System.EventHandler(this.raditnHex_Enter);
@@ -131,7 +131,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(398, 272);
             this.Name = "SearchHex";
-            this.Text = "Find";
+            this.Text = "查找";
             this.Activated += new System.EventHandler(this.SearchHex_Activated);
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();

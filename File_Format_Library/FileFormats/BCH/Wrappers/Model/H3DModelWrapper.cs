@@ -80,7 +80,7 @@ namespace FirstPlugin.CtrLibrary
             var MaterialFolder = new TreeNode("Materials");
             var MeshFolder = new TreeNode("Meshes");
             Skeleton = new H3DSkeletonWrapper();
-            Skeleton.Text = "Skeleton";
+            Skeleton.Text = "骨骼";
             Checked = true;
 
             Nodes.Add(MeshFolder);

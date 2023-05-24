@@ -57,7 +57,7 @@
             this.stCheckBox1.Name = "stCheckBox1";
             this.stCheckBox1.Size = new System.Drawing.Size(90, 17);
             this.stCheckBox1.TabIndex = 11;
-            this.stCheckBox1.Text = "Resize to 1x1";
+            this.stCheckBox1.Text = "调整大小为 1x1";
             this.stCheckBox1.UseVisualStyleBackColor = true;
             this.stCheckBox1.CheckedChanged += new System.EventHandler(this.stCheckBox1_CheckedChanged);
             // 
@@ -78,7 +78,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(31, 13);
             this.stLabel1.TabIndex = 13;
-            this.stLabel1.Text = "Color";
+            this.stLabel1.Text = "颜色";
             // 
             // stButton2
             // 
@@ -88,7 +88,7 @@
             this.stButton2.Name = "stButton2";
             this.stButton2.Size = new System.Drawing.Size(53, 23);
             this.stButton2.TabIndex = 14;
-            this.stButton2.Text = "Cancel";
+            this.stButton2.Text = "取消";
             this.stButton2.UseVisualStyleBackColor = false;
             this.stButton2.Click += new System.EventHandler(this.stButton2_Click);
             // 
@@ -110,7 +110,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(141, 133);
             this.Name = "ImageFillColor";
-            this.Text = "Fill Color";
+            this.Text = "填充颜色";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             this.ResumeLayout(false);

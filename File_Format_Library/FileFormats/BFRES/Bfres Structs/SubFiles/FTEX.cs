@@ -201,11 +201,25 @@ namespace Bfres.Structs
                 ReplaceTexture(FileName, Format, 0, swizzlePattern, null, false, false, false, false);
         }
 
+        public void ReplaceNoDialog(string FileName)
+        {
+
+            uint swizzlePattern = 0;
+            if (texture != null)
+                swizzlePattern = (texture.Swizzle >> 8) & 7;
+
+            //If the mipcount is originally 1 it's probably important so set it as default
+            if (texture != null && texture.MipCount == 1)
+                ReplaceTexture(FileName, Format, texture.MipCount, 0, null, false, false, false, false, false, false);
+            else
+                ReplaceTexture(FileName, Format, 0, swizzlePattern, null, false, false, false, false, false, false);
+        }
+
         public bool UseBc4Alpha = false;
 
         public void ReplaceTexture(string FileName, TEX_FORMAT DefaultFormat = TEX_FORMAT.UNKNOWN, uint MipMapCount = 0, 
             uint swizzlePattern = 0, TEX_FORMAT[] SupportedFormats = null, bool DisplayBc4AlphaSetting = false,
-            bool IsSwizzleReadOnly = false, bool IsTileModeReadOnly = false, bool IsFormatReadOnly = false, bool flipTextureY = false)
+            bool IsSwizzleReadOnly = false, bool IsTileModeReadOnly = false, bool IsFormatReadOnly = false, bool flipTextureY = false, bool showDialog = true)
         {
             string ext = System.IO.Path.GetExtension(FileName);
             ext = ext.ToLower();
@@ -263,7 +277,7 @@ namespace Bfres.Structs
             }
             else
             {
-                if (importer.ShowDialog() == DialogResult.OK)
+                if (!showDialog || importer.ShowDialog() == DialogResult.OK)
                 {
                     Cursor.Current = Cursors.WaitCursor;
 

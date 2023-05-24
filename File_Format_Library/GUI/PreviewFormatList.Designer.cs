@@ -53,7 +53,7 @@
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(67, 17);
             this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Textures";
+            this.checkBox2.Text = "纹理";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox1
@@ -64,7 +64,7 @@
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(60, 17);
             this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Models";
+            this.checkBox1.Text = "模型文件夹";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -87,7 +87,7 @@
             this.ClientSize = new System.Drawing.Size(224, 423);
             this.Controls.Add(this.panel1);
             this.Name = "PreviewFormatList";
-            this.Text = "Preview Format List";
+            this.Text = "预览格式列表";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

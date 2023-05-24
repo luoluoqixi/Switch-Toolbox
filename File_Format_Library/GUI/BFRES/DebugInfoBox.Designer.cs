@@ -50,7 +50,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.richTextBox1);
             this.Name = "DebugInfoBox";
-            this.Text = "DebugInfoBox";
+            this.Text = "调试信息框";
             this.ResumeLayout(false);
 
         }

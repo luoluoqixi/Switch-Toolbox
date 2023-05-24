@@ -44,7 +44,7 @@
             this.chkBoxShaderParams.Name = "chkBoxShaderParams";
             this.chkBoxShaderParams.Size = new System.Drawing.Size(98, 17);
             this.chkBoxShaderParams.TabIndex = 1;
-            this.chkBoxShaderParams.Text = "Shader Params";
+            this.chkBoxShaderParams.Text = "着色器参数";
             this.chkBoxShaderParams.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -54,7 +54,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Copy Over:";
+            this.label1.Text = "复制到上方:";
             // 
             // chkBoxShaderOptions
             // 
@@ -63,7 +63,7 @@
             this.chkBoxShaderOptions.Name = "chkBoxShaderOptions";
             this.chkBoxShaderOptions.Size = new System.Drawing.Size(99, 17);
             this.chkBoxShaderOptions.TabIndex = 3;
-            this.chkBoxShaderOptions.Text = "Shader Options";
+            this.chkBoxShaderOptions.Text = "着色器选项";
             this.chkBoxShaderOptions.UseVisualStyleBackColor = true;
             // 
             // chkBoxTextures
@@ -73,7 +73,7 @@
             this.chkBoxTextures.Name = "chkBoxTextures";
             this.chkBoxTextures.Size = new System.Drawing.Size(139, 17);
             this.chkBoxTextures.TabIndex = 4;
-            this.chkBoxTextures.Text = "Textures/Sampler Maps";
+            this.chkBoxTextures.Text = "纹理/采样器贴图";
             this.chkBoxTextures.UseVisualStyleBackColor = true;
             // 
             // chkBoxRenderInfo
@@ -83,7 +83,7 @@
             this.chkBoxRenderInfo.Name = "chkBoxRenderInfo";
             this.chkBoxRenderInfo.Size = new System.Drawing.Size(82, 17);
             this.chkBoxRenderInfo.TabIndex = 5;
-            this.chkBoxRenderInfo.Text = "Render Info";
+            this.chkBoxRenderInfo.Text = "渲染信息";
             this.chkBoxRenderInfo.UseVisualStyleBackColor = true;
             // 
             // materialTreeView
@@ -124,7 +124,7 @@
             this.Controls.Add(this.chkBoxShaderParams);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "CopyMaterialMenu";
-            this.Text = "Copy Materials";
+            this.Text = "复制材质";
             this.ResumeLayout(false);
             this.PerformLayout();
 

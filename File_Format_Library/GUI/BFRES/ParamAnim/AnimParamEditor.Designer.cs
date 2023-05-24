@@ -66,7 +66,7 @@
             this.btnEditSamplers.Name = "btnEditSamplers";
             this.btnEditSamplers.Size = new System.Drawing.Size(47, 23);
             this.btnEditSamplers.TabIndex = 21;
-            this.btnEditSamplers.Text = "Edit";
+            this.btnEditSamplers.Text = "编辑";
             this.btnEditSamplers.UseVisualStyleBackColor = false;
             this.btnEditSamplers.Click += new System.EventHandler(this.btnEditSamplers_Click);
             // 
@@ -77,7 +77,7 @@
             this.btnEditMaterial.Name = "btnEditMaterial";
             this.btnEditMaterial.Size = new System.Drawing.Size(47, 23);
             this.btnEditMaterial.TabIndex = 20;
-            this.btnEditMaterial.Text = "Edit";
+            this.btnEditMaterial.Text = "编辑";
             this.btnEditMaterial.UseVisualStyleBackColor = false;
             this.btnEditMaterial.Click += new System.EventHandler(this.btnEditMaterial_Click);
             // 
@@ -88,7 +88,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(81, 13);
             this.stLabel2.TabIndex = 19;
-            this.stLabel2.Text = "Material Target:";
+            this.stLabel2.Text = "材质目标:";
             // 
             // materialCB
             // 
@@ -121,7 +121,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(74, 13);
             this.stLabel1.TabIndex = 17;
-            this.stLabel1.Text = "Param Target:";
+            this.stLabel1.Text = "参数目标:";
             // 
             // AnimParamEditor
             // 

@@ -81,7 +81,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(38, 13);
             this.stLabel1.TabIndex = 12;
-            this.stLabel1.Text = "Name:";
+            this.stLabel1.Text = "名称:";
             // 
             // typeCB
             // 
@@ -99,7 +99,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(34, 13);
             this.stLabel2.TabIndex = 14;
-            this.stLabel2.Text = "Type:";
+            this.stLabel2.Text = "类型:";
             // 
             // valueTB
             // 
@@ -122,7 +122,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(134, 13);
             this.stLabel3.TabIndex = 16;
-            this.stLabel3.Text = "Values: (Enter one per line)";
+            this.stLabel3.Text = "值：（每行输入一个值）";
             // 
             // btnCancel
             // 
@@ -133,7 +133,7 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 17;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "取消";
             this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // btnOk
@@ -155,7 +155,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(40, 13);
             this.stLabel4.TabIndex = 20;
-            this.stLabel4.Text = "Preset:";
+            this.stLabel4.Text = "预设:";
             // 
             // presetCB
             // 
@@ -173,7 +173,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(320, 416);
             this.Name = "RenderInfoDataEditor";
-            this.Text = "Render Info";
+            this.Text = "渲染信息";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             this.ResumeLayout(false);

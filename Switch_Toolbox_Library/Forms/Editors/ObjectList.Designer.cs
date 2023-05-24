@@ -91,31 +91,31 @@
             this.largeToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.settingsToolStripMenuItem.Text = "View";
+            this.settingsToolStripMenuItem.Text = "视图";
             // 
             // smallToolStripMenuItem
             // 
             this.smallToolStripMenuItem.Name = "smallToolStripMenuItem";
             this.smallToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
-            this.smallToolStripMenuItem.Text = "Small";
+            this.smallToolStripMenuItem.Text = "小";
             // 
             // mediumToolStripMenuItem
             // 
             this.mediumToolStripMenuItem.Name = "mediumToolStripMenuItem";
             this.mediumToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
-            this.mediumToolStripMenuItem.Text = "Medium";
+            this.mediumToolStripMenuItem.Text = "中等";
             // 
             // largeToolStripMenuItem
             // 
             this.largeToolStripMenuItem.Name = "largeToolStripMenuItem";
             this.largeToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
-            this.largeToolStripMenuItem.Text = "Large";
+            this.largeToolStripMenuItem.Text = "大";
             // 
             // searchToolStripMenuItem
             // 
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
             this.searchToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
-            this.searchToolStripMenuItem.Text = "Search";
+            this.searchToolStripMenuItem.Text = "查找";
             this.searchToolStripMenuItem.Click += new System.EventHandler(this.searchToolStripMenuItem_Click);
             // 
             // ObjectList
@@ -126,7 +126,7 @@
             this.Controls.Add(this.treeView1);
             this.Controls.Add(this.panel1);
             this.Name = "ObjectList";
-            this.Text = "ObjectList";
+            this.Text = "对象列表";
             this.Load += new System.EventHandler(this.ObjectList_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

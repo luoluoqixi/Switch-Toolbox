@@ -440,10 +440,10 @@ namespace Toolbox.Library.Forms
                 {
                     foreach (var item in node.GetContextMenuItems())
                     {
-                        if (item.Text != "Delete" && item.Text != "Remove")
+                        if (item.Text != "Delete" && item.Text != "Remove" && item.Text != "删除" && item.Text != "移除")
                             menuItems.Add(item);
                     }
-                    menuItems.Add(new ToolStripMenuItem("Delete", null, DeleteAction, Keys.Delete));
+                    menuItems.Add(new ToolStripMenuItem("删除", null, DeleteAction, Keys.Delete));
                 }
                 else
                 {
@@ -454,24 +454,24 @@ namespace Toolbox.Library.Forms
                 bool HasExpand = false;
                 foreach (var item in node.GetContextMenuItems())
                 {
-                    if (item.Text == "Collapse All")
+                    if (item.Text == "全部折叠")
                         HasCollpase = true;
-                    if (item.Text == "Expand All")
+                    if (item.Text == "全部展开")
                         HasExpand = true;
                 }
 
                 if (!HasCollpase && HasChildren)
-                    menuItems.Add(new ToolStripMenuItem("Collapse All", null, CollapseAllAction, Keys.Control | Keys.Q));
+                    menuItems.Add(new ToolStripMenuItem("全部折叠", null, CollapseAllAction, Keys.Control | Keys.Q));
 
                 if (!HasExpand && HasChildren)
-                    menuItems.Add(new ToolStripMenuItem("Expand All", null, ExpandAllAction, Keys.Control | Keys.P));
+                    menuItems.Add(new ToolStripMenuItem("全部展开", null, ExpandAllAction, Keys.Control | Keys.P));
             }
 
             if (archiveMenus.Count > 0)
             {
                 if (menuItems.Count > 0)
                 {
-                    STToolStipMenuItem archiveItem = new STToolStipMenuItem("Archive");
+                    STToolStipMenuItem archiveItem = new STToolStipMenuItem("档案");
                     treeNodeContextMenu.Items.Add(archiveItem);
 
                     foreach (var item in archiveMenus)
@@ -489,7 +489,7 @@ namespace Toolbox.Library.Forms
             {
                 string path = fileFormat.FilePath;
                 if (File.Exists(path))
-                    menuItems.Add(new ToolStripMenuItem("Open In Explorer", null, SelectFileInExplorer, Keys.Control | Keys.Q));
+                    menuItems.Add(new ToolStripMenuItem("在资源管理器中打开", null, SelectFileInExplorer, Keys.Control | Keys.Q));
             }
 
             Keys currentKey = Keys.A;
@@ -603,8 +603,8 @@ namespace Toolbox.Library.Forms
             var node = treeViewCustom1.SelectedNode;
             if (node != null)
             {
-                var result = MessageBox.Show("If you remove this file, any unsaved progress will be lost! Continue?",
-                    "Remove Dialog", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                var result = MessageBox.Show("如果删除此文件，任何未保存的进度都将丢失！持续?",
+                    "删除对话框", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
                 if (result == DialogResult.Yes)
                 {
@@ -831,7 +831,7 @@ namespace Toolbox.Library.Forms
             }
             else
             {
-                STErrorDialog.Show("Invalid file type. Cannot add file to object list.", "Object List", "");
+                STErrorDialog.Show("文件类型无效。无法将文件添加到对象列表.", "Object List", "");
             }
 
             ((IUpdateForm)Runtime.MainForm).UpdateForm();
@@ -1048,7 +1048,7 @@ namespace Toolbox.Library.Forms
             var panel = new STPanel() { Dock = DockStyle.Fill };
             panel.Controls.Add(searchForm);
             form.AddControl(panel);
-            form.Text = "Search Window";
+            form.Text = "搜索窗";
             form.Show(this);
         }
 

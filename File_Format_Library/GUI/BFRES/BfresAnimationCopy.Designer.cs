@@ -69,7 +69,7 @@
             this.chkUserData.Name = "chkUserData";
             this.chkUserData.Size = new System.Drawing.Size(74, 17);
             this.chkUserData.TabIndex = 2;
-            this.chkUserData.Text = "User Data";
+            this.chkUserData.Text = "用户数据";
             this.chkUserData.UseVisualStyleBackColor = true;
             // 
             // chkBoneAnims
@@ -79,7 +79,7 @@
             this.chkBoneAnims.Name = "chkBoneAnims";
             this.chkBoneAnims.Size = new System.Drawing.Size(105, 17);
             this.chkBoneAnims.TabIndex = 1;
-            this.chkBoneAnims.Text = "Bone Animations";
+            this.chkBoneAnims.Text = "骨骼动画";
             this.chkBoneAnims.UseVisualStyleBackColor = true;
             // 
             // chkAnimSettings
@@ -89,7 +89,7 @@
             this.chkAnimSettings.Name = "chkAnimSettings";
             this.chkAnimSettings.Size = new System.Drawing.Size(113, 17);
             this.chkAnimSettings.TabIndex = 0;
-            this.chkAnimSettings.Text = "Animation Settings";
+            this.chkAnimSettings.Text = "动画设置";
             this.chkAnimSettings.UseVisualStyleBackColor = true;
             // 
             // stPanel2
@@ -151,7 +151,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(549, 393);
             this.Name = "BfresAnimationCopy";
-            this.Text = "Animation Copy";
+            this.Text = "动画副本";
             this.contentContainer.ResumeLayout(false);
             this.stPanel1.ResumeLayout(false);
             this.stPanel1.PerformLayout();

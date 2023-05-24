@@ -94,7 +94,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(34, 13);
             this.stLabel1.TabIndex = 14;
-            this.stLabel1.Text = "Type:";
+            this.stLabel1.Text = "类型:";
             // 
             // stLabel2
             // 
@@ -103,7 +103,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(38, 13);
             this.stLabel2.TabIndex = 15;
-            this.stLabel2.Text = "Name:";
+            this.stLabel2.Text = "名称:";
             // 
             // stButton1
             // 
@@ -122,7 +122,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(381, 160);
             this.Name = "AddAnimGroupDialog";
-            this.Text = "Add Group";
+            this.Text = "添加组";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             this.ResumeLayout(false);

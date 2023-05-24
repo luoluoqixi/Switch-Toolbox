@@ -65,7 +65,7 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Node";
+            this.columnHeader1.Text = "节点";
             this.columnHeader1.Width = 304;
             // 
             // searchTB
@@ -84,7 +84,7 @@
             this.chkMatchCase.Name = "chkMatchCase";
             this.chkMatchCase.Size = new System.Drawing.Size(86, 17);
             this.chkMatchCase.TabIndex = 13;
-            this.chkMatchCase.Text = "Match Case:";
+            this.chkMatchCase.Text = "区分大小写:";
             this.chkMatchCase.UseVisualStyleBackColor = true;
             this.chkMatchCase.CheckedChanged += new System.EventHandler(this.chkMatchCase_CheckedChanged);
             // 
@@ -95,7 +95,7 @@
             this.chkSearchSubNodes.Name = "chkSearchSubNodes";
             this.chkSearchSubNodes.Size = new System.Drawing.Size(111, 17);
             this.chkSearchSubNodes.TabIndex = 14;
-            this.chkSearchSubNodes.Text = "Search Subnodes";
+            this.chkSearchSubNodes.Text = "搜索子节点";
             this.chkSearchSubNodes.UseVisualStyleBackColor = true;
             // 
             // searchBtn
@@ -105,7 +105,7 @@
             this.searchBtn.Name = "searchBtn";
             this.searchBtn.Size = new System.Drawing.Size(75, 23);
             this.searchBtn.TabIndex = 15;
-            this.searchBtn.Text = "Search";
+            this.searchBtn.Text = "查找";
             this.searchBtn.UseVisualStyleBackColor = false;
             this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
             // 
@@ -116,7 +116,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(38, 13);
             this.stLabel1.TabIndex = 16;
-            this.stLabel1.Text = "Name:";
+            this.stLabel1.Text = "名称:";
             // 
             // chkAutoSearch
             // 
@@ -125,7 +125,7 @@
             this.chkAutoSearch.Name = "chkAutoSearch";
             this.chkAutoSearch.Size = new System.Drawing.Size(85, 17);
             this.chkAutoSearch.TabIndex = 17;
-            this.chkAutoSearch.Text = "Auto Search";
+            this.chkAutoSearch.Text = "自动搜索";
             this.chkAutoSearch.UseVisualStyleBackColor = true;
             // 
             // listViewModeCB
@@ -150,7 +150,7 @@
             this.lblFoundEntries.Name = "lblFoundEntries";
             this.lblFoundEntries.Size = new System.Drawing.Size(75, 13);
             this.lblFoundEntries.TabIndex = 19;
-            this.lblFoundEntries.Text = "Found Entries:";
+            this.lblFoundEntries.Text = "找到的条目:";
             // 
             // chkUpdateDoubleClick
             // 
@@ -159,7 +159,7 @@
             this.chkUpdateDoubleClick.Name = "chkUpdateDoubleClick";
             this.chkUpdateDoubleClick.Size = new System.Drawing.Size(134, 17);
             this.chkUpdateDoubleClick.TabIndex = 20;
-            this.chkUpdateDoubleClick.Text = "Select on Double Click";
+            this.chkUpdateDoubleClick.Text = "双击选择";
             this.chkUpdateDoubleClick.UseVisualStyleBackColor = true;
             // 
             // chkAllowWildcards
@@ -169,7 +169,7 @@
             this.chkAllowWildcards.Name = "chkAllowWildcards";
             this.chkAllowWildcards.Size = new System.Drawing.Size(101, 17);
             this.chkAllowWildcards.TabIndex = 21;
-            this.chkAllowWildcards.Text = "Allow Wildcards";
+            this.chkAllowWildcards.Text = "允许通配符";
             this.chkAllowWildcards.UseVisualStyleBackColor = true;
             this.chkAllowWildcards.CheckedChanged += new System.EventHandler(this.chkAllowWildcards_CheckedChanged);
             // 
@@ -179,7 +179,7 @@
             this.chkOpenWithDoubleClick.Name = "chkOpenWithDoubleClick";
             this.chkOpenWithDoubleClick.Size = new System.Drawing.Size(136, 17);
             this.chkOpenWithDoubleClick.TabIndex = 0;
-            this.chkOpenWithDoubleClick.Text = "Open by Double Click";
+            this.chkOpenWithDoubleClick.Text = "双击打开";
             this.chkOpenWithDoubleClick.UseVisualStyleBackColor = true;
             // 
             // SearchNodePanel

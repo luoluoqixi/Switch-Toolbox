@@ -104,7 +104,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(37, 13);
             this.stLabel2.TabIndex = 4;
-            this.stLabel2.Text = "Value:";
+            this.stLabel2.Text = "值:";
             // 
             // stLabel1
             // 
@@ -113,7 +113,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(40, 13);
             this.stLabel1.TabIndex = 2;
-            this.stLabel1.Text = "Param:";
+            this.stLabel1.Text = "参数:";
             // 
             // switchParamCB
             // 
@@ -210,7 +210,7 @@
             this.stLabel5.Name = "stLabel5";
             this.stLabel5.Size = new System.Drawing.Size(37, 13);
             this.stLabel5.TabIndex = 10;
-            this.stLabel5.Text = "Value:";
+            this.stLabel5.Text = "值:";
             // 
             // stLabel6
             // 
@@ -219,7 +219,7 @@
             this.stLabel6.Name = "stLabel6";
             this.stLabel6.Size = new System.Drawing.Size(40, 13);
             this.stLabel6.TabIndex = 8;
-            this.stLabel6.Text = "Param:";
+            this.stLabel6.Text = "参数:";
             // 
             // stDropDownPanel3
             // 
@@ -398,7 +398,7 @@
             this.stLabel8.Name = "stLabel8";
             this.stLabel8.Size = new System.Drawing.Size(37, 13);
             this.stLabel8.TabIndex = 17;
-            this.stLabel8.Text = "Value:";
+            this.stLabel8.Text = "值:";
             // 
             // stLabel9
             // 
@@ -407,7 +407,7 @@
             this.stLabel9.Name = "stLabel9";
             this.stLabel9.Size = new System.Drawing.Size(40, 13);
             this.stLabel9.TabIndex = 15;
-            this.stLabel9.Text = "Param:";
+            this.stLabel9.Text = "参数:";
             // 
             // GFLXMaterialParamEditor
             // 

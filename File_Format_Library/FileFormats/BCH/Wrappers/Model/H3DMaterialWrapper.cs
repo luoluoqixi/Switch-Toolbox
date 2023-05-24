@@ -44,9 +44,9 @@ namespace FirstPlugin.CtrLibrary
         public ToolStripItem[] GetContextMenuItems()
         {
             List<ToolStripItem> Items = new List<ToolStripItem>();
-            Items.Add(new ToolStripMenuItem("Export", null, ExportAction, Keys.Control | Keys.E));
-            Items.Add(new ToolStripMenuItem("Replace", null, ReplaceAction, Keys.Control | Keys.R));
-            Items.Add(new ToolStripMenuItem("Rename", null, RenameAction, Keys.Control | Keys.N));
+            Items.Add(new ToolStripMenuItem("导出", null, ExportAction, Keys.Control | Keys.E));
+            Items.Add(new ToolStripMenuItem("替换", null, ReplaceAction, Keys.Control | Keys.R));
+            Items.Add(new ToolStripMenuItem("重命名", null, RenameAction, Keys.Control | Keys.N));
 
             return Items.ToArray();
         }

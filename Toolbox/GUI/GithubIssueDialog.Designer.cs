@@ -80,7 +80,7 @@
             this.stButton1.Name = "stButton1";
             this.stButton1.Size = new System.Drawing.Size(75, 23);
             this.stButton1.TabIndex = 6;
-            this.stButton1.Text = "Cancel";
+            this.stButton1.Text = "取消";
             this.stButton1.UseVisualStyleBackColor = false;
             // 
             // stLabel3
@@ -90,7 +90,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(62, 13);
             this.stLabel3.TabIndex = 5;
-            this.stLabel3.Text = "Information:";
+            this.stLabel3.Text = "信息:";
             // 
             // stLabel2
             // 
@@ -99,7 +99,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(34, 13);
             this.stLabel2.TabIndex = 4;
-            this.stLabel2.Text = "Type:";
+            this.stLabel2.Text = "类型:";
             // 
             // typeCB
             // 
@@ -128,7 +128,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(30, 13);
             this.stLabel1.TabIndex = 1;
-            this.stLabel1.Text = "Title:";
+            this.stLabel1.Text = "标题:";
             // 
             // titleTB
             // 
@@ -146,7 +146,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(549, 398);
             this.Name = "GithubIssueDialog";
-            this.Text = "GithubIssueDialog";
+            this.Text = "Github Issue 对话框";
             this.contentContainer.ResumeLayout(false);
             this.stPanel1.ResumeLayout(false);
             this.stPanel1.PerformLayout();

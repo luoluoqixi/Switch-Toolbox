@@ -77,7 +77,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(316, 526);
             this.Name = "OdysseyCostumeSelector";
-            this.Text = "Odyssey Costume Selector";
+            this.Text = "奥德赛服装选择器";
             this.contentContainer.ResumeLayout(false);
             this.stPanel1.ResumeLayout(false);
             this.ResumeLayout(false);

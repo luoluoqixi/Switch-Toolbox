@@ -71,7 +71,7 @@
             this.stButton1.Name = "stButton1";
             this.stButton1.Size = new System.Drawing.Size(75, 23);
             this.stButton1.TabIndex = 14;
-            this.stButton1.Text = "Cancel";
+            this.stButton1.Text = "取消";
             this.stButton1.UseVisualStyleBackColor = false;
             // 
             // ParamValueDialog
@@ -80,7 +80,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(549, 398);
             this.Name = "ParamValueDialog";
-            this.Text = "ParamValueDialog";
+            this.Text = "参数值对话框";
             this.contentContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 

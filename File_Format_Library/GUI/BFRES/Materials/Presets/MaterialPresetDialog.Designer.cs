@@ -80,7 +80,7 @@
             this.stCheckBox1.Name = "stCheckBox1";
             this.stCheckBox1.Size = new System.Drawing.Size(96, 17);
             this.stCheckBox1.TabIndex = 3;
-            this.stCheckBox1.Text = "Embed Shader";
+            this.stCheckBox1.Text = "嵌入着色器";
             this.stCheckBox1.UseVisualStyleBackColor = true;
             // 
             // stLabel2
@@ -90,7 +90,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(289, 122);
             this.stLabel2.TabIndex = 2;
-            this.stLabel2.Text = "Description:";
+            this.stLabel2.Text = "描述:";
             // 
             // stLabel1
             // 
@@ -99,7 +99,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(38, 13);
             this.stLabel1.TabIndex = 1;
-            this.stLabel1.Text = "Name:";
+            this.stLabel1.Text = "名称:";
             // 
             // treeViewCustom1
             // 
@@ -121,7 +121,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(94, 13);
             this.stLabel3.TabIndex = 5;
-            this.stLabel3.Text = "Preview (In Game)";
+            this.stLabel3.Text = "预览（游戏中）";
             // 
             // stButton1
             // 
@@ -131,7 +131,7 @@
             this.stButton1.Name = "stButton1";
             this.stButton1.Size = new System.Drawing.Size(75, 23);
             this.stButton1.TabIndex = 11;
-            this.stButton1.Text = "Cancel";
+            this.stButton1.Text = "取消";
             this.stButton1.UseVisualStyleBackColor = false;
             // 
             // stButton2
@@ -152,7 +152,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(44, 13);
             this.stLabel4.TabIndex = 13;
-            this.stLabel4.Text = "Shader:";
+            this.stLabel4.Text = "着色:";
             // 
             // MaterialPresetDialog
             // 
@@ -160,7 +160,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(651, 492);
             this.Name = "MaterialPresetDialog";
-            this.Text = "Material Presets";
+            this.Text = "材质预设";
             this.Load += new System.EventHandler(this.MaterialPresetDialog_Load);
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();

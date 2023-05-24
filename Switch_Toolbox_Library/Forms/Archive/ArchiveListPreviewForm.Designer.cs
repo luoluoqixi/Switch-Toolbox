@@ -98,17 +98,17 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Name";
+            this.columnHeader1.Text = "名称";
             this.columnHeader1.Width = 214;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Type";
+            this.columnHeader2.Text = "类型";
             this.columnHeader2.Width = 126;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Size";
+            this.columnHeader3.Text = "大小";
             // 
             // stMenuStrip1
             // 
@@ -125,7 +125,7 @@
             // 
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.viewToolStripMenuItem.Text = "View";
+            this.viewToolStripMenuItem.Text = "视图";
             // 
             // stContextMenuStrip1
             // 
@@ -139,14 +139,14 @@
             // 
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
             this.exportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exportToolStripMenuItem.Text = "Export";
+            this.exportToolStripMenuItem.Text = "导出";
             this.exportToolStripMenuItem.Click += new System.EventHandler(this.exportToolStripMenuItem_Click);
             // 
             // replaceToolStripMenuItem
             // 
             this.replaceToolStripMenuItem.Name = "replaceToolStripMenuItem";
             this.replaceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.replaceToolStripMenuItem.Text = "Replace";
+            this.replaceToolStripMenuItem.Text = "替换";
             this.replaceToolStripMenuItem.Click += new System.EventHandler(this.replaceToolStripMenuItem_Click);
             // 
             // ArchiveListPreviewForm
@@ -156,7 +156,7 @@
             this.ClientSize = new System.Drawing.Size(848, 502);
             this.MainMenuStrip = this.stMenuStrip1;
             this.Name = "ArchiveListPreviewForm";
-            this.Text = "Archive Preview";
+            this.Text = "存档预览";
             this.Controls.SetChildIndex(this.contentContainer, 0);
             this.contentContainer.ResumeLayout(false);
             this.stPanel1.ResumeLayout(false);

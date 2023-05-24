@@ -20,19 +20,19 @@ namespace Bfres.Structs
     {
         public FSHPFolder()
         {
-            Text = "Objects";
+            Text = "物体";
             Name = "FshpFolder";
         }
 
         public ToolStripItem[] GetContextMenuItems()
         {
             List<ToolStripItem> Items = new List<ToolStripItem>();
-            Items.Add(new ToolStripMenuItem("Import Static Object", null, Import, Keys.Control | Keys.I));
+            Items.Add(new ToolStripMenuItem("导入静态对象", null, Import, Keys.Control | Keys.I));
             Items.Add(new ToolStripSeparator());
-            Items.Add(new ToolStripMenuItem("New Empty Object", null, CreateEmpty, Keys.Control | Keys.N));
+            Items.Add(new ToolStripMenuItem("新建空对象", null, CreateEmpty, Keys.Control | Keys.N));
             Items.Add(new ToolStripSeparator());
-            Items.Add(new ToolStripMenuItem("Export All Objects", null, ExportAll, Keys.Control | Keys.A));
-            Items.Add(new ToolStripMenuItem("Clear All Objects", null, Clear, Keys.Control | Keys.C));
+            Items.Add(new ToolStripMenuItem("导出所有对象", null, ExportAll, Keys.Control | Keys.A));
+            Items.Add(new ToolStripMenuItem("清除所有对象", null, Clear, Keys.Control | Keys.C));
             return Items.ToArray();
         }
 
@@ -40,7 +40,7 @@ namespace Bfres.Structs
         {
             FMDL fmdl = (FMDL)Parent;
             FSHP mesh = new FSHP();
-            mesh.Text = "EmptyShape";
+            mesh.Text = "空形状";
             CreateEmptyMesh((FMDL)Parent, mesh);
         }
 
@@ -90,7 +90,7 @@ namespace Bfres.Structs
 
         private void Clear(object sender, EventArgs args)
         {
-            DialogResult dialogResult = MessageBox.Show("Are you sure you want to remove all objects? This cannot be undone!", "", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("是否确实要删除所有对象？这无法撤消!", "", MessageBoxButtons.YesNo);
 
             if (dialogResult == DialogResult.Yes)
             {
@@ -166,48 +166,48 @@ namespace Bfres.Structs
         {
             List<ToolStripItem> Items = new List<ToolStripItem>();
 
-            Items.Add(new ToolStripMenuItem("Export", null, Export, Keys.Control | Keys.E));
-            Items.Add(new ToolStripMenuItem("Replace (Static)", null, Replace, Keys.Control | Keys.R));
+            Items.Add(new ToolStripMenuItem("导出", null, Export, Keys.Control | Keys.E));
+            Items.Add(new ToolStripMenuItem("替换 (静态)", null, Replace, Keys.Control | Keys.R));
             Items.Add(new ToolStripSeparator());
-            Items.Add(new ToolStripMenuItem("Rename", null, Rename, Keys.Control | Keys.N));
+            Items.Add(new ToolStripMenuItem("重命名", null, Rename, Keys.Control | Keys.N));
             Items.Add(new ToolStripSeparator());
 
-            ToolStripMenuItem lodMenu = new ToolStripMenuItem("Level Of Detail");
-            lodMenu.DropDownItems.Add(new ToolStripMenuItem("Clear LOD Meshes", null, ClearLODMeshes));
-            lodMenu.DropDownItems.Add(new ToolStripMenuItem("Add dummy LOD Meshes", null, GenerateDummyLODMeshesAction));
+            ToolStripMenuItem lodMenu = new ToolStripMenuItem("细节等级");
+            lodMenu.DropDownItems.Add(new ToolStripMenuItem("清除LOD网格", null, ClearLODMeshes));
+            lodMenu.DropDownItems.Add(new ToolStripMenuItem("添加虚拟LOD网格", null, GenerateDummyLODMeshesAction));
             Items.Add(lodMenu);
 
-            ToolStripMenuItem boundingsMenu = new ToolStripMenuItem("Boundings");
-            boundingsMenu.DropDownItems.Add(new ToolStripMenuItem("Regenerate Bounding Boxes/Radius", null, GenerateBoundingBoxes));
+            ToolStripMenuItem boundingsMenu = new ToolStripMenuItem("边界");
+            boundingsMenu.DropDownItems.Add(new ToolStripMenuItem("重新生成边界框/半径", null, GenerateBoundingBoxes));
             Items.Add(boundingsMenu);
 
             ToolStripMenuItem uvMenu = new ToolStripMenuItem("UVs");
-            uvMenu.DropDownItems.Add(new ToolStripMenuItem("Flip (Vertical)", null, FlipUvsVertical));
-            uvMenu.DropDownItems.Add(new ToolStripMenuItem("Flip (Horizontal)", null, FlipUvsHorizontal));
-            uvMenu.DropDownItems.Add(new ToolStripMenuItem("Copy Channel", null, CopyUVChannelAction));
+            uvMenu.DropDownItems.Add(new ToolStripMenuItem("翻转 (垂直)", null, FlipUvsVertical));
+            uvMenu.DropDownItems.Add(new ToolStripMenuItem("翻转 (水平)", null, FlipUvsHorizontal));
+            uvMenu.DropDownItems.Add(new ToolStripMenuItem("复制频道", null, CopyUVChannelAction));
             //  uvMenu.DropDownItems.Add(new ToolStripMenuItem("Unwrap By Position", null, UVUnwrapPosition));
 
             Items.Add(uvMenu);
 
-            ToolStripMenuItem normalsMenu = new ToolStripMenuItem("Normals");
-            normalsMenu.DropDownItems.Add(new ToolStripMenuItem("Smooth (Multiple Meshes)", null, MultiMeshSmoothNormals));
-            normalsMenu.DropDownItems.Add(new ToolStripMenuItem("Smooth", null, SmoothNormals));
-            normalsMenu.DropDownItems.Add(new ToolStripMenuItem("Invert", null, InvertNormals));
-            normalsMenu.DropDownItems.Add(new ToolStripMenuItem("Recalculate", null, RecalculateNormals));
+            ToolStripMenuItem normalsMenu = new ToolStripMenuItem("法线");
+            normalsMenu.DropDownItems.Add(new ToolStripMenuItem("平滑（多个网格）", null, MultiMeshSmoothNormals));
+            normalsMenu.DropDownItems.Add(new ToolStripMenuItem("平滑", null, SmoothNormals));
+            normalsMenu.DropDownItems.Add(new ToolStripMenuItem("反转", null, InvertNormals));
+            normalsMenu.DropDownItems.Add(new ToolStripMenuItem("重新计算", null, RecalculateNormals));
             Items.Add(normalsMenu);
 			
-            ToolStripMenuItem colorMenu = new ToolStripMenuItem("Colors");
-            colorMenu.DropDownItems.Add(new ToolStripMenuItem("Set Color", null, SetVertexColorDialog));
-            colorMenu.DropDownItems.Add(new ToolStripMenuItem("Set As White", null, SetVertexColorWhite));
+            ToolStripMenuItem colorMenu = new ToolStripMenuItem("颜色");
+            colorMenu.DropDownItems.Add(new ToolStripMenuItem("设置颜色", null, SetVertexColorDialog));
+            colorMenu.DropDownItems.Add(new ToolStripMenuItem("设置为白色", null, SetVertexColorWhite));
             Items.Add(colorMenu);
 
-            Items.Add(new ToolStripMenuItem("Recalulate Tangents/Bitangents", null, CalcTansBitans, Keys.Control | Keys.T));
-            Items.Add(new ToolStripMenuItem("Fill Tangent Space with constant", null, FillTangentsAction, Keys.Control | Keys.W));
-            Items.Add(new ToolStripMenuItem("Fill Bitangent Space with constant", null, FillBitangentsAction, Keys.Control | Keys.B));
+            Items.Add(new ToolStripMenuItem("重新计算切线/双切线", null, CalcTansBitans, Keys.Control | Keys.T));
+            Items.Add(new ToolStripMenuItem("用常量填充切线空间", null, FillTangentsAction, Keys.Control | Keys.W));
+            Items.Add(new ToolStripMenuItem("用常量填充双切空间", null, FillBitangentsAction, Keys.Control | Keys.B));
 
-            Items.Add(new ToolStripMenuItem("Open Material Editor", null, OpenMaterialEditor, Keys.Control | Keys.M));
+            Items.Add(new ToolStripMenuItem("打开材质编辑器", null, OpenMaterialEditor, Keys.Control | Keys.M));
 
-            Items.Add(new ToolStripMenuItem("Delete", null, Remove, Keys.Control | Keys.Delete));
+            Items.Add(new ToolStripMenuItem("移除", null, Remove, Keys.Control | Keys.Delete));
             return Items.ToArray();
         }
 
@@ -482,7 +482,7 @@ namespace Bfres.Structs
 
             if (!vertexAttributes.Any(x => x.Name == "_u1"))
             {
-                DialogResult dialogResult = MessageBox.Show("This model has no second uv channel to copy to. Create one?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dialogResult = MessageBox.Show("此模型没有可复制到的第二个uv通道。创建一个?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dialogResult == DialogResult.Yes)
                 {
                     VertexAttribute att = new VertexAttribute();
@@ -507,7 +507,7 @@ namespace Bfres.Structs
             }
             else
             {
-                throw new Exception("Only one UV found. No destination UV can be applied");
+                throw new Exception("仅找到一个UV。无法应用目标UV");
             }
         }
 
@@ -583,7 +583,7 @@ namespace Bfres.Structs
         }
         private void Remove(object sender, EventArgs args)
         {
-            DialogResult dialogResult = MessageBox.Show("Are you sure you want to remove this object? This cannot be undone!", "", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("确实要删除此对象吗？这无法撤消!", "", MessageBoxButtons.YesNo);
 
             if (dialogResult == DialogResult.Yes)
             {
@@ -941,7 +941,7 @@ namespace Bfres.Structs
                         {
                             if (assimp.objects.Count == 0)
                             {
-                                MessageBox.Show("No models found!");
+                                MessageBox.Show("未找到模型!");
                                 return;
                             }
 
@@ -1612,7 +1612,7 @@ namespace Bfres.Structs
             }
             if (atrib.Count == 0)
             {
-                MessageBox.Show("Attributes are empty?");
+                MessageBox.Show("属性为空?");
                 return;
             }
             helpernx.Attributes = atrib;

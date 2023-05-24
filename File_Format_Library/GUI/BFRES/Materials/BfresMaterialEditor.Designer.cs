@@ -67,17 +67,17 @@
             // 
             // columnHeader7
             // 
-            this.columnHeader7.Text = "Name";
+            this.columnHeader7.Text = "名称";
             this.columnHeader7.Width = 267;
             // 
             // columnHeader8
             // 
-            this.columnHeader8.Text = "Value";
+            this.columnHeader8.Text = "值";
             this.columnHeader8.Width = 169;
             // 
             // columnHeader9
             // 
-            this.columnHeader9.Text = "Format";
+            this.columnHeader9.Text = "格式";
             this.columnHeader9.Width = 44;
             // 
             // chkboxVisible
@@ -89,7 +89,7 @@
             this.chkboxVisible.Name = "chkboxVisible";
             this.chkboxVisible.Size = new System.Drawing.Size(56, 17);
             this.chkboxVisible.TabIndex = 43;
-            this.chkboxVisible.Text = "Visible";
+            this.chkboxVisible.Text = "可用";
             this.chkboxVisible.UseVisualStyleBackColor = true;
             this.chkboxVisible.CheckedChanged += new System.EventHandler(this.chkboxVisible_CheckedChanged);
             // 
@@ -100,7 +100,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 13);
             this.label3.TabIndex = 42;
-            this.label3.Text = "Shader Model";
+            this.label3.Text = "着色器";
             // 
             // textBoxShaderModel
             // 
@@ -136,7 +136,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(530, 510);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Textures";
+            this.tabPage2.Text = "纹理";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // samplerEditor1
@@ -155,7 +155,7 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(530, 510);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Parameters";
+            this.tabPage3.Text = "参数";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // shaderParamEditor1
@@ -174,7 +174,7 @@
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(530, 510);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Render Info";
+            this.tabPage4.Text = "渲染信息";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // renderInfoEditor1
@@ -193,7 +193,7 @@
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage5.Size = new System.Drawing.Size(530, 510);
             this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Shader Options";
+            this.tabPage5.Text = "着色器选项";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // shaderOptionsEditor1
@@ -212,7 +212,7 @@
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage6.Size = new System.Drawing.Size(530, 510);
             this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "User Data";
+            this.tabPage6.Text = "用户数据";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // userDataEditor
@@ -230,7 +230,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 13);
             this.label2.TabIndex = 40;
-            this.label2.Text = "Shader Archive";
+            this.label2.Text = "着色器存档";
             // 
             // textBoxShaderArchive
             // 
@@ -248,7 +248,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 38;
-            this.label1.Text = "Name";
+            this.label1.Text = "名称";
             // 
             // textBoxMaterialName
             // 
@@ -266,7 +266,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(67, 13);
             this.stLabel1.TabIndex = 44;
-            this.stLabel1.Text = "Violate Flags";
+            this.stLabel1.Text = "违反标志";
             // 
             // btnViotileFlags
             // 
@@ -295,7 +295,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(80, 13);
             this.stLabel2.TabIndex = 46;
-            this.stLabel2.Text = "Sampler Inputs:";
+            this.stLabel2.Text = "采样器输入:";
             // 
             // btnAttributeInputEditor
             // 
@@ -314,7 +314,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(81, 13);
             this.stLabel3.TabIndex = 48;
-            this.stLabel3.Text = "Attribute Inputs:";
+            this.stLabel3.Text = "属性输入:";
             // 
             // stButton1
             // 
@@ -333,7 +333,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(42, 13);
             this.stLabel4.TabIndex = 50;
-            this.stLabel4.Text = "Presets";
+            this.stLabel4.Text = "预设";
             // 
             // FMATEditor
             // 

@@ -50,7 +50,7 @@
             this.chkAlphaInterpolation.Name = "chkAlphaInterpolation";
             this.chkAlphaInterpolation.Size = new System.Drawing.Size(147, 17);
             this.chkAlphaInterpolation.TabIndex = 0;
-            this.chkAlphaInterpolation.Text = "Threshold Alpha Blending";
+            this.chkAlphaInterpolation.Text = "阈值Alpha混合";
             this.chkAlphaInterpolation.UseVisualStyleBackColor = true;
             // 
             // stLabel1
@@ -60,7 +60,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(62, 13);
             this.stLabel1.TabIndex = 2;
-            this.stLabel1.Text = "White Color";
+            this.stLabel1.Text = "白色";
             // 
             // stLabel2
             // 
@@ -69,7 +69,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(61, 13);
             this.stLabel2.TabIndex = 4;
-            this.stLabel2.Text = "Black Color";
+            this.stLabel2.Text = "黑色";
             // 
             // whiteColorPB
             // 
@@ -114,7 +114,7 @@
             this.stLabel5.Name = "stLabel5";
             this.stLabel5.Size = new System.Drawing.Size(62, 13);
             this.stLabel5.TabIndex = 11;
-            this.stLabel5.Text = "Tev Color 1";
+            this.stLabel5.Text = "Tev颜色 1";
             // 
             // tevColor2PB
             // 
@@ -135,7 +135,7 @@
             this.stLabel6.Name = "stLabel6";
             this.stLabel6.Size = new System.Drawing.Size(62, 13);
             this.stLabel6.TabIndex = 13;
-            this.stLabel6.Text = "Tev Color 2";
+            this.stLabel6.Text = "Tev颜色 2";
             // 
             // tevColor4PB
             // 
@@ -168,7 +168,7 @@
             this.stLabel7.Name = "stLabel7";
             this.stLabel7.Size = new System.Drawing.Size(62, 13);
             this.stLabel7.TabIndex = 17;
-            this.stLabel7.Text = "Tev Color 4";
+            this.stLabel7.Text = "Tev颜色 4";
             // 
             // stLabel8
             // 
@@ -177,7 +177,7 @@
             this.stLabel8.Name = "stLabel8";
             this.stLabel8.Size = new System.Drawing.Size(62, 13);
             this.stLabel8.TabIndex = 15;
-            this.stLabel8.Text = "Tev Color 3";
+            this.stLabel8.Text = "Tev颜色 3";
             // 
             // PaneMatCTRColorEditor
             // 

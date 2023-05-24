@@ -137,7 +137,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(53, 13);
             this.stLabel2.TabIndex = 3;
-            this.stLabel2.Text = "User Info:";
+            this.stLabel2.Text = "用户信息:";
             // 
             // nameTB
             // 
@@ -155,7 +155,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(38, 13);
             this.stLabel1.TabIndex = 1;
-            this.stLabel1.Text = "Name:";
+            this.stLabel1.Text = "名称:";
             // 
             // stDropDownPanel2
             // 
@@ -626,7 +626,7 @@
             this.stLabel5.Name = "stLabel5";
             this.stLabel5.Size = new System.Drawing.Size(30, 13);
             this.stLabel5.TabIndex = 41;
-            this.stLabel5.Text = "Size:";
+            this.stLabel5.Text = "大小:";
             // 
             // stLabel4
             // 
@@ -635,7 +635,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(37, 13);
             this.stLabel4.TabIndex = 40;
-            this.stLabel4.Text = "Scale:";
+            this.stLabel4.Text = "缩放:";
             // 
             // stLabel3
             // 
@@ -644,7 +644,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(42, 13);
             this.stLabel3.TabIndex = 39;
-            this.stLabel3.Text = "Rotate:";
+            this.stLabel3.Text = "旋转:";
             // 
             // stLabel6
             // 
@@ -653,7 +653,7 @@
             this.stLabel6.Name = "stLabel6";
             this.stLabel6.Size = new System.Drawing.Size(54, 13);
             this.stLabel6.TabIndex = 38;
-            this.stLabel6.Text = "Translate:";
+            this.stLabel6.Text = "移动:";
             // 
             // stDropDownPanel3
             // 
@@ -755,7 +755,7 @@
             this.stLabel7.Name = "stLabel7";
             this.stLabel7.Size = new System.Drawing.Size(37, 13);
             this.stLabel7.TabIndex = 49;
-            this.stLabel7.Text = "Alpha:";
+            this.stLabel7.Text = "阿尔法:";
             // 
             // stDropDownPanel4
             // 
@@ -790,7 +790,7 @@
             this.radioBottomLeftBtn.Size = new System.Drawing.Size(79, 17);
             this.radioBottomLeftBtn.TabIndex = 9;
             this.radioBottomLeftBtn.TabStop = true;
-            this.radioBottomLeftBtn.Text = "Bottom Left";
+            this.radioBottomLeftBtn.Text = "左下";
             this.radioBottomLeftBtn.UseVisualStyleBackColor = true;
             // 
             // radioTopLeftBtn
@@ -801,7 +801,7 @@
             this.radioTopLeftBtn.Size = new System.Drawing.Size(65, 17);
             this.radioTopLeftBtn.TabIndex = 8;
             this.radioTopLeftBtn.TabStop = true;
-            this.radioTopLeftBtn.Text = "Top Left";
+            this.radioTopLeftBtn.Text = "左上";
             this.radioTopLeftBtn.UseVisualStyleBackColor = true;
             // 
             // radioLeftBtn
@@ -812,7 +812,7 @@
             this.radioLeftBtn.Size = new System.Drawing.Size(43, 17);
             this.radioLeftBtn.TabIndex = 7;
             this.radioLeftBtn.TabStop = true;
-            this.radioLeftBtn.Text = "Left";
+            this.radioLeftBtn.Text = "左";
             this.radioLeftBtn.UseVisualStyleBackColor = true;
             // 
             // radioBottomRightBtn
@@ -823,7 +823,7 @@
             this.radioBottomRightBtn.Size = new System.Drawing.Size(86, 17);
             this.radioBottomRightBtn.TabIndex = 6;
             this.radioBottomRightBtn.TabStop = true;
-            this.radioBottomRightBtn.Text = "Bottom Right";
+            this.radioBottomRightBtn.Text = "右下";
             this.radioBottomRightBtn.UseVisualStyleBackColor = true;
             // 
             // radioTopRightBtn
@@ -834,7 +834,7 @@
             this.radioTopRightBtn.Size = new System.Drawing.Size(72, 17);
             this.radioTopRightBtn.TabIndex = 5;
             this.radioTopRightBtn.TabStop = true;
-            this.radioTopRightBtn.Text = "Top Right";
+            this.radioTopRightBtn.Text = "右上";
             this.radioTopRightBtn.UseVisualStyleBackColor = true;
             // 
             // radioRightBtn
@@ -845,7 +845,7 @@
             this.radioRightBtn.Size = new System.Drawing.Size(50, 17);
             this.radioRightBtn.TabIndex = 4;
             this.radioRightBtn.TabStop = true;
-            this.radioRightBtn.Text = "Right";
+            this.radioRightBtn.Text = "右";
             this.radioRightBtn.UseVisualStyleBackColor = true;
             // 
             // radioBottomBtn
@@ -856,7 +856,7 @@
             this.radioBottomBtn.Size = new System.Drawing.Size(58, 17);
             this.radioBottomBtn.TabIndex = 3;
             this.radioBottomBtn.TabStop = true;
-            this.radioBottomBtn.Text = "Bottom";
+            this.radioBottomBtn.Text = "下";
             this.radioBottomBtn.UseVisualStyleBackColor = true;
             // 
             // radioTopBtn
@@ -867,7 +867,7 @@
             this.radioTopBtn.Size = new System.Drawing.Size(44, 17);
             this.radioTopBtn.TabIndex = 2;
             this.radioTopBtn.TabStop = true;
-            this.radioTopBtn.Text = "Top";
+            this.radioTopBtn.Text = "上";
             this.radioTopBtn.UseVisualStyleBackColor = true;
             // 
             // radioCenterBtn
@@ -878,7 +878,7 @@
             this.radioCenterBtn.Size = new System.Drawing.Size(56, 17);
             this.radioCenterBtn.TabIndex = 1;
             this.radioCenterBtn.TabStop = true;
-            this.radioCenterBtn.Text = "Center";
+            this.radioCenterBtn.Text = "中心";
             this.radioCenterBtn.UseVisualStyleBackColor = true;
             // 
             // stDropDownPanel5
@@ -914,7 +914,7 @@
             this.radioBottomLeftBtnParent.Size = new System.Drawing.Size(79, 17);
             this.radioBottomLeftBtnParent.TabIndex = 9;
             this.radioBottomLeftBtnParent.TabStop = true;
-            this.radioBottomLeftBtnParent.Text = "Bottom Left";
+            this.radioBottomLeftBtnParent.Text = "左下";
             this.radioBottomLeftBtnParent.UseVisualStyleBackColor = true;
             // 
             // radioTopLeftBtnParent
@@ -925,7 +925,7 @@
             this.radioTopLeftBtnParent.Size = new System.Drawing.Size(65, 17);
             this.radioTopLeftBtnParent.TabIndex = 8;
             this.radioTopLeftBtnParent.TabStop = true;
-            this.radioTopLeftBtnParent.Text = "Top Left";
+            this.radioTopLeftBtnParent.Text = "左上";
             this.radioTopLeftBtnParent.UseVisualStyleBackColor = true;
             // 
             // radioLeftBtnParent
@@ -936,7 +936,7 @@
             this.radioLeftBtnParent.Size = new System.Drawing.Size(43, 17);
             this.radioLeftBtnParent.TabIndex = 7;
             this.radioLeftBtnParent.TabStop = true;
-            this.radioLeftBtnParent.Text = "Left";
+            this.radioLeftBtnParent.Text = "左";
             this.radioLeftBtnParent.UseVisualStyleBackColor = true;
             // 
             // radioBottomRightBtnParent
@@ -947,7 +947,7 @@
             this.radioBottomRightBtnParent.Size = new System.Drawing.Size(86, 17);
             this.radioBottomRightBtnParent.TabIndex = 6;
             this.radioBottomRightBtnParent.TabStop = true;
-            this.radioBottomRightBtnParent.Text = "Bottom Right";
+            this.radioBottomRightBtnParent.Text = "右下";
             this.radioBottomRightBtnParent.UseVisualStyleBackColor = true;
             // 
             // radioTopRightBtnParent
@@ -958,7 +958,7 @@
             this.radioTopRightBtnParent.Size = new System.Drawing.Size(72, 17);
             this.radioTopRightBtnParent.TabIndex = 5;
             this.radioTopRightBtnParent.TabStop = true;
-            this.radioTopRightBtnParent.Text = "Top Right";
+            this.radioTopRightBtnParent.Text = "右上";
             this.radioTopRightBtnParent.UseVisualStyleBackColor = true;
             // 
             // radioRightBtnParent
@@ -969,7 +969,7 @@
             this.radioRightBtnParent.Size = new System.Drawing.Size(50, 17);
             this.radioRightBtnParent.TabIndex = 4;
             this.radioRightBtnParent.TabStop = true;
-            this.radioRightBtnParent.Text = "Right";
+            this.radioRightBtnParent.Text = "右";
             this.radioRightBtnParent.UseVisualStyleBackColor = true;
             // 
             // radioBottomBtnParent
@@ -980,7 +980,7 @@
             this.radioBottomBtnParent.Size = new System.Drawing.Size(58, 17);
             this.radioBottomBtnParent.TabIndex = 3;
             this.radioBottomBtnParent.TabStop = true;
-            this.radioBottomBtnParent.Text = "Bottom";
+            this.radioBottomBtnParent.Text = "下";
             this.radioBottomBtnParent.UseVisualStyleBackColor = true;
             // 
             // radioTopBtnParent
@@ -991,7 +991,7 @@
             this.radioTopBtnParent.Size = new System.Drawing.Size(44, 17);
             this.radioTopBtnParent.TabIndex = 2;
             this.radioTopBtnParent.TabStop = true;
-            this.radioTopBtnParent.Text = "Top";
+            this.radioTopBtnParent.Text = "上";
             this.radioTopBtnParent.UseVisualStyleBackColor = true;
             // 
             // radioCenterBtnParent
@@ -1002,7 +1002,7 @@
             this.radioCenterBtnParent.Size = new System.Drawing.Size(56, 17);
             this.radioCenterBtnParent.TabIndex = 1;
             this.radioCenterBtnParent.TabStop = true;
-            this.radioCenterBtnParent.Text = "Center";
+            this.radioCenterBtnParent.Text = "中心";
             this.radioCenterBtnParent.UseVisualStyleBackColor = true;
             // 
             // partPaneScalingCB
@@ -1025,7 +1025,7 @@
             this.stLabel8.Name = "stLabel8";
             this.stLabel8.Size = new System.Drawing.Size(67, 13);
             this.stLabel8.TabIndex = 53;
-            this.stLabel8.Text = "Part Scaling:";
+            this.stLabel8.Text = "部件缩放比例:";
             // 
             // BasePaneEditor
             // 

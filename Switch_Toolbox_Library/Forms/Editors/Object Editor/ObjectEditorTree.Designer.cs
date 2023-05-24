@@ -206,7 +206,7 @@
             this.activeEditorChkBox.Name = "activeEditorChkBox";
             this.activeEditorChkBox.Size = new System.Drawing.Size(144, 17);
             this.activeEditorChkBox.TabIndex = 3;
-            this.activeEditorChkBox.Text = "Add Files to Active Editor";
+            this.activeEditorChkBox.Text = "将文件添加到活动编辑器";
             this.activeEditorChkBox.UseVisualStyleBackColor = true;
             this.activeEditorChkBox.CheckedChanged += new System.EventHandler(this.activeEditorChkBox_CheckedChanged);
             // 
@@ -241,13 +241,13 @@
             this.openToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 22);
-            this.fileToolStripMenuItem.Text = "File";
+            this.fileToolStripMenuItem.Text = "文件";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.openToolStripMenuItem.Text = "Add File";
+            this.openToolStripMenuItem.Text = "添加文件";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // viewToolStripMenuItem
@@ -257,13 +257,13 @@
             this.dockSearchListToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
-            this.viewToolStripMenuItem.Text = "View";
+            this.viewToolStripMenuItem.Text = "查看";
             // 
             // sortToolStripMenuItem
             // 
             this.sortToolStripMenuItem.Name = "sortToolStripMenuItem";
             this.sortToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.sortToolStripMenuItem.Text = "Sort";
+            this.sortToolStripMenuItem.Text = "排序";
             this.sortToolStripMenuItem.Click += new System.EventHandler(this.sortToolStripMenuItem_Click);
             // 
             // dockSearchListToolStripMenuItem
@@ -271,7 +271,7 @@
             this.dockSearchListToolStripMenuItem.CheckOnClick = true;
             this.dockSearchListToolStripMenuItem.Name = "dockSearchListToolStripMenuItem";
             this.dockSearchListToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.dockSearchListToolStripMenuItem.Text = "Dock Search List";
+            this.dockSearchListToolStripMenuItem.Text = "停靠搜索列表";
             this.dockSearchListToolStripMenuItem.Click += new System.EventHandler(this.dockSearchListToolStripMenuItem_Click);
             // 
             // stPanel2

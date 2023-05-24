@@ -171,7 +171,7 @@ namespace FirstPlugin
         public ToolStripItem[] GetContextMenuItems()
         {
             List<ToolStripItem> Items = new List<ToolStripItem>();
-            Items.Add(new ToolStripMenuItem("Rename Actor Files (Odyssey)", null, RenameActors, Keys.Control | Keys.R));
+            Items.Add(new ToolStripMenuItem("重命名Actor文件 (Odyssey)", null, RenameActors, Keys.Control | Keys.R));
             return Items.ToArray();
         }
 

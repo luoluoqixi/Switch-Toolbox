@@ -99,12 +99,12 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Message";
+            this.columnHeader1.Text = "信息";
             this.columnHeader1.Width = 172;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Date";
+            this.columnHeader2.Text = "日期";
             this.columnHeader2.Width = 368;
             // 
             // stTextBox1
@@ -125,7 +125,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(283, 13);
             this.stLabel1.TabIndex = 15;
-            this.stLabel1.Text = "Updates are found! Would you like to update to the latest?";
+            this.stLabel1.Text = "找到更新！是否要更新到最新版本?";
             // 
             // stLabel2
             // 
@@ -135,7 +135,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(39, 13);
             this.stLabel2.TabIndex = 16;
-            this.stLabel2.Text = "Details";
+            this.stLabel2.Text = "详情";
             // 
             // GithubUpdateDialog
             // 
@@ -143,7 +143,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(549, 398);
             this.Name = "GithubUpdateDialog";
-            this.Text = "Github Update";
+            this.Text = "Github更新";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             this.ResumeLayout(false);

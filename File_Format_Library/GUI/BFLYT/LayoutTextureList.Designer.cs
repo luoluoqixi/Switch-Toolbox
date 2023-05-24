@@ -63,7 +63,7 @@
             this.btnAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(23, 22);
-            this.btnAdd.Text = "Add Texture";
+            this.btnAdd.Text = "增加纹理";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnEdit
@@ -73,7 +73,7 @@
             this.btnEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(23, 22);
-            this.btnEdit.Text = "Edit Texture";
+            this.btnEdit.Text = "编辑纹理";
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnRemove
@@ -83,7 +83,7 @@
             this.btnRemove.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(23, 22);
-            this.btnRemove.Text = "Remove Texture";
+            this.btnRemove.Text = "移除纹理";
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // listViewTpyeCB
@@ -125,25 +125,25 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Name";
+            this.columnHeader1.Text = "名称";
             this.columnHeader1.Width = 118;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Format";
+            this.columnHeader2.Text = "格式";
             this.columnHeader2.Width = 101;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Width";
+            this.columnHeader3.Text = "宽度";
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Hieght";
+            this.columnHeader4.Text = "高度";
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "Size";
+            this.columnHeader5.Text = "大小";
             this.columnHeader5.Width = 194;
             // 
             // LayoutTextureList

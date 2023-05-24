@@ -50,7 +50,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(74, 13);
             this.stLabel1.TabIndex = 1;
-            this.stLabel1.Text = "Search Paths:";
+            this.stLabel1.Text = "搜索路径:";
             // 
             // stButton1
             // 
@@ -59,7 +59,7 @@
             this.stButton1.Name = "stButton1";
             this.stButton1.Size = new System.Drawing.Size(75, 23);
             this.stButton1.TabIndex = 2;
-            this.stButton1.Text = "Add";
+            this.stButton1.Text = "添加";
             this.stButton1.UseVisualStyleBackColor = false;
             // 
             // LayoutPartsEditor
@@ -71,7 +71,7 @@
             this.Controls.Add(this.stLabel1);
             this.Controls.Add(this.listView1);
             this.Name = "LayoutPartsEditor";
-            this.Text = "Parts Editor";
+            this.Text = "零件编辑器";
             this.ResumeLayout(false);
             this.PerformLayout();
 

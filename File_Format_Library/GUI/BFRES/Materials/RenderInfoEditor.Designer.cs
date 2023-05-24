@@ -45,7 +45,7 @@
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(75, 23);
             this.btnRemove.TabIndex = 26;
-            this.btnRemove.Text = "Remove";
+            this.btnRemove.Text = "移除";
             this.btnRemove.UseVisualStyleBackColor = true;
             this.btnRemove.Click += new System.EventHandler(this.btnRemoveRenderInfo_Click);
             // 
@@ -56,7 +56,7 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 25;
-            this.btnAdd.Text = "Add";
+            this.btnAdd.Text = "添加";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAddRenderInfo_Click);
             // 
@@ -82,12 +82,12 @@
             // 
             // columnHeader10
             // 
-            this.columnHeader10.Text = "Name";
+            this.columnHeader10.Text = "名称";
             this.columnHeader10.Width = 267;
             // 
             // columnHeader11
             // 
-            this.columnHeader11.Text = "Value";
+            this.columnHeader11.Text = "值";
             this.columnHeader11.Width = 149;
             // 
             // btnEdit
@@ -98,7 +98,7 @@
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
             this.btnEdit.TabIndex = 27;
-            this.btnEdit.Text = "Edit";
+            this.btnEdit.Text = "编辑";
             this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 

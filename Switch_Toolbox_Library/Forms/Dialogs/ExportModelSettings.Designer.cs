@@ -72,7 +72,7 @@
             this.exportTexturesChkBox.Name = "exportTexturesChkBox";
             this.exportTexturesChkBox.Size = new System.Drawing.Size(100, 17);
             this.exportTexturesChkBox.TabIndex = 11;
-            this.exportTexturesChkBox.Text = "Export Textures";
+            this.exportTexturesChkBox.Text = "导出纹理";
             this.exportTexturesChkBox.UseVisualStyleBackColor = true;
             this.exportTexturesChkBox.CheckedChanged += new System.EventHandler(this.exportTexturesChkBox_CheckedChanged);
             // 
@@ -84,7 +84,7 @@
             this.stButton1.Name = "stButton1";
             this.stButton1.Size = new System.Drawing.Size(75, 23);
             this.stButton1.TabIndex = 12;
-            this.stButton1.Text = "Cancel";
+            this.stButton1.Text = "取消";
             this.stButton1.UseVisualStyleBackColor = false;
             // 
             // stButton2
@@ -105,7 +105,7 @@
             this.chkFlipUvsVertical.Name = "chkFlipUvsVertical";
             this.chkFlipUvsVertical.Size = new System.Drawing.Size(101, 17);
             this.chkFlipUvsVertical.TabIndex = 14;
-            this.chkFlipUvsVertical.Text = "Flp UVs Vertical";
+            this.chkFlipUvsVertical.Text = "Flp UV垂直";
             this.chkFlipUvsVertical.UseVisualStyleBackColor = true;
             this.chkFlipUvsVertical.CheckedChanged += new System.EventHandler(this.chkFlipUvsVertical_CheckedChanged);
             // 
@@ -116,7 +116,7 @@
             this.chkOldExporter.Name = "chkOldExporter";
             this.chkOldExporter.Size = new System.Drawing.Size(200, 17);
             this.chkOldExporter.TabIndex = 15;
-            this.chkOldExporter.Text = "Use Old Exporter (If new one breaks)";
+            this.chkOldExporter.Text = "使用旧导出器（如果新导出器损坏）";
             this.chkOldExporter.UseVisualStyleBackColor = true;
             this.chkOldExporter.CheckedChanged += new System.EventHandler(this.stCheckBox1_CheckedChanged);
             // 
@@ -129,7 +129,7 @@
             this.chkVertexColors.Name = "chkVertexColors";
             this.chkVertexColors.Size = new System.Drawing.Size(121, 17);
             this.chkVertexColors.TabIndex = 16;
-            this.chkVertexColors.Text = "Export Vertex Colors";
+            this.chkVertexColors.Text = "导出顶点颜色";
             this.chkVertexColors.UseVisualStyleBackColor = true;
             this.chkVertexColors.CheckedChanged += new System.EventHandler(this.chkVertexColors_CheckedChanged);
             // 
@@ -141,7 +141,7 @@
             this.chkExportRiggedBonesOnly.Name = "chkExportRiggedBonesOnly";
             this.chkExportRiggedBonesOnly.Size = new System.Drawing.Size(150, 17);
             this.chkExportRiggedBonesOnly.TabIndex = 17;
-            this.chkExportRiggedBonesOnly.Text = "Export Only Rigged Bones";
+            this.chkExportRiggedBonesOnly.Text = "仅导出装配的骨骼";
             this.chkExportRiggedBonesOnly.UseVisualStyleBackColor = true;
             this.chkExportRiggedBonesOnly.CheckedChanged += new System.EventHandler(this.chkExportRiggedBonesOnly_CheckedChanged);
             // 
@@ -152,7 +152,7 @@
             this.chkApplyUVTransforms.Name = "chkApplyUVTransforms";
             this.chkApplyUVTransforms.Size = new System.Drawing.Size(187, 17);
             this.chkApplyUVTransforms.TabIndex = 18;
-            this.chkApplyUVTransforms.Text = "Apply UV Transforms (diffuse only)";
+            this.chkApplyUVTransforms.Text = "应用UV变换(仅漫反射)";
             this.chkApplyUVTransforms.UseVisualStyleBackColor = true;
             this.chkApplyUVTransforms.CheckedChanged += new System.EventHandler(this.chkApplyUVTransforms_CheckedChanged);
             // 
@@ -165,7 +165,7 @@
             this.chkTextureChannelComps.Name = "chkTextureChannelComps";
             this.chkTextureChannelComps.Size = new System.Drawing.Size(161, 17);
             this.chkTextureChannelComps.TabIndex = 19;
-            this.chkTextureChannelComps.Text = "Use Texture Channel Swaps";
+            this.chkTextureChannelComps.Text = "使用纹理通道交换";
             this.chkTextureChannelComps.UseVisualStyleBackColor = true;
             this.chkTextureChannelComps.CheckedChanged += new System.EventHandler(this.chkTextureChannelComps_CheckedChanged);
             // 
@@ -175,7 +175,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(344, 272);
             this.Name = "ExportModelSettings";
-            this.Text = "Export Settings";
+            this.Text = "导出设定";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             this.ResumeLayout(false);

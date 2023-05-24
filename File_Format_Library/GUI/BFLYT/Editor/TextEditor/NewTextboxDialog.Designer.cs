@@ -81,7 +81,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(64, 13);
             this.stLabel1.TabIndex = 2;
-            this.stLabel1.Text = "Select Font:";
+            this.stLabel1.Text = "选择字体:";
             // 
             // btnAdd
             // 
@@ -90,7 +90,7 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 3;
-            this.btnAdd.Text = "Add";
+            this.btnAdd.Text = "添加";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -112,7 +112,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(76, 13);
             this.stLabel2.TabIndex = 12;
-            this.stLabel2.Text = "Text (Optional)";
+            this.stLabel2.Text = "文本（可选）";
             // 
             // NewTextboxDialog
             // 
@@ -120,7 +120,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(447, 243);
             this.Name = "NewTextboxDialog";
-            this.Text = "New Textbox";
+            this.Text = "新建文本框";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             this.ResumeLayout(false);

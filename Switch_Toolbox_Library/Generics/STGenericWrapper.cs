@@ -63,25 +63,25 @@ namespace Toolbox.Library.NodeWrappers
             {
                 return new ToolStripItem[]
                 {
-                    new ToolStripMenuItem("Import", null, ImportAction, Keys.Control | Keys.I) {Enabled = CanReplace },
-                    new ToolStripMenuItem("Export All", null, ExportAllAction, Keys.Control | Keys.E)  {Enabled = CanExport },
-                    new ToolStripMenuItem("Replace All", null, ReplaceAllAction, Keys.Control | Keys.R) {Enabled = CanReplace },
+                    new ToolStripMenuItem("导入", null, ImportAction, Keys.Control | Keys.I) {Enabled = CanReplace },
+                    new ToolStripMenuItem("导出全部", null, ExportAllAction, Keys.Control | Keys.E)  {Enabled = CanExport },
+                    new ToolStripMenuItem("替换全部", null, ReplaceAllAction, Keys.Control | Keys.R) {Enabled = CanReplace },
                     new ToolStripSeparator(),
-                    new ToolStripMenuItem("Sort", null, SortAction, Keys.Control | Keys.N),
+                    new ToolStripMenuItem("排序", null, SortAction, Keys.Control | Keys.N),
                     new ToolStripSeparator(),
-                    new ToolStripMenuItem("Clear", null, ClearAction, Keys.Control | Keys.Delete) {Enabled = CanDelete } ,
+                    new ToolStripMenuItem("清除", null, ClearAction, Keys.Control | Keys.Delete) {Enabled = CanDelete } ,
                 };
             }
             else
             {
                 return new ToolStripItem[]
                 {
-                    new ToolStripMenuItem("Export", null, ExportAction, Keys.Control | Keys.E) {Enabled = CanExport },
-                    new ToolStripMenuItem("Replace", null, ReplaceAction, Keys.Control | Keys.R) {Enabled = CanReplace },
+                    new ToolStripMenuItem("导出", null, ExportAction, Keys.Control | Keys.E) {Enabled = CanExport },
+                    new ToolStripMenuItem("替换", null, ReplaceAction, Keys.Control | Keys.R) {Enabled = CanReplace },
                     new ToolStripSeparator(),
-                    new ToolStripMenuItem("Rename", null, RenameAction, Keys.Control | Keys.N) {Enabled = CanRename },
+                    new ToolStripMenuItem("重命名", null, RenameAction, Keys.Control | Keys.N) {Enabled = CanRename },
                     new ToolStripSeparator(),
-                    new ToolStripMenuItem("Delete", null, DeleteAction, Keys.Control | Keys.Delete) {Enabled = CanDelete },
+                    new ToolStripMenuItem("删除", null, DeleteAction, Keys.Control | Keys.Delete) {Enabled = CanDelete },
                 };
             }
         }
@@ -238,7 +238,7 @@ namespace Toolbox.Library.NodeWrappers
 
         public virtual void Clear()
         {
-            var result = MessageBox.Show("Are you sure you want to clear this section? This cannot be undone!",
+            var result = MessageBox.Show("是否确实要清除此分区？这无法撤消!",
                 "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)

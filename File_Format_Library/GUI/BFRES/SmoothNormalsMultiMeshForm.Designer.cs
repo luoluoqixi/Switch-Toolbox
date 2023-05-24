@@ -67,7 +67,7 @@
             this.stButton1.Name = "stButton1";
             this.stButton1.Size = new System.Drawing.Size(75, 23);
             this.stButton1.TabIndex = 12;
-            this.stButton1.Text = "Cancel";
+            this.stButton1.Text = "取消";
             this.stButton1.UseVisualStyleBackColor = false;
             // 
             // stButton2
@@ -88,7 +88,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(549, 398);
             this.Name = "SmoothNormalsMultiMeshForm";
-            this.Text = "Smooth Normals : Select Meshes";
+            this.Text = "平滑法线 ：选择网格";
             this.contentContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 

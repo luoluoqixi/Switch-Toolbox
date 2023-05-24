@@ -66,7 +66,7 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Defeault Extensions";
+            this.columnHeader1.Text = "默认扩展";
             this.columnHeader1.Width = 246;
             // 
             // chkAll
@@ -77,7 +77,7 @@
             this.chkAll.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.chkAll.Size = new System.Drawing.Size(71, 17);
             this.chkAll.TabIndex = 12;
-            this.chkAll.Text = "Check All";
+            this.chkAll.Text = "检查所有";
             this.chkAll.UseVisualStyleBackColor = true;
             this.chkAll.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -89,7 +89,7 @@
             this.stButton1.Name = "stButton1";
             this.stButton1.Size = new System.Drawing.Size(75, 23);
             this.stButton1.TabIndex = 13;
-            this.stButton1.Text = "Save";
+            this.stButton1.Text = "保存";
             this.stButton1.UseVisualStyleBackColor = false;
             this.stButton1.Click += new System.EventHandler(this.stButton1_Click);
             // 
@@ -101,7 +101,7 @@
             this.stButton2.Name = "stButton2";
             this.stButton2.Size = new System.Drawing.Size(75, 23);
             this.stButton2.TabIndex = 14;
-            this.stButton2.Text = "Cancel";
+            this.stButton2.Text = "取消";
             this.stButton2.UseVisualStyleBackColor = false;
             // 
             // columnHeader2
@@ -114,7 +114,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(295, 354);
             this.Name = "FileAssociationForm";
-            this.Text = "File Association";
+            this.Text = "文件关联";
             this.Load += new System.EventHandler(this.FileAssociationForm_Load);
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();

@@ -65,7 +65,7 @@
             this.encodeHDRAlphaChk.Name = "encodeHDRAlphaChk";
             this.encodeHDRAlphaChk.Size = new System.Drawing.Size(125, 17);
             this.encodeHDRAlphaChk.TabIndex = 12;
-            this.encodeHDRAlphaChk.Text = "View Encoded Alpha";
+            this.encodeHDRAlphaChk.Text = "查看编码Alpha";
             this.encodeHDRAlphaChk.UseVisualStyleBackColor = true;
             this.encodeHDRAlphaChk.CheckedChanged += new System.EventHandler(this.encodeHDRAlphaChk_CheckedChanged);
             // 
@@ -100,13 +100,13 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(46, 13);
             this.stLabel1.TabIndex = 14;
-            this.stLabel1.Text = "Gamma:";
+            this.stLabel1.Text = "伽马:";
             // 
             // CubeMapFaceViewer3D
             // 
             this.ClientSize = new System.Drawing.Size(589, 460);
             this.Name = "CubeMapFaceViewer3D";
-            this.Text = "CubeMapFaceViewer3D";
+            this.Text = "立方体地图人脸查看器3D";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gammaUD)).EndInit();

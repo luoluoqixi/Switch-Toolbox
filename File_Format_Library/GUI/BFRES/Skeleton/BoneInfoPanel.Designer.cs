@@ -58,7 +58,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(38, 13);
             this.stLabel1.TabIndex = 1;
-            this.stLabel1.Text = "Name:";
+            this.stLabel1.Text = "名称:";
             // 
             // stLabel2
             // 
@@ -67,7 +67,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(41, 13);
             this.stLabel2.TabIndex = 3;
-            this.stLabel2.Text = "Parent:";
+            this.stLabel2.Text = "父:";
             // 
             // parentTB
             // 
@@ -95,7 +95,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(40, 13);
             this.stLabel3.TabIndex = 5;
-            this.stLabel3.Text = "Vsibile:";
+            this.stLabel3.Text = "可见:";
             // 
             // parentIndexUD
             // 
@@ -128,7 +128,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(36, 13);
             this.stLabel4.TabIndex = 7;
-            this.stLabel4.Text = "Index:";
+            this.stLabel4.Text = "索引:";
             // 
             // stLabel5
             // 
@@ -137,7 +137,7 @@
             this.stLabel5.Name = "stLabel5";
             this.stLabel5.Size = new System.Drawing.Size(36, 13);
             this.stLabel5.TabIndex = 9;
-            this.stLabel5.Text = "Index:";
+            this.stLabel5.Text = "索引:";
             // 
             // nameIndexUD
             // 

@@ -21,15 +21,15 @@ namespace Bfres.Structs
     {
         public FMATFolder()
         {
-            Text = "Materials";
+            Text = "材质";
             Name = "FmatFolder";
 
             ContextMenuStrip = new STContextMenuStrip();
 
-            ContextMenuStrip.Items.Add(new ToolStripMenuItem("Import Material", null, ImportAction, Keys.Control | Keys.I));
+            ContextMenuStrip.Items.Add(new ToolStripMenuItem("导入材质", null, ImportAction, Keys.Control | Keys.I));
             ContextMenuStrip.Items.Add(new ToolStripSeparator());
-            ContextMenuStrip.Items.Add(new ToolStripMenuItem("Export All Materials", null, ExportAllAction, Keys.Control | Keys.A));
-            ContextMenuStrip.Items.Add(new ToolStripMenuItem("Replace (From Folder)",null, ReplaceBatchAction, Keys.Control | Keys.R));
+            ContextMenuStrip.Items.Add(new ToolStripMenuItem("导出所有材质", null, ExportAllAction, Keys.Control | Keys.A));
+            ContextMenuStrip.Items.Add(new ToolStripMenuItem("替换 (从文件夹)",null, ReplaceBatchAction, Keys.Control | Keys.R));
         }
 
         public void ExportAllAction(object sender, EventArgs args) { ExportAll(); }
@@ -99,14 +99,14 @@ namespace Bfres.Structs
 
             ContextMenuStrip = new STContextMenuStrip();
 
-            ContextMenuStrip.Items.Add(new ToolStripMenuItem("Export", null, ExportAction, Keys.Control | Keys.E));
-            ContextMenuStrip.Items.Add(new ToolStripMenuItem("Replace", null, ReplaceAction, Keys.Control | Keys.R));
+            ContextMenuStrip.Items.Add(new ToolStripMenuItem("导出", null, ExportAction, Keys.Control | Keys.E));
+            ContextMenuStrip.Items.Add(new ToolStripMenuItem("替换", null, ReplaceAction, Keys.Control | Keys.R));
 
             ContextMenuStrip.Items.Add(new ToolStripSeparator());
-            ContextMenuStrip.Items.Add(new ToolStripMenuItem("Copy", null, CopyAction, Keys.Control | Keys.C));
-            ContextMenuStrip.Items.Add(new ToolStripMenuItem("Rename", null, RenameAction, Keys.Control | Keys.N));
+            ContextMenuStrip.Items.Add(new ToolStripMenuItem("拷贝", null, CopyAction, Keys.Control | Keys.C));
+            ContextMenuStrip.Items.Add(new ToolStripMenuItem("重命名", null, RenameAction, Keys.Control | Keys.N));
             ContextMenuStrip.Items.Add(new ToolStripSeparator());
-            ContextMenuStrip.Items.Add(new ToolStripMenuItem("Delete", null, DeleteAction, Keys.Control | Keys.N));
+            ContextMenuStrip.Items.Add(new ToolStripMenuItem("删除", null, DeleteAction, Keys.Control | Keys.N));
         }
 
         protected void ExportAction(object sender, EventArgs args) { Export(); }
@@ -133,7 +133,7 @@ namespace Bfres.Structs
 
             if (model.materials.Count == 1 && model.shapes.Count > 0)
             {
-                MessageBox.Show("A single material must exist if any objects exist!", "Material Delete",
+                MessageBox.Show("如果存在任何对象，则必须存在单个材质!", "材质删除",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -145,8 +145,8 @@ namespace Bfres.Structs
             }
             if (MappedNames != "")
             {
-                var result = STOptionsDialog.Show("Shapes are mapped to this material. Are you sure you want to remove this? (Will default to first material)",
-                    "Material Delete", MappedNames);
+                var result = STOptionsDialog.Show("形状映射到此材质。是否确实要删除此？（默认为第一种材质）",
+                    "材质删除", MappedNames);
 
                 if (result == DialogResult.Yes)
                     RemoveMaterial(model, CurrentIndex);

@@ -1368,6 +1368,40 @@ namespace FirstPlugin
             else
                 STFileSaver.SaveFileFormat(this, FileName);
         }
+        public void ExportNoDialog(string FileName)
+        {
+            bool IsTex1 = FileName.Contains("Tex1");
+            bool HasTextures = false;
+
+            foreach (TreeNode group in Nodes)
+            {
+                if (group is BFRESGroupNode)
+                {
+                    if (((BFRESGroupNode)group).Type == BRESGroupType.Textures && group.Nodes.Count > 0)
+                        HasTextures = true;
+                }
+            }
+
+            if (IsTex1 && HasTextures)
+            {
+                STFileSaver.SaveFileFormat(this, FileName, false, "", false);
+
+                byte[] Tex2 = GenerateTex2();
+
+                SaveFileDialog sfd = new SaveFileDialog();
+                sfd.FileName = Path.GetFileName(FileName.Replace("Tex1", "Tex2"));
+                sfd.DefaultExt = ".sbfres";
+
+                List<IFileFormat> formats = new List<IFileFormat>();
+                formats.Add(this);
+                sfd.Filter = Utils.GetAllFilters(formats);
+
+                if (sfd.ShowDialog() == DialogResult.OK)
+                    STFileSaver.SaveFileFormat(Tex2, true, new Yaz0(), 0, sfd.FileName);
+            }
+            else
+                STFileSaver.SaveFileFormat(this, FileName, false, "", false);
+        }
 
         private byte[] GenerateTex2()
         {
@@ -1892,7 +1926,7 @@ namespace FirstPlugin
             if (dialogResult == DialogResult.OK)
             {
                 RenameDialog renameDialog = new RenameDialog();
-                renameDialog.Text = "Rename Texture";
+                renameDialog.Text = "重命名纹理";
                 if (renameDialog.ShowDialog() == DialogResult.OK)
                 {
                     shape.Text = renameDialog.textBox1.Text;

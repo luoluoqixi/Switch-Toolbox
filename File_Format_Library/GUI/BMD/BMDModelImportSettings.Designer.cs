@@ -73,7 +73,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(73, 13);
             this.stLabel1.TabIndex = 12;
-            this.stLabel1.Text = "Textures Path";
+            this.stLabel1.Text = "贴图路径";
             // 
             // stLabel2
             // 
@@ -82,7 +82,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(74, 13);
             this.stLabel2.TabIndex = 14;
-            this.stLabel2.Text = "Materials Path";
+            this.stLabel2.Text = "材质路径";
             // 
             // materalPathTB
             // 
@@ -101,7 +101,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(73, 13);
             this.stLabel3.TabIndex = 16;
-            this.stLabel3.Text = "Tri Strip Mode";
+            this.stLabel3.Text = "三条模式";
             // 
             // stComboBox1
             // 
@@ -133,7 +133,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(191, 237);
             this.Name = "BMDModelImportSettings";
-            this.Text = "J3D Import Settings";
+            this.Text = "J3D导入设置";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             this.ResumeLayout(false);

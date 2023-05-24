@@ -57,7 +57,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(78, 31);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Cancel";
+            this.button1.Text = "取消";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
@@ -80,7 +80,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(160, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Select BNTX file to inject texture";
+            this.label1.Text = "选择BNTX文件以注入纹理";
             // 
             // BntxSelector
             // 

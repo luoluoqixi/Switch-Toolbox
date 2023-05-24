@@ -188,7 +188,7 @@
             this.chkDisplayAlpha.Name = "chkDisplayAlpha";
             this.chkDisplayAlpha.Size = new System.Drawing.Size(90, 17);
             this.chkDisplayAlpha.TabIndex = 21;
-            this.chkDisplayAlpha.Text = "Display Alpha";
+            this.chkDisplayAlpha.Text = "显示Alpha";
             this.chkDisplayAlpha.UseVisualStyleBackColor = true;
             this.chkDisplayAlpha.CheckedChanged += new System.EventHandler(this.chkDisplayAlpha_CheckedChanged);
             // 
@@ -199,7 +199,7 @@
             this.displayEncodedHDRAlphaChk.Name = "displayEncodedHDRAlphaChk";
             this.displayEncodedHDRAlphaChk.Size = new System.Drawing.Size(163, 17);
             this.displayEncodedHDRAlphaChk.TabIndex = 22;
-            this.displayEncodedHDRAlphaChk.Text = "Display Encoded HDR Alpha";
+            this.displayEncodedHDRAlphaChk.Text = "显示编码HDR Alpha";
             this.displayEncodedHDRAlphaChk.UseVisualStyleBackColor = true;
             this.displayEncodedHDRAlphaChk.CheckedChanged += new System.EventHandler(this.displayEncodedHDRAlphaChk_CheckedChanged);
             // 
@@ -234,7 +234,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(46, 13);
             this.stLabel1.TabIndex = 24;
-            this.stLabel1.Text = "Gamma:";
+            this.stLabel1.Text = "伽马:";
             // 
             // CubeMapFaceViewer
             // 
@@ -243,7 +243,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(836, 655);
             this.Name = "CubeMapFaceViewer";
-            this.Text = "CubeMap Face View";
+            this.Text = "立方体贴图面视图";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTopFace)).EndInit();

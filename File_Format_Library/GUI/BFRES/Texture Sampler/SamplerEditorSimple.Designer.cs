@@ -107,7 +107,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(29, 13);
             this.stLabel3.TabIndex = 6;
-            this.stLabel3.Text = "Hint:";
+            this.stLabel3.Text = "提示:";
             // 
             // stTextBox2
             // 
@@ -135,7 +135,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(48, 13);
             this.stLabel2.TabIndex = 3;
-            this.stLabel2.Text = "Sampler:";
+            this.stLabel2.Text = "采样:";
             // 
             // stButton1
             // 
@@ -144,7 +144,7 @@
             this.stButton1.Name = "stButton1";
             this.stButton1.Size = new System.Drawing.Size(54, 23);
             this.stButton1.TabIndex = 2;
-            this.stButton1.Text = "Edit:";
+            this.stButton1.Text = "编辑:";
             this.stButton1.UseVisualStyleBackColor = false;
             // 
             // nameTB
@@ -162,7 +162,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(46, 13);
             this.stLabel1.TabIndex = 0;
-            this.stLabel1.Text = "Texture:";
+            this.stLabel1.Text = "纹理:";
             // 
             // stPropertyGrid1
             // 
@@ -190,13 +190,13 @@
             this.displayVerticalToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.viewToolStripMenuItem.Text = "View";
+            this.viewToolStripMenuItem.Text = "视图";
             // 
             // displayVerticalToolStripMenuItem
             // 
             this.displayVerticalToolStripMenuItem.Name = "displayVerticalToolStripMenuItem";
             this.displayVerticalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.displayVerticalToolStripMenuItem.Text = "Display Vertical";
+            this.displayVerticalToolStripMenuItem.Text = "垂直显示";
             this.displayVerticalToolStripMenuItem.Click += new System.EventHandler(this.displayVerticalToolStripMenuItem_Click);
             // 
             // SamplerEditorSimple

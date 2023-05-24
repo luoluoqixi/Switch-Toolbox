@@ -206,7 +206,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(28, 13);
             this.stLabel1.TabIndex = 1;
-            this.stLabel1.Text = "Edit:";
+            this.stLabel1.Text = "编辑:";
             // 
             // originalTextTB
             // 
@@ -228,7 +228,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(45, 13);
             this.stLabel2.TabIndex = 2;
-            this.stLabel2.Text = "Original:";
+            this.stLabel2.Text = "初始:";
             // 
             // hexEditor1
             // 
@@ -248,7 +248,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(55, 13);
             this.stLabel3.TabIndex = 4;
-            this.stLabel3.Text = "Hex View:";
+            this.stLabel3.Text = "十六进制视图:";
             // 
             // stMenuStrip1
             // 
@@ -265,13 +265,13 @@
             // 
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.viewToolStripMenuItem.Text = "View";
+            this.viewToolStripMenuItem.Text = "视图";
             // 
             // loadFontToolStripMenuItem
             // 
             this.loadFontToolStripMenuItem.Name = "loadFontToolStripMenuItem";
             this.loadFontToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
-            this.loadFontToolStripMenuItem.Text = "Load Font";
+            this.loadFontToolStripMenuItem.Text = "载入字型";
             this.loadFontToolStripMenuItem.Click += new System.EventHandler(this.loadFontToolStripMenuItem_Click);
             // 
             // stContextMenuStrip1

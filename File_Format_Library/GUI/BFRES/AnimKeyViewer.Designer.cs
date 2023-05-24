@@ -95,7 +95,7 @@
             this.stButton1.Name = "stButton1";
             this.stButton1.Size = new System.Drawing.Size(96, 23);
             this.stButton1.TabIndex = 1;
-            this.stButton1.Text = "Add";
+            this.stButton1.Text = "添加";
             this.stButton1.UseVisualStyleBackColor = false;
             // 
             // stButton2
@@ -105,7 +105,7 @@
             this.stButton2.Name = "stButton2";
             this.stButton2.Size = new System.Drawing.Size(96, 23);
             this.stButton2.TabIndex = 2;
-            this.stButton2.Text = "Remove";
+            this.stButton2.Text = "移除";
             this.stButton2.UseVisualStyleBackColor = false;
             this.stButton2.Click += new System.EventHandler(this.stButton2_Click);
             // 
@@ -140,7 +140,7 @@
             this.stButton3.Name = "stButton3";
             this.stButton3.Size = new System.Drawing.Size(71, 23);
             this.stButton3.TabIndex = 7;
-            this.stButton3.Text = "Cancel";
+            this.stButton3.Text = "取消";
             this.stButton3.UseVisualStyleBackColor = false;
             // 
             // stButton4
@@ -262,7 +262,7 @@
             // 
             this.ClientSize = new System.Drawing.Size(549, 398);
             this.Name = "AnimKeyViewer";
-            this.Text = "AnimKeyViewer";
+            this.Text = "动画键查看器";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFloat1)).EndInit();

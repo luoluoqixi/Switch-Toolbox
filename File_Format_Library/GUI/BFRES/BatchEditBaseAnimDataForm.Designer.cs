@@ -75,7 +75,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(66, 13);
             this.stLabel1.TabIndex = 12;
-            this.stLabel1.Text = "Bone Target";
+            this.stLabel1.Text = "骨骼目标";
             // 
             // boneListCB
             // 
@@ -180,7 +180,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(415, 264);
             this.Name = "BatchEditBaseAnimDataForm";
-            this.Text = "BatchEditBaseAnimDataForm";
+            this.Text = "批量编辑库动画数据表单";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.scaleXUD)).EndInit();

@@ -45,7 +45,7 @@
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(127, 17);
             this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Don\'t show this again";
+            this.checkBox1.Text = "不再显示此内容";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -70,7 +70,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Useful tips!";
+            this.label1.Text = "实用小建议!";
             // 
             // label2
             // 
@@ -81,7 +81,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Recent (Not Working ATM)";
+            this.label2.Text = "最近（打开的）";
             // 
             // listView1
             // 
@@ -122,7 +122,7 @@
             this.Controls.Add(this.checkBox1);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "Startup_Window";
-            this.Text = "Startup";
+            this.Text = "启动";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

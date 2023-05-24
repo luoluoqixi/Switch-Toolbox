@@ -75,7 +75,7 @@ namespace FirstPlugin.CtrLibrary
         public void AddNode(STGenericWrapper node)
         {
             if (node.Text == string.Empty)
-                throw new System.Exception("Text invalid. Must not be empty!");
+                throw new System.Exception("文本无效。不得为空!");
 
             Nodes.Add(node);
             ResourceNodes.Add(node.Text, node);

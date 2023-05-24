@@ -18,7 +18,7 @@ namespace Toolbox.Library.IO
         /// <param name="Alignment">The Alignment used for compression. Used for Yaz0 compression type. </param>
         /// <param name="EnableDialog">Toggle for showing compression dialog</param>
         /// <returns></returns>
-        public static void SaveFileFormat(IFileFormat FileFormat, string FileName, bool EnableDialog = true, string DetailsLog = "")
+        public static void SaveFileFormat(IFileFormat FileFormat, string FileName, bool EnableDialog = true, string DetailsLog = "", bool isSuccessDialog = true)
         {
             //These always get created on loading a file,however not on creating a new file
             if (FileFormat.IFileInfo == null)
@@ -97,10 +97,13 @@ namespace Toolbox.Library.IO
                 }
             }
 
-            if (compressionLog != string.Empty)
-                MessageBox.Show($"File has been saved to {FileName}. Compressed time: {compressionLog}", "Save Notification");
-            else
-                MessageBox.Show($"File has been saved to {FileName}", "Save Notification");
+            if (isSuccessDialog)
+            {
+                if (compressionLog != string.Empty)
+                    MessageBox.Show($"File has been saved to {FileName}. Compressed time: {compressionLog}", "Save Notification");
+                else
+                    MessageBox.Show($"File has been saved to {FileName}", "Save Notification");
+            }
 
          //   STSaveLogDialog.Show($"File has been saved to {FileName}", "Save Notification", DetailsLog);
             Cursor.Current = Cursors.Default;

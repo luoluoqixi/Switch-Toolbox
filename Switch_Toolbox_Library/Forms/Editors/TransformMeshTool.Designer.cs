@@ -83,7 +83,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 16;
-            this.label2.Text = "Position:";
+            this.label2.Text = "坐标:";
             // 
             // label3
             // 
@@ -122,7 +122,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(50, 13);
             this.label9.TabIndex = 23;
-            this.label9.Text = "Rotation:";
+            this.label9.Text = "旋转:";
             // 
             // label8
             // 
@@ -161,7 +161,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 30;
-            this.label1.Text = "Scale:";
+            this.label1.Text = "缩放:";
             // 
             // label10
             // 
@@ -200,7 +200,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(151, 45);
             this.button2.TabIndex = 37;
-            this.button2.Text = "Update Transforms";
+            this.button2.Text = "更新变换";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -211,7 +211,7 @@
             this.flipX90.Name = "flipX90";
             this.flipX90.Size = new System.Drawing.Size(79, 61);
             this.flipX90.TabIndex = 38;
-            this.flipX90.Text = "Flip X 90";
+            this.flipX90.Text = "翻转 X 90";
             this.flipX90.UseVisualStyleBackColor = true;
             this.flipX90.Click += new System.EventHandler(this.flipX90_Click);
             // 
@@ -222,7 +222,7 @@
             this.flipY90.Name = "flipY90";
             this.flipY90.Size = new System.Drawing.Size(79, 61);
             this.flipY90.TabIndex = 39;
-            this.flipY90.Text = "Flip Y 90";
+            this.flipY90.Text = "翻转 Y 90";
             this.flipY90.UseVisualStyleBackColor = true;
             this.flipY90.Click += new System.EventHandler(this.flipY90_Click);
             // 
@@ -233,7 +233,7 @@
             this.flipZ90.Name = "flipZ90";
             this.flipZ90.Size = new System.Drawing.Size(79, 61);
             this.flipZ90.TabIndex = 40;
-            this.flipZ90.Text = "Flip Z 90";
+            this.flipZ90.Text = "翻转 Z 90";
             this.flipZ90.UseVisualStyleBackColor = true;
             this.flipZ90.Click += new System.EventHandler(this.flipZ90_Click);
             // 
@@ -529,7 +529,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "TransformMeshTool";
-            this.Text = "Transform Mesh";
+            this.Text = "变换网格";
             ((System.ComponentModel.ISupportInitialize)(this.scaXUD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.scaYUD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.scaZUD)).EndInit();

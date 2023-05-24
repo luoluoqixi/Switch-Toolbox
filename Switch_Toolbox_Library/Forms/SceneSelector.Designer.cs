@@ -55,7 +55,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(321, 457);
             this.Name = "SceneSelector";
-            this.Text = "Scene Selector";
+            this.Text = "场景选择器";
             this.contentContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 

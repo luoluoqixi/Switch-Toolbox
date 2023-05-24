@@ -57,7 +57,7 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(409, 23);
             this.btnAdd.TabIndex = 1;
-            this.btnAdd.Text = "Edit";
+            this.btnAdd.Text = "编辑";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 

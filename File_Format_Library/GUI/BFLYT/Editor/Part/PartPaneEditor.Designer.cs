@@ -41,7 +41,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(48, 13);
             this.stLabel1.TabIndex = 0;
-            this.stLabel1.Text = "Part File:";
+            this.stLabel1.Text = "部件文件:";
             // 
             // stTextBox1
             // 
@@ -73,7 +73,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(57, 13);
             this.stLabel2.TabIndex = 3;
-            this.stLabel2.Text = "Properties:";
+            this.stLabel2.Text = "属性:";
             // 
             // PartPaneEditor
             // 

@@ -50,7 +50,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.contentContainer.Controls.Add(this.listViewCustom1);
             this.Name = "PokemonLoaderSwShForm";
-            this.Text = "PokemonLoaderSwSh";
+            this.Text = "口袋妖怪加载器 SwSh";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PokemonLoaderSwShForm_FormClosing);
             this.Load += new System.EventHandler(this.PokemonLoaderSwShForm_Load);
             this.ResumeLayout(false);

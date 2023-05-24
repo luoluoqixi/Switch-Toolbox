@@ -43,7 +43,7 @@
             this.chkAlphaInterpolation.Name = "chkAlphaInterpolation";
             this.chkAlphaInterpolation.Size = new System.Drawing.Size(147, 17);
             this.chkAlphaInterpolation.TabIndex = 0;
-            this.chkAlphaInterpolation.Text = "Threshold Alpha Blending";
+            this.chkAlphaInterpolation.Text = "阈值Alpha混合";
             this.chkAlphaInterpolation.UseVisualStyleBackColor = true;
             // 
             // stLabel1
@@ -53,7 +53,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(62, 13);
             this.stLabel1.TabIndex = 2;
-            this.stLabel1.Text = "White Color";
+            this.stLabel1.Text = "白色";
             // 
             // stLabel2
             // 
@@ -62,7 +62,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(61, 13);
             this.stLabel2.TabIndex = 4;
-            this.stLabel2.Text = "Black Color";
+            this.stLabel2.Text = "黑色";
             // 
             // whiteColorPB
             // 

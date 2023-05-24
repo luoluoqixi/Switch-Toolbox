@@ -62,7 +62,7 @@
             this.stButton1.Name = "stButton1";
             this.stButton1.Size = new System.Drawing.Size(75, 23);
             this.stButton1.TabIndex = 12;
-            this.stButton1.Text = "Cancel";
+            this.stButton1.Text = "取消";
             this.stButton1.UseVisualStyleBackColor = false;
             // 
             // stButton2
@@ -74,7 +74,7 @@
             this.stButton2.Name = "stButton2";
             this.stButton2.Size = new System.Drawing.Size(75, 23);
             this.stButton2.TabIndex = 13;
-            this.stButton2.Text = "Save";
+            this.stButton2.Text = "保存";
             this.stButton2.UseVisualStyleBackColor = false;
             // 
             // GenericEditorForm
@@ -83,7 +83,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(549, 398);
             this.Name = "GenericEditorForm";
-            this.Text = "GenericEditorForm";
+            this.Text = "通用编辑器窗体";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GenericEditorForm_FormClosing);
             this.contentContainer.ResumeLayout(false);
             this.ResumeLayout(false);

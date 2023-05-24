@@ -7,6 +7,7 @@ using Toolbox.Library.Forms;
 using System.Windows.Forms;
 using System.IO;
 using Toolbox.Library.IO;
+using Toolbox.Library.Animations;
 
 namespace Toolbox.Library
 {
@@ -69,6 +70,123 @@ namespace Toolbox.Library
             }
         }
 
+
+        public static string[] ExtractAllFilesText(string ParentPath, TreeNodeCollection Nodes, string overridePath = "")
+        {
+            List<string> filesExtracted = new List<string>();
+
+            if (overridePath == string.Empty)
+            {
+                FolderSelectDialog folderDialog = new FolderSelectDialog();
+                if (folderDialog.ShowDialog() != DialogResult.OK)
+                    return new string[0];
+
+                overridePath = folderDialog.SelectedPath;
+            }
+
+            STProgressBar progressBar = new STProgressBar();
+            progressBar.Task = "Extracing Files...";
+            progressBar.Refresh();
+            progressBar.Value = 0;
+            progressBar.StartPosition = FormStartPosition.CenterScreen;
+            progressBar.Show();
+
+            Thread Thread = new Thread((ThreadStart)(() =>
+            {
+                var Collection = TreeViewExtensions.Collect(Nodes).ToList();
+                Console.WriteLine($"Collection {Collection.Count}");
+
+                int Curfile = 0;
+                foreach (TreeNode node in Collection)
+                {
+                    if (progressBar.IsDisposed || progressBar.Disposing)
+                    {
+                        break;
+                    }
+
+                    ArchiveFileInfo file = null;
+
+                    if (node.Tag != null && node.Tag is ArchiveFileInfo)
+                        file = (ArchiveFileInfo)node.Tag;
+                    else if (node is ArchiveFileWrapper)
+                        file = ((ArchiveFileWrapper)node).ArchiveFileInfo;
+
+                    if (file != null)
+                    {
+                        string FilePath = file.FileName;
+                        string FolderPath = Path.GetDirectoryName(FilePath.RemoveIllegaleFolderNameCharacters());
+                        string FolderPathDir = Path.Combine(overridePath, FolderPath);
+
+                        if (!Directory.Exists(FolderPathDir))
+                            Directory.CreateDirectory(FolderPathDir);
+
+                        string FileName = Path.GetFileName(file.FileName).RemoveIllegaleFileNameCharacters();
+
+                        FilePath = Path.Combine(FolderPath, FileName);
+
+                        if (ParentPath != string.Empty)
+                            FilePath = FilePath.Replace(ParentPath, string.Empty);
+
+                        var path = $"{overridePath}/{FilePath}";
+
+                        if (progressBar.InvokeRequired)
+                        {
+                            progressBar.Invoke((MethodInvoker)delegate {
+                                // Running on the UI thread
+                                progressBar.Task = $"Extracting File {FileName}";
+                                progressBar.Value = (Curfile++ * 100) / Collection.Count;
+                                progressBar.Refresh();
+                            });
+                        }
+
+                        CreateDirectoryIfExists($"{path}");
+
+                        filesExtracted.Add($"{path}");
+
+                        if (file.FileFormat != null && file.FileFormat.CanSave)
+                            file.SaveFileFormat();
+
+                        string text = null;
+                        var f = file.FileFormat;
+                        if (f == null)
+                            f = file.OpenFile();
+                        if (f != null && typeof(IConvertableTextFormat).IsAssignableFrom(f.GetType()))
+                            text = ((IConvertableTextFormat)f).ConvertToString();
+
+                        if (!string.IsNullOrEmpty(text))
+                        {
+                            File.WriteAllText($"{path}.txt", text);
+                        }
+                        else
+                        {
+                            if (file.FileDataStream != null)
+                                file.FileDataStream.ExportToFile(path);
+                            else
+                                File.WriteAllBytes($"{path}", file.FileData);
+                        }
+                    }
+                }
+
+                if (progressBar.InvokeRequired)
+                {
+                    progressBar.Invoke((MethodInvoker)delegate {
+                        progressBar.Value = 100;
+                        progressBar.Refresh();
+                        progressBar.Close();
+                    });
+                }
+                else
+                {
+                    progressBar.Value = 100;
+                    progressBar.Refresh();
+                    progressBar.Close();
+                }
+
+            }));
+            Thread.Start();
+
+            return filesExtracted.ToArray();
+        }
 
         public static string[] ExtractAllFiles(string ParentPath, TreeNodeCollection Nodes, string overridePath = "")
         {

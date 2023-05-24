@@ -62,7 +62,7 @@
             this.frameLbl.Name = "frameLbl";
             this.frameLbl.Size = new System.Drawing.Size(130, 13);
             this.frameLbl.TabIndex = 2;
-            this.frameLbl.Text = "Selected Frame: [Content]";
+            this.frameLbl.Text = "选定帧: [Content]";
             // 
             // frameNumCB
             // 
@@ -88,7 +88,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(90, 13);
             this.stLabel2.TabIndex = 4;
-            this.stLabel2.Text = "Window Settings:";
+            this.stLabel2.Text = "窗口设置:";
             // 
             // stLabel3
             // 
@@ -97,7 +97,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(34, 13);
             this.stLabel3.TabIndex = 5;
-            this.stLabel3.Text = "Type:";
+            this.stLabel3.Text = "类型:";
             // 
             // stLabel4
             // 
@@ -106,7 +106,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(44, 13);
             this.stLabel4.TabIndex = 6;
-            this.stLabel4.Text = "Frames:";
+            this.stLabel4.Text = "框架:";
             // 
             // chkRenderContent
             // 
@@ -115,7 +115,7 @@
             this.chkRenderContent.Name = "chkRenderContent";
             this.chkRenderContent.Size = new System.Drawing.Size(88, 17);
             this.chkRenderContent.TabIndex = 7;
-            this.chkRenderContent.Text = "Hide Content";
+            this.chkRenderContent.Text = "隐藏内容";
             this.chkRenderContent.UseVisualStyleBackColor = true;
             this.chkRenderContent.CheckedChanged += new System.EventHandler(this.chkRenderContent_CheckedChanged);
             // 

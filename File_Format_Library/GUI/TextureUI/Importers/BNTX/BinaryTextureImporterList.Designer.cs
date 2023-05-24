@@ -115,7 +115,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(79, 33);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Cancel";
+            this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -149,12 +149,12 @@
             // 
             // Name
             // 
-            this.Name.Text = "Name";
+            this.Name.Text = "名称";
             this.Name.Width = 104;
             // 
             // Format
             // 
-            this.Format.Text = "Format";
+            this.Format.Text = "格式";
             this.Format.Width = 133;
             // 
             // SwizzleNum
@@ -171,7 +171,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 13);
             this.label5.TabIndex = 27;
-            this.label5.Text = "Swizzle:";
+            this.label5.Text = "四维索类:";
             // 
             // tileModeCB
             // 
@@ -192,7 +192,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 13);
             this.label4.TabIndex = 25;
-            this.label4.Text = "Tile Mode:";
+            this.label4.Text = "平铺模式:";
             // 
             // ImgDimComb
             // 
@@ -214,7 +214,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 13);
             this.label3.TabIndex = 23;
-            this.label3.Text = "Surface Dimension:";
+            this.label3.Text = "表面尺寸:";
             // 
             // label2
             // 
@@ -223,7 +223,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 13);
             this.label2.TabIndex = 22;
-            this.label2.Text = "Format:";
+            this.label2.Text = "格式:";
             // 
             // label1
             // 
@@ -232,7 +232,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 21;
-            this.label1.Text = "Mip Count:";
+            this.label1.Text = "Mip计数:";
             // 
             // MipmapNum
             // 
@@ -249,7 +249,7 @@
             this.WidthLabel.Name = "WidthLabel";
             this.WidthLabel.Size = new System.Drawing.Size(38, 13);
             this.WidthLabel.TabIndex = 19;
-            this.WidthLabel.Text = "Width:";
+            this.WidthLabel.Text = "宽度:";
             // 
             // HeightLabel
             // 
@@ -258,7 +258,7 @@
             this.HeightLabel.Name = "HeightLabel";
             this.HeightLabel.Size = new System.Drawing.Size(41, 13);
             this.HeightLabel.TabIndex = 18;
-            this.HeightLabel.Text = "Height:";
+            this.HeightLabel.Text = "高度:";
             // 
             // pictureBox1
             // 
@@ -305,7 +305,7 @@
             this.compModeLbl.Name = "compModeLbl";
             this.compModeLbl.Size = new System.Drawing.Size(100, 13);
             this.compModeLbl.TabIndex = 29;
-            this.compModeLbl.Text = "Compression Mode:";
+            this.compModeLbl.Text = "压缩模式:";
             // 
             // dataSizeLbl
             // 
@@ -314,7 +314,7 @@
             this.dataSizeLbl.Name = "dataSizeLbl";
             this.dataSizeLbl.Size = new System.Drawing.Size(56, 13);
             this.dataSizeLbl.TabIndex = 31;
-            this.dataSizeLbl.Text = "Data Size:";
+            this.dataSizeLbl.Text = "数据大小:";
             // 
             // cnkGammaFix
             // 
@@ -323,7 +323,7 @@
             this.cnkGammaFix.Name = "cnkGammaFix";
             this.cnkGammaFix.Size = new System.Drawing.Size(160, 17);
             this.cnkGammaFix.TabIndex = 32;
-            this.cnkGammaFix.Text = "Gamma Fix (Smash Ultimate)";
+            this.cnkGammaFix.Text = "伽玛修复（终极粉碎）";
             this.cnkGammaFix.UseVisualStyleBackColor = true;
             this.cnkGammaFix.CheckedChanged += new System.EventHandler(this.cnkGammaFix_CheckedChanged);
             // 
@@ -334,7 +334,7 @@
             this.chkMultiThreading.Name = "chkMultiThreading";
             this.chkMultiThreading.Size = new System.Drawing.Size(124, 17);
             this.chkMultiThreading.TabIndex = 33;
-            this.chkMultiThreading.Text = "Use Multi Threading ";
+            this.chkMultiThreading.Text = "使用多线程 ";
             this.chkMultiThreading.UseVisualStyleBackColor = true;
             this.chkMultiThreading.CheckedChanged += new System.EventHandler(this.chkMultiThreading_CheckedChanged);
             // 
@@ -345,7 +345,7 @@
             this.chkBC4Alpha.Name = "chkBC4Alpha";
             this.chkBC4Alpha.Size = new System.Drawing.Size(76, 17);
             this.chkBC4Alpha.TabIndex = 34;
-            this.chkBC4Alpha.Text = "BC4 Alpha";
+            this.chkBC4Alpha.Text = "BC4 阿尔法";
             this.chkBC4Alpha.UseVisualStyleBackColor = true;
             this.chkBC4Alpha.CheckedChanged += new System.EventHandler(this.chkBC4Alpha_CheckedChanged);
             // 
@@ -355,7 +355,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1096, 560);
             this.KeyPreview = true;
-            this.Text = "Texture Importer";
+            this.Text = "纹理导入器";
             this.Load += new System.EventHandler(this.BinaryTextureImporterList_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.BinaryTextureImporterList_KeyDown);
             this.contentContainer.ResumeLayout(false);

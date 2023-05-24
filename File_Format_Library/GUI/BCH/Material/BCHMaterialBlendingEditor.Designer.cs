@@ -119,7 +119,7 @@
             this.stLabel15.Name = "stLabel15";
             this.stLabel15.Size = new System.Drawing.Size(36, 13);
             this.stLabel15.TabIndex = 61;
-            this.stLabel15.Text = "Layer:";
+            this.stLabel15.Text = "分层:";
             // 
             // renderLayerCB
             // 
@@ -140,7 +140,7 @@
             this.stLabel14.Name = "stLabel14";
             this.stLabel14.Size = new System.Drawing.Size(40, 13);
             this.stLabel14.TabIndex = 60;
-            this.stLabel14.Text = "Preset:";
+            this.stLabel14.Text = "预设:";
             // 
             // presetCB
             // 
@@ -182,7 +182,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(37, 13);
             this.stLabel2.TabIndex = 59;
-            this.stLabel2.Text = "Value:";
+            this.stLabel2.Text = "值:";
             // 
             // stLabel1
             // 
@@ -191,7 +191,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(82, 13);
             this.stLabel1.TabIndex = 58;
-            this.stLabel1.Text = "Compare Mode:";
+            this.stLabel1.Text = "对比模式:";
             // 
             // alphaCompareCB
             // 
@@ -213,7 +213,7 @@
             this.chkEnableAlpha.Name = "chkEnableAlpha";
             this.chkEnableAlpha.Size = new System.Drawing.Size(59, 17);
             this.chkEnableAlpha.TabIndex = 1;
-            this.chkEnableAlpha.Text = "Enable";
+            this.chkEnableAlpha.Text = "启用";
             this.chkEnableAlpha.UseVisualStyleBackColor = true;
             this.chkEnableAlpha.CheckedChanged += new System.EventHandler(this.EditBlendData);
             // 
@@ -290,7 +290,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(38, 13);
             this.stLabel4.TabIndex = 65;
-            this.stLabel4.Text = "Offset:";
+            this.stLabel4.Text = "偏移:";
             // 
             // polyOffsetUD
             // 
@@ -355,7 +355,7 @@
             this.chkUsePolyOffset.Name = "chkUsePolyOffset";
             this.chkUsePolyOffset.Size = new System.Drawing.Size(112, 17);
             this.chkUsePolyOffset.TabIndex = 64;
-            this.chkUsePolyOffset.Text = "Use Polgon Offset";
+            this.chkUsePolyOffset.Text = "使用多边形偏移";
             this.chkUsePolyOffset.UseVisualStyleBackColor = true;
             this.chkUsePolyOffset.CheckedChanged += new System.EventHandler(this.EditBlendData);
             // 
@@ -366,7 +366,7 @@
             this.chkEnableDepth.Name = "chkEnableDepth";
             this.chkEnableDepth.Size = new System.Drawing.Size(59, 17);
             this.chkEnableDepth.TabIndex = 3;
-            this.chkEnableDepth.Text = "Enable";
+            this.chkEnableDepth.Text = "启用";
             this.chkEnableDepth.UseVisualStyleBackColor = true;
             this.chkEnableDepth.CheckedChanged += new System.EventHandler(this.EditBlendData);
             // 
@@ -377,7 +377,7 @@
             this.chkDepthWrite.Name = "chkDepthWrite";
             this.chkDepthWrite.Size = new System.Drawing.Size(86, 17);
             this.chkDepthWrite.TabIndex = 63;
-            this.chkDepthWrite.Text = "Depth Write:";
+            this.chkDepthWrite.Text = "深度写入:";
             this.chkDepthWrite.UseVisualStyleBackColor = true;
             this.chkDepthWrite.CheckedChanged += new System.EventHandler(this.EditBlendData);
             // 
@@ -388,7 +388,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(82, 13);
             this.stLabel3.TabIndex = 61;
-            this.stLabel3.Text = "Compare Mode:";
+            this.stLabel3.Text = "对比模式:";
             // 
             // stDropDownPanel4
             // 
@@ -419,7 +419,7 @@
             this.stLabel13.Name = "stLabel13";
             this.stLabel13.Size = new System.Drawing.Size(37, 13);
             this.stLabel13.TabIndex = 9;
-            this.stLabel13.Text = "Mode:";
+            this.stLabel13.Text = "模式:";
             // 
             // blendModeCB
             // 
@@ -441,7 +441,7 @@
             this.stLabel9.Name = "stLabel9";
             this.stLabel9.Size = new System.Drawing.Size(81, 13);
             this.stLabel9.TabIndex = 4;
-            this.stLabel9.Text = "Alpha Blending:";
+            this.stLabel9.Text = "透明度混合:";
             // 
             // stPanel4
             // 
@@ -502,7 +502,7 @@
             this.stLabel10.Name = "stLabel10";
             this.stLabel10.Size = new System.Drawing.Size(63, 13);
             this.stLabel10.TabIndex = 5;
-            this.stLabel10.Text = "Destination:";
+            this.stLabel10.Text = "作为目的地的(旅馆、商店、饭店等):";
             // 
             // stLabel11
             // 
@@ -511,7 +511,7 @@
             this.stLabel11.Name = "stLabel11";
             this.stLabel11.Size = new System.Drawing.Size(44, 13);
             this.stLabel11.TabIndex = 4;
-            this.stLabel11.Text = "Source:";
+            this.stLabel11.Text = "来源:";
             // 
             // stLabel12
             // 
@@ -520,7 +520,7 @@
             this.stLabel12.Name = "stLabel12";
             this.stLabel12.Size = new System.Drawing.Size(52, 13);
             this.stLabel12.TabIndex = 3;
-            this.stLabel12.Text = "Equation:";
+            this.stLabel12.Text = "方程:";
             // 
             // stLabel5
             // 
@@ -529,7 +529,7 @@
             this.stLabel5.Name = "stLabel5";
             this.stLabel5.Size = new System.Drawing.Size(78, 13);
             this.stLabel5.TabIndex = 2;
-            this.stLabel5.Text = "Color Blending:";
+            this.stLabel5.Text = "色彩混合:";
             // 
             // stPanel3
             // 
@@ -590,7 +590,7 @@
             this.stLabel8.Name = "stLabel8";
             this.stLabel8.Size = new System.Drawing.Size(63, 13);
             this.stLabel8.TabIndex = 5;
-            this.stLabel8.Text = "Destination:";
+            this.stLabel8.Text = "作为目的地的(旅馆、商店、饭店等):";
             // 
             // stLabel7
             // 
@@ -599,7 +599,7 @@
             this.stLabel7.Name = "stLabel7";
             this.stLabel7.Size = new System.Drawing.Size(44, 13);
             this.stLabel7.TabIndex = 4;
-            this.stLabel7.Text = "Source:";
+            this.stLabel7.Text = "来源:";
             // 
             // stLabel6
             // 
@@ -608,7 +608,7 @@
             this.stLabel6.Name = "stLabel6";
             this.stLabel6.Size = new System.Drawing.Size(52, 13);
             this.stLabel6.TabIndex = 3;
-            this.stLabel6.Text = "Equation:";
+            this.stLabel6.Text = "方程:";
             // 
             // BCHMaterialBlendingEditor
             // 

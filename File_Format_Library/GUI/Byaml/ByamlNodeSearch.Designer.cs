@@ -45,7 +45,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(70, 13);
             this.stLabel1.TabIndex = 0;
-            this.stLabel1.Text = "Batch Folder:";
+            this.stLabel1.Text = "批处理文件夹:";
             // 
             // stCheckBox1
             // 
@@ -54,7 +54,7 @@
             this.stCheckBox1.Name = "stCheckBox1";
             this.stCheckBox1.Size = new System.Drawing.Size(146, 17);
             this.stCheckBox1.TabIndex = 1;
-            this.stCheckBox1.Text = "Batch Search Byaml Files";
+            this.stCheckBox1.Text = "批处理搜索Byaml文件";
             this.stCheckBox1.UseVisualStyleBackColor = true;
             // 
             // stTextBox1
@@ -80,7 +80,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(44, 13);
             this.stLabel2.TabIndex = 4;
-            this.stLabel2.Text = "Search:";
+            this.stLabel2.Text = "查找:";
             // 
             // stComboBox1
             // 
@@ -101,7 +101,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(60, 13);
             this.stLabel3.TabIndex = 6;
-            this.stLabel3.Text = "Data Type:";
+            this.stLabel3.Text = "数据类型:";
             // 
             // stButton1
             // 
@@ -128,7 +128,7 @@
             this.Controls.Add(this.stCheckBox1);
             this.Controls.Add(this.stLabel1);
             this.Name = "ByamlNodeSearch";
-            this.Text = "Node Search";
+            this.Text = "节点搜索";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -22,8 +22,8 @@ namespace FirstPlugin
         public virtual ToolStripItem[] GetContextMenuItems()
         {
             List<ToolStripItem> Items = new List<ToolStripItem>();
-            Items.Add(new ToolStripMenuItem("Export All", null, ExportAllAction, Keys.Control | Keys.E));
-            Items.Add(new ToolStripMenuItem("Replace (From Folder)", null, ReplaceAllAction, Keys.Control | Keys.R));
+            Items.Add(new ToolStripMenuItem("导出全部", null, ExportAllAction, Keys.Control | Keys.E));
+            Items.Add(new ToolStripMenuItem("替换（从文件夹）", null, ReplaceAllAction, Keys.Control | Keys.R));
             return Items.ToArray();
         }
 

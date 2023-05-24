@@ -42,7 +42,7 @@
             this.btnDetails.Name = "btnDetails";
             this.btnDetails.Size = new System.Drawing.Size(75, 23);
             this.btnDetails.TabIndex = 1;
-            this.btnDetails.Text = "Details";
+            this.btnDetails.Text = "详情";
             this.btnDetails.UseVisualStyleBackColor = true;
             this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
             // 
@@ -98,7 +98,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Save Notification";
+            this.Text = "保存通知";
             this.ResumeLayout(false);
             this.PerformLayout();
 

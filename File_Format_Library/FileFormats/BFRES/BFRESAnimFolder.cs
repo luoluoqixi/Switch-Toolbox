@@ -15,7 +15,7 @@ namespace Bfres.Structs
     {
         public BFRESAnimFolder()
         {
-            Text = "Animations";
+            Text = "动画";
         }
 
         public bool IsWiiU { get; set; }
@@ -57,28 +57,28 @@ namespace Bfres.Structs
         public ToolStripItem[] GetContextMenuItems()
         {
             List<ToolStripItem> Items = new List<ToolStripItem>();
-            Items.Add(new ToolStripMenuItem("New", null,
-                           new ToolStripMenuItem("Skeletal Animation", null, NewSkeletalAnimAction),
-                           new ToolStripMenuItem("Shader Param Animation", null, NewShaderParamAnimAction),
-                           new ToolStripMenuItem("Color Animation", null, NewColorAnimAction),
-                           new ToolStripMenuItem("Texture SRT Animations", null, NewTexSrtAnimAction),
-                           new ToolStripMenuItem("Texture Pattern Animation", null, NewTexPatAnimAction),
-                           new ToolStripMenuItem("Bone Visibility Animation", null, NewBoneVisAnimAction),
-                           new ToolStripMenuItem("Material Visibility Animation", null, NewMatVisAnimAction),
-                           new ToolStripMenuItem("Shape Animation", null, NewShapeAnimAction),
-                           new ToolStripMenuItem("Scene Animation", null, NewSceneAnimAction)
+            Items.Add(new ToolStripMenuItem("新建", null,
+                           new ToolStripMenuItem("骨骼动画", null, NewSkeletalAnimAction),
+                           new ToolStripMenuItem("着色器参数动画", null, NewShaderParamAnimAction),
+                           new ToolStripMenuItem("颜色的动画", null, NewColorAnimAction),
+                           new ToolStripMenuItem("纹理SRT动画", null, NewTexSrtAnimAction),
+                           new ToolStripMenuItem("纹理图案动画", null, NewTexPatAnimAction),
+                           new ToolStripMenuItem("骨骼可见性动画", null, NewBoneVisAnimAction),
+                           new ToolStripMenuItem("材质可见性动画", null, NewMatVisAnimAction),
+                           new ToolStripMenuItem("形变动画", null, NewShapeAnimAction),
+                           new ToolStripMenuItem("场景动画", null, NewSceneAnimAction)
                        ));
 
-            Items.Add(new ToolStripMenuItem("Import", null,
-              new ToolStripMenuItem("Skeletal Animation", null, ImportSkeletalAnimAction),
-              new ToolStripMenuItem("Shader Param Animation", null, ImportShaderParamAnimAction),
-              new ToolStripMenuItem("Color Animation", null, ImportColorAnimAction),
-              new ToolStripMenuItem("Texture SRT Animations", null, ImportTexSrtAnimAction),
-              new ToolStripMenuItem("Texture Pattern Animation", null, ImportTexPatAnimAction),
-              new ToolStripMenuItem("Bone Visibility Animation", null, ImportBoneVisAnimAction),
-              new ToolStripMenuItem("Material Visibility Animation", null, ImportMatVisAnimAction),
-              new ToolStripMenuItem("Shape Animation", null, ImportShapeAnimAction),
-              new ToolStripMenuItem("Scene Animation", null, ImportSceneAnimAction)
+            Items.Add(new ToolStripMenuItem("导入", null,
+              new ToolStripMenuItem("骨骼动画", null, ImportSkeletalAnimAction),
+              new ToolStripMenuItem("着色器参数动画", null, ImportShaderParamAnimAction),
+              new ToolStripMenuItem("颜色的动画", null, ImportColorAnimAction),
+              new ToolStripMenuItem("纹理SRT动画", null, ImportTexSrtAnimAction),
+              new ToolStripMenuItem("纹理图案动画", null, ImportTexPatAnimAction),
+              new ToolStripMenuItem("骨骼可见性动画", null, ImportBoneVisAnimAction),
+              new ToolStripMenuItem("材质可见性动画", null, ImportMatVisAnimAction),
+              new ToolStripMenuItem("形变动画", null, ImportShapeAnimAction),
+              new ToolStripMenuItem("场景动画", null, ImportSceneAnimAction)
               ));
 
             Items.Add(new ToolStripMenuItem("Clear", null, ClearAction, Keys.Control | Keys.C));

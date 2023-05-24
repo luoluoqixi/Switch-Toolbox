@@ -136,7 +136,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(51, 13);
             this.stLabel4.TabIndex = 5;
-            this.stLabel4.Text = "Translate";
+            this.stLabel4.Text = "移动";
             // 
             // stLabel3
             // 
@@ -145,7 +145,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(34, 13);
             this.stLabel3.TabIndex = 4;
-            this.stLabel3.Text = "Scale";
+            this.stLabel3.Text = "缩放";
             // 
             // scaleXUD
             // 
@@ -257,7 +257,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(56, 13);
             this.stLabel2.TabIndex = 2;
-            this.stLabel2.Text = "Brightness";
+            this.stLabel2.Text = "亮度";
             // 
             // textureCB
             // 
@@ -296,7 +296,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(82, 13);
             this.stLabel1.TabIndex = 4;
-            this.stLabel1.Text = "Active Channel:";
+            this.stLabel1.Text = "活动通道:";
             // 
             // btnApplyTransform
             // 
@@ -305,7 +305,7 @@
             this.btnApplyTransform.Name = "btnApplyTransform";
             this.btnApplyTransform.Size = new System.Drawing.Size(119, 23);
             this.btnApplyTransform.TabIndex = 9;
-            this.btnApplyTransform.Text = "Apply Transform";
+            this.btnApplyTransform.Text = "应用变换";
             this.btnApplyTransform.UseVisualStyleBackColor = false;
             this.btnApplyTransform.Click += new System.EventHandler(this.btnApplyTransform_Click);
             // 

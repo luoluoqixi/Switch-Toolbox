@@ -53,12 +53,12 @@
             // 
             // Plugin
             // 
-            this.Plugin.Text = "Plugin";
+            this.Plugin.Text = "插件";
             this.Plugin.Width = 113;
             // 
             // Version
             // 
-            this.Version.Text = "Version";
+            this.Version.Text = "版本";
             this.Version.Width = 175;
             // 
             // imageList1
@@ -75,7 +75,7 @@
             this.ClientSize = new System.Drawing.Size(292, 356);
             this.Controls.Add(this.listView1);
             this.Name = "PluginManager";
-            this.Text = "PluginManager";
+            this.Text = "插件管理器";
             this.ResumeLayout(false);
 
         }

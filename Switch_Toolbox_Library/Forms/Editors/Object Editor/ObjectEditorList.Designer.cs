@@ -75,7 +75,7 @@
             this.activeEditorChkBox.Name = "activeEditorChkBox";
             this.activeEditorChkBox.Size = new System.Drawing.Size(144, 17);
             this.activeEditorChkBox.TabIndex = 4;
-            this.activeEditorChkBox.Text = "Add Files to Active Editor";
+            this.activeEditorChkBox.Text = "将文件添加到活动编辑器";
             this.activeEditorChkBox.UseVisualStyleBackColor = true;
             // 
             // treeViewCustom1
@@ -116,7 +116,7 @@
             this.searchLbl.Name = "searchLbl";
             this.searchLbl.Size = new System.Drawing.Size(41, 13);
             this.searchLbl.TabIndex = 2;
-            this.searchLbl.Text = "Search";
+            this.searchLbl.Text = "查找";
             // 
             // searchImgPB
             // 
@@ -160,13 +160,13 @@
             this.openToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
+            this.fileToolStripMenuItem.Text = "文件";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.openToolStripMenuItem.Text = "Add File";
+            this.openToolStripMenuItem.Text = "添加文件";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // viewToolStripMenuItem
@@ -175,13 +175,13 @@
             this.sortToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.viewToolStripMenuItem.Text = "View";
+            this.viewToolStripMenuItem.Text = "视图";
             // 
             // sortToolStripMenuItem
             // 
             this.sortToolStripMenuItem.Name = "sortToolStripMenuItem";
             this.sortToolStripMenuItem.Size = new System.Drawing.Size(95, 22);
-            this.sortToolStripMenuItem.Text = "Sort";
+            this.sortToolStripMenuItem.Text = "排序";
             this.sortToolStripMenuItem.Click += new System.EventHandler(this.sortToolStripMenuItem_Click);
             // 
             // stPanel2
@@ -212,22 +212,22 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Name";
+            this.columnHeader1.Text = "重命名";
             this.columnHeader1.Width = 268;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Size";
+            this.columnHeader2.Text = "大小";
             this.columnHeader2.Width = 89;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Type";
+            this.columnHeader3.Text = "分类";
             this.columnHeader3.Width = 74;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "State";
+            this.columnHeader4.Text = "说明";
             this.columnHeader4.Width = 154;
             // 
             // splitter1

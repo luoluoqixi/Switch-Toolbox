@@ -85,7 +85,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(549, 398);
             this.Name = "EffectTableEditor";
-            this.Text = "EffectTableEditor";
+            this.Text = "有效表格编辑器";
             ((System.ComponentModel.ISupportInitialize)(this.stDataGridView1)).EndInit();
             this.stPanel1.ResumeLayout(false);
             this.stPanel1.PerformLayout();

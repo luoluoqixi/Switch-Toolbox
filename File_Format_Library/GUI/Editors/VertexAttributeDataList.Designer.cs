@@ -77,7 +77,7 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Vertex ID";
+            this.columnHeader1.Text = "顶点 ID";
             // 
             // VertexAttributeDataList
             // 
@@ -86,7 +86,7 @@
             this.ClientSize = new System.Drawing.Size(351, 450);
             this.Controls.Add(this.listViewCustom1);
             this.Name = "VertexAttributeDataList";
-            this.Text = "Vertex Attribute Data";
+            this.Text = "顶点属性数据";
             this.ResumeLayout(false);
 
         }

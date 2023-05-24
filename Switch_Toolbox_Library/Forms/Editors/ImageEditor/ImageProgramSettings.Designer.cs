@@ -60,7 +60,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(121, 13);
             this.stLabel1.TabIndex = 11;
-            this.stLabel1.Text = "Format to save back as:";
+            this.stLabel1.Text = "要另存为的格式:";
             // 
             // textureImageFormatCB
             // 
@@ -91,7 +91,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(61, 13);
             this.stLabel2.TabIndex = 13;
-            this.stLabel2.Text = "File Format:";
+            this.stLabel2.Text = "文件存储格式:";
             // 
             // stButton1
             // 
@@ -111,7 +111,7 @@
             this.stButton2.Name = "stButton2";
             this.stButton2.Size = new System.Drawing.Size(125, 23);
             this.stButton2.TabIndex = 16;
-            this.stButton2.Text = "Edit Default Program";
+            this.stButton2.Text = "编辑默认程序";
             this.stButton2.UseVisualStyleBackColor = false;
             this.stButton2.Click += new System.EventHandler(this.stButton2_Click);
             // 
@@ -121,7 +121,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(399, 128);
             this.Name = "ImageProgramSettings";
-            this.Text = "ImageProgramSettings";
+            this.Text = "图像程序设置";
             this.contentContainer.ResumeLayout(false);
             this.contentContainer.PerformLayout();
             this.ResumeLayout(false);

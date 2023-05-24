@@ -61,12 +61,12 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Name";
+            this.columnHeader1.Text = "名称";
             this.columnHeader1.Width = 198;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Index";
+            this.columnHeader3.Text = "索引";
             this.columnHeader3.Width = 144;
             // 
             // BoneIndexList

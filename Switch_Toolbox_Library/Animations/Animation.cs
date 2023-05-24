@@ -102,9 +102,9 @@ namespace Toolbox.Library.Animations
             {
                 //File Operations
                 ContextMenuStrip = new STContextMenuStrip();
-                ContextMenuStrip.Items.Add(new ToolStripMenuItem("Rename", null, RenameAction, Keys.Control | Keys.N));
+                ContextMenuStrip.Items.Add(new ToolStripMenuItem("重命名", null, RenameAction, Keys.Control | Keys.N));
                 ContextMenuStrip.Items.Add(new ToolStripSeparator());
-                ContextMenuStrip.Items.Add(new ToolStripMenuItem("Delete", null, DeleteAction, Keys.Control | Keys.Delete));
+                ContextMenuStrip.Items.Add(new ToolStripMenuItem("删除", null, DeleteAction, Keys.Control | Keys.Delete));
             }
 
             protected void DeleteAction(object sender, EventArgs e) { Delete(); Unload(); }

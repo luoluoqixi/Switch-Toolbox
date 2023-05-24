@@ -55,7 +55,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(595, 468);
             this.Name = "UVEditorForm";
-            this.Text = "UV Editor";
+            this.Text = "UV编辑器";
             this.contentContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 

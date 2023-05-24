@@ -133,7 +133,7 @@ namespace FirstPlugin
             editor.Text = Text;
             editor.Dock = DockStyle.Fill;
             editor.Font = font;
-            texbox.Text = "Preview Text!";
+            texbox.Text = "预览文本!";
         }
 
         private static UInt32 GetUInt32(byte[] data, int pos)

@@ -143,7 +143,7 @@
             this.stLabel13.Name = "stLabel13";
             this.stLabel13.Size = new System.Drawing.Size(57, 13);
             this.stLabel13.TabIndex = 18;
-            this.stLabel13.Text = "Line Feed:";
+            this.stLabel13.Text = "换行:";
             // 
             // fontTypeCB
             // 
@@ -176,7 +176,7 @@
             this.stLabel12.Name = "stLabel12";
             this.stLabel12.Size = new System.Drawing.Size(55, 13);
             this.stLabel12.TabIndex = 15;
-            this.stLabel12.Text = "Encoding:";
+            this.stLabel12.Text = "字符编码:";
             // 
             // stLabel11
             // 
@@ -185,7 +185,7 @@
             this.stLabel11.Name = "stLabel11";
             this.stLabel11.Size = new System.Drawing.Size(34, 13);
             this.stLabel11.TabIndex = 14;
-            this.stLabel11.Text = "Type:";
+            this.stLabel11.Text = "类型:";
             // 
             // stLabel10
             // 
@@ -194,7 +194,7 @@
             this.stLabel10.Name = "stLabel10";
             this.stLabel10.Size = new System.Drawing.Size(69, 13);
             this.stLabel10.TabIndex = 13;
-            this.stLabel10.Text = "Default Char:";
+            this.stLabel10.Text = "默认字符:";
             // 
             // leftSpacingUD
             // 
@@ -215,7 +215,7 @@
             this.stLabel9.Name = "stLabel9";
             this.stLabel9.Size = new System.Drawing.Size(73, 13);
             this.stLabel9.TabIndex = 11;
-            this.stLabel9.Text = "Left Spacing::";
+            this.stLabel9.Text = "左侧间距::";
             // 
             // glyphWidthCB
             // 
@@ -236,7 +236,7 @@
             this.stLabel8.Name = "stLabel8";
             this.stLabel8.Size = new System.Drawing.Size(68, 13);
             this.stLabel8.TabIndex = 9;
-            this.stLabel8.Text = "Glyph Width:";
+            this.stLabel8.Text = "字形宽度:";
             // 
             // charWidthUD
             // 
@@ -257,7 +257,7 @@
             this.stLabel7.Name = "stLabel7";
             this.stLabel7.Size = new System.Drawing.Size(63, 13);
             this.stLabel7.TabIndex = 7;
-            this.stLabel7.Text = "Char Width:";
+            this.stLabel7.Text = "字符宽度:";
             // 
             // fontHeightUD
             // 
@@ -278,7 +278,7 @@
             this.stLabel6.Name = "stLabel6";
             this.stLabel6.Size = new System.Drawing.Size(41, 13);
             this.stLabel6.TabIndex = 5;
-            this.stLabel6.Text = "Height:";
+            this.stLabel6.Text = "高度:";
             // 
             // fontWidthUD
             // 
@@ -299,7 +299,7 @@
             this.stLabel5.Name = "stLabel5";
             this.stLabel5.Size = new System.Drawing.Size(38, 13);
             this.stLabel5.TabIndex = 3;
-            this.stLabel5.Text = "Width:";
+            this.stLabel5.Text = "宽度:";
             // 
             // ascentUD
             // 
@@ -320,7 +320,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(43, 13);
             this.stLabel4.TabIndex = 1;
-            this.stLabel4.Text = "Ascent:";
+            this.stLabel4.Text = "上升:";
             // 
             // stLabel1
             // 
@@ -329,7 +329,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(28, 13);
             this.stLabel1.TabIndex = 0;
-            this.stLabel1.Text = "Font";
+            this.stLabel1.Text = "选择字体";
             // 
             // stPanel2
             // 
@@ -367,7 +367,7 @@
             this.stLabel17.Name = "stLabel17";
             this.stLabel17.Size = new System.Drawing.Size(79, 13);
             this.stLabel17.TabIndex = 24;
-            this.stLabel17.Text = "Effictive Width:";
+            this.stLabel17.Text = "有效宽度:";
             // 
             // numericUpDownUint2
             // 
@@ -388,7 +388,7 @@
             this.stLabel16.Name = "stLabel16";
             this.stLabel16.Size = new System.Drawing.Size(73, 13);
             this.stLabel16.TabIndex = 22;
-            this.stLabel16.Text = "Left Spacing::";
+            this.stLabel16.Text = "左侧间距::";
             // 
             // numericUpDownUint1
             // 
@@ -409,7 +409,7 @@
             this.stLabel15.Name = "stLabel15";
             this.stLabel15.Size = new System.Drawing.Size(77, 13);
             this.stLabel15.TabIndex = 20;
-            this.stLabel15.Text = "Texture Width:";
+            this.stLabel15.Text = "纹理宽度:";
             // 
             // stLabel14
             // 
@@ -418,7 +418,7 @@
             this.stLabel14.Name = "stLabel14";
             this.stLabel14.Size = new System.Drawing.Size(84, 13);
             this.stLabel14.TabIndex = 3;
-            this.stLabel14.Text = "Character Code:";
+            this.stLabel14.Text = "字符码:";
             // 
             // characterCodeCB
             // 
@@ -440,7 +440,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(58, 13);
             this.stLabel2.TabIndex = 1;
-            this.stLabel2.Text = "Characters";
+            this.stLabel2.Text = "字符";
             // 
             // splitter1
             // 
@@ -493,7 +493,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(392, 361);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Preview";
+            this.tabPage1.Text = "预览";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // pictureBoxCustom1
@@ -530,7 +530,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(392, 361);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Images";
+            this.tabPage2.Text = "图像";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // imagePanel
@@ -567,7 +567,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(41, 13);
             this.stLabel3.TabIndex = 0;
-            this.stLabel3.Text = "Images";
+            this.stLabel3.Text = "图像";
             // 
             // imageMenuStrip
             // 

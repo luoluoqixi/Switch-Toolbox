@@ -222,7 +222,7 @@
             this.removeKeyFrameToolstrip.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.removeKeyFrameToolstrip.Name = "removeKeyFrameToolstrip";
             this.removeKeyFrameToolstrip.Size = new System.Drawing.Size(21, 20);
-            this.removeKeyFrameToolstrip.Text = "Remove Frame";
+            this.removeKeyFrameToolstrip.Text = "移除影格";
             this.removeKeyFrameToolstrip.Click += new System.EventHandler(this.removeKeyFrameToolstrip_Click);
             // 
             // toolstripShiftUp
@@ -232,7 +232,7 @@
             this.toolstripShiftUp.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolstripShiftUp.Name = "toolstripShiftUp";
             this.toolstripShiftUp.Size = new System.Drawing.Size(21, 20);
-            this.toolstripShiftUp.Text = "Move Up";
+            this.toolstripShiftUp.Text = "移动 Up";
             this.toolstripShiftUp.Click += new System.EventHandler(this.toolstripShiftUp_Click);
             // 
             // toolstripShiftDown
@@ -242,7 +242,7 @@
             this.toolstripShiftDown.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolstripShiftDown.Name = "toolstripShiftDown";
             this.toolstripShiftDown.Size = new System.Drawing.Size(21, 20);
-            this.toolstripShiftDown.Text = "Move Down";
+            this.toolstripShiftDown.Text = "移动 Down";
             this.toolstripShiftDown.Click += new System.EventHandler(this.toolstripShiftDown_Click);
             // 
             // toolStripButton2
@@ -277,7 +277,7 @@
             this.stLabel2.Name = "stLabel2";
             this.stLabel2.Size = new System.Drawing.Size(48, 13);
             this.stLabel2.TabIndex = 18;
-            this.stLabel2.Text = "Textures";
+            this.stLabel2.Text = "纹理";
             // 
             // stLabel4
             // 
@@ -287,7 +287,7 @@
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(39, 13);
             this.stLabel4.TabIndex = 15;
-            this.stLabel4.Text = "Frame:";
+            this.stLabel4.Text = "框架:";
             // 
             // textureFrameUD
             // 
@@ -311,7 +311,7 @@
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(56, 13);
             this.stLabel1.TabIndex = 17;
-            this.stLabel1.Text = "Data View";
+            this.stLabel1.Text = "数据界面";
             // 
             // treeView1
             // 
@@ -371,7 +371,7 @@
             this.stLabel5.Name = "stLabel5";
             this.stLabel5.Size = new System.Drawing.Size(89, 13);
             this.stLabel5.TabIndex = 8;
-            this.stLabel5.Text = "Active Animation:";
+            this.stLabel5.Text = "活动动画:";
             // 
             // activeAnimCB
             // 
@@ -392,7 +392,7 @@
             this.stLabel3.Name = "stLabel3";
             this.stLabel3.Size = new System.Drawing.Size(70, 13);
             this.stLabel3.TabIndex = 6;
-            this.stLabel3.Text = "Frame Count:";
+            this.stLabel3.Text = "帧数:";
             // 
             // frameCountUD
             // 
@@ -628,27 +628,27 @@
             this.editToolStripMenuItem.Enabled = false;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-            this.editToolStripMenuItem.Text = "Edit";
+            this.editToolStripMenuItem.Text = "编辑";
             // 
             // exportToolStripMenuItem
             // 
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
             this.exportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exportToolStripMenuItem.Text = "Export";
+            this.exportToolStripMenuItem.Text = "导出";
             this.exportToolStripMenuItem.Click += new System.EventHandler(this.exportToolStripMenuItem_Click);
             // 
             // replaceToolStripMenuItem
             // 
             this.replaceToolStripMenuItem.Name = "replaceToolStripMenuItem";
             this.replaceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.replaceToolStripMenuItem.Text = "Replace";
+            this.replaceToolStripMenuItem.Text = "替换";
             this.replaceToolStripMenuItem.Click += new System.EventHandler(this.replaceToolStripMenuItem_Click);
             // 
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.viewToolStripMenuItem.Text = "View";
+            this.viewToolStripMenuItem.Text = "视图";
             // 
             // imageToolStripMenuItem
             // 
@@ -660,7 +660,7 @@
             // 
             this.adjustmentsToolStripMenuItem.Name = "adjustmentsToolStripMenuItem";
             this.adjustmentsToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
-            this.adjustmentsToolStripMenuItem.Text = "Adjustments";
+            this.adjustmentsToolStripMenuItem.Text = "图像调整";
             // 
             // splitter4
             // 
