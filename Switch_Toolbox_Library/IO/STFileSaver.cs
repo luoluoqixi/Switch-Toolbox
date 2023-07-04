@@ -29,7 +29,8 @@ namespace Toolbox.Library.IO
 
             string compressionLog = "";
             if (FileFormat.IFileInfo.FileIsCompressed || FileFormat.IFileInfo.InArchive
-                || Path.GetExtension(FileName) == ".szs" || Path.GetExtension(FileName) == ".sbfres")
+                || Path.GetExtension(FileName) == ".szs" || Path.GetExtension(FileName) == ".sbfres"
+                || Path.GetExtension(FileName) == ".mc")
             {
                 //Todo find more optmial way to handle memory with files in archives
                 //Also make compression require streams
@@ -97,7 +98,7 @@ namespace Toolbox.Library.IO
                 }
             }
 
-            if (isSuccessDialog)
+            if (EnableDialog)
             {
                 if (compressionLog != string.Empty)
                     MessageBox.Show($"File has been saved to {FileName}. Compressed time: {compressionLog}", "Save Notification");
@@ -105,7 +106,7 @@ namespace Toolbox.Library.IO
                     MessageBox.Show($"File has been saved to {FileName}", "Save Notification");
             }
 
-         //   STSaveLogDialog.Show($"File has been saved to {FileName}", "Save Notification", DetailsLog);
+            //   STSaveLogDialog.Show($"File has been saved to {FileName}", "Save Notification", DetailsLog);
             Cursor.Current = Cursors.Default;
         }
 

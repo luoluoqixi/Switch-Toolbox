@@ -20,7 +20,7 @@ using OpenTK;
 
 namespace FirstPlugin
 {
-    public class BFRES : BFRESWrapper, IFileFormat, ITextureContainer, IExportableModelContainer
+    public class BFRES : BFRESWrapper, IFileFormat, ITextureContainer, IExportableModelContainer, IDisposable
     {
         public FileType FileType { get; set; } = FileType.Resource;
 
@@ -786,6 +786,11 @@ namespace FirstPlugin
         }
 
         public BFRESRenderBase BFRESRender;
+
+        private MeshCodec MeshCodec;
+
+        public void Dispose() { MeshCodec.Dispose(); }
+
         public void Load(System.IO.Stream stream)
         {
             CanSave = true;
@@ -801,6 +806,26 @@ namespace FirstPlugin
 
             BFRESRender.ModelTransform = MarioCostumeEditor.SetTransform(FileName);
             BFRESRender.ResFileNode = this;
+
+            MeshCodec = new MeshCodec();
+
+            var externalFlags = MeshCodec.GetExternalFlags(stream);
+            //External flags used
+            if (externalFlags.HasFlag(MeshCodec.ExternalFlags.HasExternalGPU) || this.FileName.EndsWith(".mc"))
+            {
+                //Ensure it uses mc compressor for save
+                this.IFileInfo.FileIsCompressed = true;
+                if (this.IFileInfo.FileCompression == null)
+                {
+                    this.IFileInfo.FileCompression = new MeshCodecFormat();
+                    if (!this.FileName.EndsWith(".mc"))
+                        this.FileName += ".mc";
+                    if (!this.FilePath.EndsWith(".mc"))
+                        this.FilePath += ".mc";
+                }
+            }
+            if (externalFlags.HasFlag(MeshCodec.ExternalFlags.HasExternalString))
+                MeshCodec.Prepare();
 
             if (IsWiiU)
             {
@@ -823,6 +848,14 @@ namespace FirstPlugin
                 }
             }
 
+            //Mesh codec type of bfres, load textures externallly
+            if (externalFlags != (MeshCodec.ExternalFlags)0)
+            {
+                MeshCodec.PrepareTexToGo(resFile);
+                MeshCodec.TextureFolder = new TexToGoFolder(MeshCodec);
+                this.Nodes.Add(MeshCodec.TextureFolder);
+            }
+
             DrawableContainer.Drawables.Add(BFRESRender);
 
             var Models = GetModels();
@@ -835,6 +868,7 @@ namespace FirstPlugin
                 }
             }
         }
+
         public void Unload()
         {
             BFRESRender.Destroy();
@@ -916,6 +950,13 @@ namespace FirstPlugin
 
         public void Save(Stream stream)
         {
+            //Force mesh codec compression on save 
+            if (this.FilePath.EndsWith(".mc"))
+            {
+                this.IFileInfo.FileCompression = new MeshCodecFormat();
+                this.IFileInfo.FileIsCompressed = true;
+            }
+
             var Models = GetModels();
             if (Models != null && !IsParticlePrimitive)
             {
@@ -933,6 +974,9 @@ namespace FirstPlugin
                 SaveWiiU(stream);
             else
                 SaveSwitch(stream);
+
+            if (MeshCodec.TextureList.Count > 0)
+                MeshCodec.SaveTexToGo();
         }
 
         public TreeNodeCollection GetModels()

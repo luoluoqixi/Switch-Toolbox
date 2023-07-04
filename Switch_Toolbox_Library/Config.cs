@@ -181,6 +181,9 @@ namespace Toolbox.Library
                     case "BotwGamePath":
                         Runtime.BotwGamePath = node.InnerText;
                         break;
+                    case "TotkGamePath":
+                        Runtime.TotkGamePath = node.InnerText;
+                        break;
                     case "SpecularCubeMapPath":
                         Runtime.PBR.SpecularCubeMapPath = node.InnerText;
                         break;
@@ -320,6 +323,12 @@ namespace Toolbox.Library
                         break;
                     case "ShowCloseDialog":
                         bool.TryParse(node.InnerText, out Runtime.ShowCloseDialog);
+                        break;
+                    case "displayGrid":
+                        bool.TryParse(node.InnerText, out Runtime.displayGrid);
+                        break;
+                    case "displayAxisLines":
+                        bool.TryParse(node.InnerText, out Runtime.displayAxisLines);
                         break;
                 }
             }
@@ -511,6 +520,7 @@ namespace Toolbox.Library
             PathsNode.AppendChild(createNode(doc, "Mk8dGamePath", Runtime.Mk8dGamePath.ToString()));
             PathsNode.AppendChild(createNode(doc, "TpGamePath", Runtime.TpGamePath.ToString()));
             PathsNode.AppendChild(createNode(doc, "BotwGamePath", Runtime.BotwGamePath.ToString()));
+            PathsNode.AppendChild(createNode(doc, "TotkGamePath", Runtime.TotkGamePath.ToString()));
             PathsNode.AppendChild(createNode(doc, "SpecularCubeMapPath", Runtime.PBR.SpecularCubeMapPath.ToString()));
             PathsNode.AppendChild(createNode(doc, "DiffuseCubeMapPath", Runtime.PBR.DiffuseCubeMapPath.ToString()));
             PathsNode.AppendChild(createNode(doc, "PkSwShGamePath", Runtime.PkSwShGamePath.ToString()));
@@ -583,8 +593,11 @@ namespace Toolbox.Library
             renderSettingsNode.AppendChild(createNode(doc, "MaxCameraSpeed", Runtime.MaxCameraSpeed.ToString()));
             renderSettingsNode.AppendChild(createNode(doc, "FrameCamera", Runtime.FrameCamera.ToString()));
             renderSettingsNode.AppendChild(createNode(doc, "cameraMovement", Runtime.cameraMovement.ToString()));
+            renderSettingsNode.AppendChild(createNode(doc, "displayAxisLines", Runtime.displayAxisLines.ToString()));
+            renderSettingsNode.AppendChild(createNode(doc, "displayGrid", Runtime.displayGrid.ToString()));
+
         }
-        
+
         private static void AppendResourceTableSettings(XmlDocument doc, XmlNode parentNode)
         {
             XmlNode resourceTableNode = doc.CreateElement("ResourceTables");

@@ -334,6 +334,7 @@ namespace FirstPlugin
         private Type[] LoadCompressionFormats()
         {
             List<Type> Formats = new List<Type>();
+            Formats.Add(typeof(MeshCodecFormat));
             return Formats.ToArray();
         }
 
@@ -462,7 +463,9 @@ namespace FirstPlugin
             Formats.Add(typeof(NKN));
             Formats.Add(typeof(MetroidDreadLibrary.BSMAT));
             Formats.Add(typeof(TRANM));
-			
+            Formats.Add(typeof(GFA));
+            Formats.Add(typeof(TXTG));
+
             //Formats.Add(typeof(XLINK_FILE));
 
             //  Formats.Add(typeof(MPBIN));
@@ -478,7 +481,6 @@ namespace FirstPlugin
             if (Runtime.DEVELOPER_DEBUG_MODE)
             {
                 Formats.Add(typeof(BFSAR));
-                Formats.Add(typeof(GFA));
             }
 
 

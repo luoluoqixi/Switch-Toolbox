@@ -11,6 +11,7 @@ using Toolbox.Library.Animations;
 using Toolbox.Library.Forms;
 using SELib;
 using FirstPlugin.Forms;
+using static Toolbox.Library.Animations.Animation;
 
 namespace Bfres.Structs
 {
@@ -210,45 +211,46 @@ namespace Bfres.Structs
 
         private STSkeleton GetActiveSkeleton()
         {
+            if (Parent == null)
+                return null;
+
+            //Check parent renderer and find skeleton
+            var render = ((BFRES)Parent.Parent.Parent).BFRESRender;
+            if (render != null)
+            {
+                //Return individual skeleton for single model files
+                if (render.models.Count == 1)
+                    return render.models[0].Skeleton;
+
+                //Search multiple FMDL to find matching bones
+                foreach (var model in render.models)
+                {
+                    //Check if all the bones in the animation are present in the skeleton
+                    bool areAllBonesPresent = model.Skeleton.bones.Count > 0;
+                    foreach (var bone in Bones)
+                    {
+                        var animBone = model.Skeleton.GetBone(bone.Text);
+
+                        if (animBone == null)
+                            areAllBonesPresent = false;
+                    }
+                    if (areAllBonesPresent)
+                        return model.Skeleton;
+                }
+
+                //If not all bones were present but models are present, use first model
+                if (render.models.Count > 0)
+                    return render.models[0].Skeleton;
+            }
+
+            //Search by viewport active model in the event the animation is externally loaded
             var viewport = LibraryGUI.GetActiveViewport();
             if (viewport != null)
             {
                 foreach (var drawable in viewport.scene.objects)
                 {
                     if (drawable is STSkeleton)
-                    {
-                        foreach (var bone in Bones)
-                        {
-                            var animBone = ((STSkeleton)drawable).GetBone(bone.Text);
-
-                            if (animBone != null)
-                                return (STSkeleton)drawable;
-                        }
-                    }
-                }
-            }
-
-            if (Parent == null)
-                return null;
-
-            //Check parent renderer and find skeleton
-            var render = ((BFRES)Parent.Parent.Parent).BFRESRender;
-            if (render == null)
-                return null;
-
-            //Return individual skeleton for single model files
-            if (render.models.Count == 1)
-                return render.models[0].Skeleton;
-
-            //Search multiple FMDL to find matching bones
-            foreach (var model in render.models)
-            {
-                foreach (var bone in Bones)
-                {
-                    var animBone = model.Skeleton.GetBone(bone.Text);
-
-                    if (animBone != null)
-                        return model.Skeleton;
+                        return ((STSkeleton)drawable);
                 }
             }
 
@@ -748,16 +750,16 @@ namespace Bfres.Structs
                     keyGroup.AnimDataOffset = bn.Curves[curve].AnimDataOffset;
                     switch (keyGroup.AnimDataOffset)
                     {
-                        case (int)TrackType.XPOS: bone.XPOS.Keys.AddRange(keyGroup.Keys); break;
-                        case (int)TrackType.YPOS: bone.YPOS.Keys.AddRange(keyGroup.Keys); break;
-                        case (int)TrackType.ZPOS: bone.ZPOS.Keys.AddRange(keyGroup.Keys); break;
-                        case (int)TrackType.XROT: bone.XROT.Keys.AddRange(keyGroup.Keys); break;
-                        case (int)TrackType.YROT: bone.YROT.Keys.AddRange(keyGroup.Keys); break;
-                        case (int)TrackType.ZROT: bone.ZROT.Keys.AddRange(keyGroup.Keys); break;
-                        case (int)TrackType.WROT: bone.WROT.Keys.AddRange(keyGroup.Keys); break;
-                        case (int)TrackType.XSCA: bone.XSCA.Keys.AddRange(keyGroup.Keys); break;
-                        case (int)TrackType.YSCA: bone.YSCA.Keys.AddRange(keyGroup.Keys); break;
-                        case (int)TrackType.ZSCA: bone.ZSCA.Keys.AddRange(keyGroup.Keys); break;
+                        case (int)TrackType.XPOS: bone.XPOS = keyGroup; break;
+                        case (int)TrackType.YPOS: bone.YPOS = keyGroup; break;
+                        case (int)TrackType.ZPOS: bone.ZPOS = keyGroup; break;
+                        case (int)TrackType.XROT: bone.XROT = keyGroup; break;
+                        case (int)TrackType.YROT: bone.YROT = keyGroup; break;
+                        case (int)TrackType.ZROT: bone.ZROT = keyGroup; break;
+                        case (int)TrackType.WROT: bone.WROT = keyGroup; break;
+                        case (int)TrackType.XSCA: bone.XSCA = keyGroup; break;
+                        case (int)TrackType.YSCA: bone.YSCA = keyGroup; break;
+                        case (int)TrackType.ZSCA: bone.ZSCA = keyGroup; break;
                         default: throw new Exception("Unknown Anim Offset " + keyGroup.AnimDataOffset);
                     }
                 }
@@ -811,16 +813,16 @@ namespace Bfres.Structs
                     keyGroup.AnimDataOffset = bn.Curves[curve].AnimDataOffset;
                     switch (keyGroup.AnimDataOffset)
                     {
-                        case (int)TrackType.XPOS: bone.XPOS.Keys.AddRange(keyGroup.Keys); break;
-                        case (int)TrackType.YPOS: bone.YPOS.Keys.AddRange(keyGroup.Keys); break;
-                        case (int)TrackType.ZPOS: bone.ZPOS.Keys.AddRange(keyGroup.Keys); break;
-                        case (int)TrackType.XROT: bone.XROT.Keys.AddRange(keyGroup.Keys); break;
-                        case (int)TrackType.YROT: bone.YROT.Keys.AddRange(keyGroup.Keys); break;
-                        case (int)TrackType.ZROT: bone.ZROT.Keys.AddRange(keyGroup.Keys); break;
-                        case (int)TrackType.WROT: bone.WROT.Keys.AddRange(keyGroup.Keys); break;
-                        case (int)TrackType.XSCA: bone.XSCA.Keys.AddRange(keyGroup.Keys); break;
-                        case (int)TrackType.YSCA: bone.YSCA.Keys.AddRange(keyGroup.Keys); break;
-                        case (int)TrackType.ZSCA: bone.ZSCA.Keys.AddRange(keyGroup.Keys); break;
+                        case (int)TrackType.XPOS: bone.XPOS = keyGroup; break;
+                        case (int)TrackType.YPOS: bone.YPOS = keyGroup; break;
+                        case (int)TrackType.ZPOS: bone.ZPOS = keyGroup; break;
+                        case (int)TrackType.XROT: bone.XROT = keyGroup; break;
+                        case (int)TrackType.YROT: bone.YROT = keyGroup; break;
+                        case (int)TrackType.ZROT: bone.ZROT = keyGroup; break;
+                        case (int)TrackType.WROT: bone.WROT = keyGroup; break;
+                        case (int)TrackType.XSCA: bone.XSCA = keyGroup; break;
+                        case (int)TrackType.YSCA: bone.YSCA = keyGroup; break;
+                        case (int)TrackType.ZSCA: bone.ZSCA = keyGroup; break;
                         default: throw new Exception("Unknown Anim Offset " + keyGroup.AnimDataOffset);
                     }
                 }

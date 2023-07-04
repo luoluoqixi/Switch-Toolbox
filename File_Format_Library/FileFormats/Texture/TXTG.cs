@@ -18,7 +18,7 @@ using VGAudio.Utilities;
 
 namespace FirstPlugin
 {
-    public class TXTG : STGenericTexture, IFileFormat, ILeaveOpenOnLoad
+    public class TXTG : STGenericTexture, IFileFormat, ILeaveOpenOnLoad, IDisposable
     {
         public FileType FileType { get; set; } = FileType.Image;
 
@@ -142,15 +142,34 @@ namespace FirstPlugin
         //Image data is properly loaded afterwards
         private List<List<byte[]>> ImageList = new List<List<byte[]>>();
 
+        public override ToolStripItem[] GetContextMenuItems()
+        {
+            List<ToolStripItem> items = new List<ToolStripItem>();
+            items.Add(new ToolStripMenuItem("Save File", null, (o, e) =>
+            {
+                STFileSaver.SaveFileFormat(this, FilePath);
+            }));
+            items.AddRange(base.GetContextMenuItems());
+            return items.ToArray();
+        }
+
         public void Load(Stream stream)
         {
-            Text = FileName;
             Tag = this;
 
             CanReplace = true;
 
             ImageKey = "Texture";
             SelectedImageKey = "Texture";
+
+            string name = Path.GetFileNameWithoutExtension(FileName);
+            Text = name;
+
+            //cache for loading file 
+            if (PluginRuntime.TextureCache.ContainsKey(name))
+                PluginRuntime.TextureCache.Remove(name);
+
+            PluginRuntime.TextureCache.Add(name, this);
 
             using (var reader = new FileReader(stream, true))
             {
@@ -194,11 +213,14 @@ namespace FirstPlugin
 
                 //Dumb hack. Terrain is oddly 8x8 astc, but the format seems to be 0x101
                 //Use some of the different texture settings, as they likely configure the astc blocks in some way
+                if (this.HeaderInfo.TextureSetting2 == 32628)
+                {
+                    this.Format = TEX_FORMAT.ASTC_8x5_UNORM;
+                }
                 if (this.HeaderInfo.TextureSetting2 == 32631)
                 {
                     this.Format = TEX_FORMAT.ASTC_8x8_UNORM;
                 }
-
                 //Image data is properly loaded afterwards
                 List<List<byte[]>> data = new List<List<byte[]>>();
 
@@ -244,7 +266,7 @@ namespace FirstPlugin
                         writer.Write((byte)mip);
                         writer.Write((byte)1);
 
-                        var surface = Zstb.SCompress(ImageList[array][mip]);
+                        var surface = Zstb.SCompress(ImageList[array][mip], 20);
                         surfaceSizes.Add((uint)surface.Length);
 
                         surfaceData.Add(surface);
@@ -264,6 +286,12 @@ namespace FirstPlugin
                     writer.Write(data);
                 }
             }
+        }
+
+        public void Dispose()
+        {
+            if (PluginRuntime.TextureCache.ContainsKey(FileName))
+                PluginRuntime.TextureCache.Remove(FileName);
         }
 
         public override byte[] GetImageData(int ArrayLevel = 0, int MipLevel = 0, int DepthLevel = 0)
@@ -293,7 +321,7 @@ namespace FirstPlugin
         {
             //Replace the data using an instance of a switch texture
             var tex = new TextureData();
-            tex.Replace(FileName, MipCount, 0, Format);
+            tex.Replace(FileName, MipCount, 0, Format, Syroot.NintenTools.NSW.Bntx.GFX.SurfaceDim.Dim2D, 1);
 
             //Get swappable array level
             ImageEditorBase editor = (ImageEditorBase)LibraryGUI.GetActiveContent(typeof(ImageEditorBase));
@@ -309,6 +337,9 @@ namespace FirstPlugin
             //If it's null, the operation is cancelled
             if (tex.Texture == null)
                 return;
+
+            for (int i = 0; i < ImageList[0].Count; i++)
+                Console.WriteLine($"SIZE 1 mip{i} {ImageList[0][i].Length}");
 
             //Ensure the format matches if image requires multiple surface levels
             if (ImageList.Count > 1 && this.Format != tex.Format)
@@ -326,13 +357,21 @@ namespace FirstPlugin
                     ImageList.Add(surface);
             }
 
+            for (int i = 0; i < ImageList[0].Count; i++)
+                Console.WriteLine($"SIZE 2 mip{i} {ImageList[0][i].Length}");
+
+
             Width = tex.Texture.Width;
             Height = tex.Texture.Height;
             MipCount = tex.Texture.MipCount;
             ArrayCount = (uint)ImageList.Count;
             Format = tex.Format;
 
+            IsEdited = true;
+
             UpdateEditor();
+
+            this.LoadOpenGLTexture();
         }
 
         class SurfaceInfo
@@ -359,10 +398,16 @@ namespace FirstPlugin
             { 0x101, TEX_FORMAT.ASTC_4x4_UNORM },
             { 0x102, TEX_FORMAT.ASTC_8x8_UNORM },
             { 0x105, TEX_FORMAT.ASTC_8x8_SRGB },
+            { 0x109, TEX_FORMAT.ASTC_4x4_SRGB },
             { 0x202, TEX_FORMAT.BC1_UNORM },
             { 0x203, TEX_FORMAT.BC1_UNORM_SRGB },
             { 0x302, TEX_FORMAT.BC1_UNORM },
+
+            
+            { 0x505, TEX_FORMAT.BC3_UNORM_SRGB },
+            { 0x602, TEX_FORMAT.BC4_UNORM },
             { 0x606, TEX_FORMAT.BC4_UNORM },
+            { 0x607, TEX_FORMAT.BC4_UNORM },
             { 0x702, TEX_FORMAT.BC5_UNORM },
             { 0x703, TEX_FORMAT.BC5_UNORM },
             { 0x707, TEX_FORMAT.BC5_UNORM },

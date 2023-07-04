@@ -64,6 +64,7 @@
             this.reportBugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.requestFeatureToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.donateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.extendToolsStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.batchGenerateHairTitleBGToolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stPanel1 = new Toolbox.Library.Forms.STPanel();
@@ -77,6 +78,7 @@
             this.stToolStrip1 = new Toolbox.Library.Forms.STToolStrip();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.updateToolstrip = new System.Windows.Forms.ToolStripButton();
+            this.openUserFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.batchReplaceEquipIconToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.batchReplaceClothImgToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -123,6 +125,7 @@
             this.recentToolStripMenuItem,
             this.saveToolStripMenuItem,
             this.saveAsToolStripMenuItem,
+            this.openUserFolderToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(101, 21);
@@ -131,40 +134,40 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(392, 54);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newToolStripMenuItem.Text = "创建";
             // 
             // newFromFileToolStripMenuItem
             // 
             this.newFromFileToolStripMenuItem.Name = "newFromFileToolStripMenuItem";
-            this.newFromFileToolStripMenuItem.Size = new System.Drawing.Size(392, 54);
+            this.newFromFileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newFromFileToolStripMenuItem.Text = "从文件新建";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(392, 54);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuItem.Text = "打开";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // openFolderToolStripMenuItem
             // 
             this.openFolderToolStripMenuItem.Name = "openFolderToolStripMenuItem";
-            this.openFolderToolStripMenuItem.Size = new System.Drawing.Size(392, 54);
+            this.openFolderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openFolderToolStripMenuItem.Text = "打开（文件夹）";
             this.openFolderToolStripMenuItem.Click += new System.EventHandler(this.openFolderToolStripMenuItem_Click);
             // 
             // recentToolStripMenuItem
             // 
             this.recentToolStripMenuItem.Name = "recentToolStripMenuItem";
-            this.recentToolStripMenuItem.Size = new System.Drawing.Size(392, 54);
+            this.recentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.recentToolStripMenuItem.Text = "最近";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Enabled = false;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(392, 54);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem.Text = "保存";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -172,14 +175,14 @@
             // 
             this.saveAsToolStripMenuItem.Enabled = false;
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(392, 54);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveAsToolStripMenuItem.Text = "另存为";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(392, 54);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "退出";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -231,7 +234,7 @@
             // batchExportModelsToolStripMenuItem
             // 
             this.batchExportModelsToolStripMenuItem.Name = "batchExportModelsToolStripMenuItem";
-            this.batchExportModelsToolStripMenuItem.Size = new System.Drawing.Size(602, 54);
+            this.batchExportModelsToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
             this.batchExportModelsToolStripMenuItem.Text = "批量导出模型";
             this.batchExportModelsToolStripMenuItem.Click += new System.EventHandler(this.batchExportModelsToolStripMenuItem_Click);
             // 
@@ -327,7 +330,8 @@
             this.tutorialToolStripMenuItem,
             this.reportBugToolStripMenuItem,
             this.requestFeatureToolStripMenuItem1,
-            this.githubToolStripMenuItem});
+            this.githubToolStripMenuItem,
+            this.donateToolStripMenuItem});
             this.requestFeatureToolStripMenuItem.Name = "requestFeatureToolStripMenuItem";
             this.requestFeatureToolStripMenuItem.Size = new System.Drawing.Size(101, 21);
             this.requestFeatureToolStripMenuItem.Text = "帮助";
@@ -383,6 +387,12 @@
             this.batchGenerateHairTitleBGToolsToolStripMenuItem.Size = new System.Drawing.Size(584, 54);
             this.batchGenerateHairTitleBGToolsToolStripMenuItem.Text = "批量生成头发颜色TitleBG工具";
             this.batchGenerateHairTitleBGToolsToolStripMenuItem.Click += new System.EventHandler(this.batchGenerateHairTitleBGToolsToolStripMenuItem_Click);
+            // donateToolStripMenuItem
+            // 
+            this.donateToolStripMenuItem.Name = "donateToolStripMenuItem";
+            this.donateToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.donateToolStripMenuItem.Text = "Donate";
+            this.donateToolStripMenuItem.Click += new System.EventHandler(this.donateToolStripMenuItem_Click);
             // 
             // stPanel1
             // 
@@ -530,6 +540,12 @@
             this.batchReplaceClothImgToolStripMenuItem.Size = new System.Drawing.Size(584, 54);
             this.batchReplaceClothImgToolStripMenuItem.Text = "批量替换衣服染色图片";
             this.batchReplaceClothImgToolStripMenuItem.Click += new System.EventHandler(this.BatchReplaceClothImgToolStripMenuItem_Click);
+            // openUserFolderToolStripMenuItem
+            // 
+            this.openUserFolderToolStripMenuItem.Name = "openUserFolderToolStripMenuItem";
+            this.openUserFolderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openUserFolderToolStripMenuItem.Text = "打开用户文件夹";
+            this.openUserFolderToolStripMenuItem.Click += new System.EventHandler(this.openUserFolderToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -617,5 +633,7 @@
         private System.Windows.Forms.ToolStripMenuItem batchGenerateHairTitleBGToolsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem batchReplaceEquipIconToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem batchReplaceClothImgToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem donateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openUserFolderToolStripMenuItem;
     }
 }

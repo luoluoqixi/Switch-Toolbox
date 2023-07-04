@@ -70,9 +70,9 @@ namespace Toolbox.Library
                 return decompressor.Unwrap(b, MaxDecompressedSize);
             }
         }
-        public static byte[] SCompress(byte[] b)
+        public static byte[] SCompress(byte[] b, int level = 5)
         {
-            using (var compressor = new ZstdNet.Compressor())
+            using (var compressor = new ZstdNet.Compressor(new ZstdNet.CompressionOptions(level)))
             {
                 return compressor.Wrap(b);
             }
@@ -82,7 +82,33 @@ namespace Toolbox.Library
         {
             byte[] dictionary = new byte[0];
 
-            string folder = Path.Combine(Runtime.ExecutableDir, "Lib", "ZstdDictionaries");
+            var userDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "SwitchToolbox");
+            if (!Directory.Exists(userDir))
+                Directory.CreateDirectory(userDir);
+
+            //Create folder for TOTK contents if it does not exist
+            if (!Directory.Exists(Path.Combine(userDir, "TOTK")))
+                Directory.CreateDirectory(Path.Combine(userDir, "TOTK"));
+
+            string folder = Path.Combine(userDir, "TOTK", "ZstdDictionaries");
+
+            if (!Directory.Exists(folder))
+                Directory.CreateDirectory(folder);
+
+            void TransferZDic(string path)
+            {
+                //Check if old directory contains the file and move it
+                string fileOld = Path.Combine(Runtime.ExecutableDir, "Lib", "ZstdDictionaries", path);
+                string fileNew = Path.Combine(folder, path);
+                if (!File.Exists(fileNew) && File.Exists(fileOld))
+                {
+                    File.Move(fileOld, fileNew); 
+                }
+            }
+            TransferZDic("bcett.byml.zsdic");
+            TransferZDic("pack.zsdic");
+            TransferZDic("zs.zsdic");
+
             if (Directory.Exists(folder))
             {
                 void CheckZDic(string fileName, string expectedExtension)

@@ -89,24 +89,27 @@ namespace Bfres.Structs
 
         }
     }
-    public class FMAT : STGenericMaterial
+    public class FMAT : STGenericMaterial, IContextMenuNode
     {
         public FMAT()
         {
             Checked = true;
             ImageKey = "material";
             SelectedImageKey = "material";
+        }
 
-            ContextMenuStrip = new STContextMenuStrip();
+        public ToolStripItem[] GetContextMenuItems()
+        {
+            List<ToolStripItem> Items = new List<ToolStripItem>();
+            Items.Add(new ToolStripMenuItem("导出", null, ExportAction, Keys.Control | Keys.E));
+            Items.Add(new ToolStripMenuItem("替换", null, ReplaceAction, Keys.Control | Keys.R));
 
-            ContextMenuStrip.Items.Add(new ToolStripMenuItem("导出", null, ExportAction, Keys.Control | Keys.E));
-            ContextMenuStrip.Items.Add(new ToolStripMenuItem("替换", null, ReplaceAction, Keys.Control | Keys.R));
-
-            ContextMenuStrip.Items.Add(new ToolStripSeparator());
-            ContextMenuStrip.Items.Add(new ToolStripMenuItem("拷贝", null, CopyAction, Keys.Control | Keys.C));
-            ContextMenuStrip.Items.Add(new ToolStripMenuItem("重命名", null, RenameAction, Keys.Control | Keys.N));
-            ContextMenuStrip.Items.Add(new ToolStripSeparator());
-            ContextMenuStrip.Items.Add(new ToolStripMenuItem("删除", null, DeleteAction, Keys.Control | Keys.N));
+            Items.Add(new ToolStripSeparator());
+            Items.Add(new ToolStripMenuItem("拷贝", null, CopyAction, Keys.Control | Keys.C));
+            Items.Add(new ToolStripMenuItem("重命名", null, RenameAction, Keys.Control | Keys.N));
+            Items.Add(new ToolStripSeparator());
+            Items.Add(new ToolStripMenuItem("删除", null, DeleteAction, Keys.Control | Keys.Delete));
+            return Items.ToArray();
         }
 
         protected void ExportAction(object sender, EventArgs args) { Export(); }

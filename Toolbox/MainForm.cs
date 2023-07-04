@@ -189,8 +189,10 @@ namespace Toolbox
                 UpdateProgram.CommitList.Count > 0)
             {
                 updateToolstrip.Enabled = true;
+                UsePrompt = false;
             }
         }
+
 
         private void UpdateNotifcationClick()
         {
@@ -1601,12 +1603,24 @@ namespace Toolbox
             }
         }
 
+        private void donateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            WebUtil.OpenDonation();
+        }
+        private void openUserFolderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var userDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "SwitchToolbox");
+            if (!Directory.Exists(userDir))
+                Directory.CreateDirectory(userDir);
+
+            Process.Start("explorer.exe", userDir);
+        }
+
+
         private void batchGenerateHairTitleBGToolsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             BatchGenerateHairTool();
         }
-
-
         private void BatchGenerateHairTool()
         {
             bool jump = true;
@@ -1785,8 +1799,6 @@ namespace Toolbox
 
             MessageBox.Show("成功处理：" + count + "个");
         }
-
-
         // 替换内部文件
         public void Extend_ReplaceFile_SARC(string inputPath, string localPath, string replacePath, string saveAsPath = null)
         {
@@ -1857,7 +1869,6 @@ namespace Toolbox
             STFileSaver.SaveFileFormat(((IFileFormat)activeFile), FileName, false, "", false);
             editor.Close();
         }
-
         public void Extend_ReplaceFile_BFRES_Texture(string inputPath, string localPath, string replacePath, string saveAsPath = null)
         {
             // 打开TitleBG.pack
@@ -1923,7 +1934,6 @@ namespace Toolbox
             STFileSaver.SaveFileFormat(((IFileFormat)activeFile), FileName, false, "", false);
             editor.Close();
         }
-
         private void BatchReplaceEquipIconToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new ExtendTools.ExtendForms.Extend_BatchReplaceEquipIconForm(this);

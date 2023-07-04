@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Drawing;
+﻿using GL_EditorFramework.EditorDrawables;
 using GL_EditorFramework.Interfaces;
-using GL_EditorFramework.EditorDrawables;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Toolbox.Library
@@ -39,6 +36,7 @@ namespace Toolbox.Library
         public static string SmoGamePath = "";
         public static string TpGamePath = "";
         public static string BotwGamePath = "";
+        public static string TotkGamePath = "";
 
         public static bool ShowCloseDialog = true;
 
@@ -293,6 +291,9 @@ namespace Toolbox.Library
         public static bool renderNormalsPoints = false;
         public static bool renderBones = true;
         public static bool renderFog = true;
+
+        public static bool displayAxisLines = true;
+        public static bool displayGrid = true;
 
         public static bool FrameCamera = false;
 
