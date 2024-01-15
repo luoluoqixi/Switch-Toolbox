@@ -47,6 +47,9 @@
             this.hashCalculatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.batchExportTexturesAllSupportedFormatsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.batchExportModelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.batchReplaceFTPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.batchRenameBNTXToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.batchReplaceTXTGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.experimentalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.windowsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cascadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -199,7 +202,10 @@
             this.batchToolStripMenuItem,
             this.hashCalculatorToolStripMenuItem,
             this.batchExportTexturesAllSupportedFormatsToolStripMenuItem,
-            this.batchExportModelsToolStripMenuItem});
+            this.batchExportModelsToolStripMenuItem,
+            this.batchReplaceFTPToolStripMenuItem,
+            this.batchReplaceTXTGToolStripMenuItem,
+            this.batchRenameBNTXToolStripMenuItem,});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(101, 21);
             this.toolsToolStripMenuItem.Text = "工具";
@@ -237,6 +243,27 @@
             this.batchExportModelsToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
             this.batchExportModelsToolStripMenuItem.Text = "批量导出模型";
             this.batchExportModelsToolStripMenuItem.Click += new System.EventHandler(this.batchExportModelsToolStripMenuItem_Click);
+            // 
+            // batchReplaceFTPToolStripMenuItem
+            // 
+            this.batchReplaceFTPToolStripMenuItem.Name = "batchReplaceFTPToolStripMenuItem";
+            this.batchReplaceFTPToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
+            this.batchReplaceFTPToolStripMenuItem.Text = "批量替换FTP";
+            this.batchReplaceFTPToolStripMenuItem.Click += new System.EventHandler(this.batchReplaceFTPToolStripMenuItem_Click);
+            // 
+            // batchReplaceTXTGToolStripMenuItem
+            // 
+            this.batchReplaceTXTGToolStripMenuItem.Name = "batchReplaceTXTGToolStripMenuItem";
+            this.batchReplaceTXTGToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
+            this.batchReplaceTXTGToolStripMenuItem.Text = "批量替换TXTG";
+            this.batchReplaceTXTGToolStripMenuItem.Click += new System.EventHandler(this.batchReplaceTXTGToolStripMenuItem_Click);
+            // 
+            // batchRenameBNTXToolStripMenuItem
+            // 
+            this.batchRenameBNTXToolStripMenuItem.Name = "batchRenameBNTXToolStripMenuItem";
+            this.batchRenameBNTXToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
+            this.batchRenameBNTXToolStripMenuItem.Text = "从文件名批量重命名BNTX";
+            this.batchRenameBNTXToolStripMenuItem.Click += new System.EventHandler(this.batchRenameBNTXToolStripMenuItem_Click);
             // 
             // experimentalToolStripMenuItem
             // 
@@ -633,6 +660,9 @@
         private System.Windows.Forms.ToolStripMenuItem batchGenerateHairTitleBGToolsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem batchReplaceEquipIconToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem batchReplaceClothImgToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem batchReplaceFTPToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem batchReplaceTXTGToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem batchRenameBNTXToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem donateToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openUserFolderToolStripMenuItem;
     }

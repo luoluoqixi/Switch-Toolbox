@@ -383,7 +383,7 @@ namespace Bfres.Structs
                     }
                 }
 
-                bool UseUVLayer2 = false;
+                int UseUVIndex = 0;
 
                 //for BOTW if it uses UV layer 2 for normal maps use second UV map
                 if (shp.GetFMAT().shaderassign.options.ContainsKey("uking_texture2_texcoord"))
@@ -391,10 +391,16 @@ namespace Bfres.Structs
                     float value = float.Parse(shp.GetFMAT().shaderassign.options["uking_texture2_texcoord"]);
 
                     if (value == 1)
-                        UseUVLayer2 = true;
+                        UseUVIndex = 1;
                 }
 
-                shp.CalculateTangentBitangent(UseUVLayer2);
+                //for TOTK use o_texture2_texcoord to find required uv layer for tangents
+                if (shp.GetFMAT().shaderassign.options.ContainsKey("o_texture2_texcoord"))
+                {
+                    UseUVIndex = int.TryParse(shp.GetFMAT().shaderassign.options["o_texture2_texcoord"], out UseUVIndex) ? UseUVIndex : 0;
+                }
+
+                shp.CalculateTangentBitangent(UseUVIndex);
                 shp.SaveVertexBuffer(GetResFileU() != null);
             }
 
@@ -884,6 +890,7 @@ namespace Bfres.Structs
                         {
                             List<FSHP> Matches = shapes.Where(p => String.Equals(p.Text,
                             ImportedObjects[i].ObjectName, StringComparison.CurrentCulture)).ToList();
+                            ImportedObjects[i].BoneIndex = 0;
 
                             if (Matches != null && Matches.Count > 0)
                             {
@@ -895,6 +902,11 @@ namespace Bfres.Structs
 
                                 if (settings.LimitSkinCount)
                                     ImportedObjects[i].VertexSkinCount = ((FSHP)Matches[0]).VertexSkinCount;
+
+                                //Keep original bone mapping by default
+                                //Only do this for original boneset for now
+                                if (!settings.ImportBones)
+                                    ImportedObjects[i].BoneIndex = ((FSHP)Matches[0]).BoneIndex;
 
                                 if (settings.UseOriginalAttributes)
                                 {
@@ -1319,22 +1331,13 @@ namespace Bfres.Structs
                             else
                                 shape.VertexSkinCount = obj.GetMaxSkinInfluenceCount();
 
-                            if (shape.VertexSkinCount == 0 && obj.boneList.Count > 0)
-                            {
-                                int boneIndex = Skeleton.bones.FindIndex(x => x.Text == obj.boneList[0]);
-                                if (boneIndex != -1)
-                                    shape.BoneIndex = boneIndex;
-                            }
-                            else if (shape.VertexSkinCount == 1 && shape.BoneIndices.Count > 0)
-                            {
-                                int boneIndex = shape.BoneIndices[0];
-                                shape.BoneIndex = boneIndex;
-                            }
-
                             shape.CreateNewBoundingBoxes(this);
                             shape.OptmizeAttributeFormats();
                             shape.SaveShape(IsWiiU);
                             shape.SaveVertexBuffer(IsWiiU);
+
+                            if (shape.Shape != null)
+                                shape.Shape.BoneIndex = (ushort)shape.BoneIndex;
 
                             if (IsWiiU)
                             {

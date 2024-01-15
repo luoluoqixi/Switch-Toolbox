@@ -262,7 +262,7 @@
             // stLabel1
             // 
             this.stLabel1.AutoSize = true;
-            this.stLabel1.Location = new System.Drawing.Point(366, 35);
+            this.stLabel1.Location = new System.Drawing.Point(366, 56);
             this.stLabel1.Name = "stLabel1";
             this.stLabel1.Size = new System.Drawing.Size(67, 13);
             this.stLabel1.TabIndex = 44;
@@ -271,7 +271,7 @@
             // btnViotileFlags
             // 
             this.btnViotileFlags.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViotileFlags.Location = new System.Drawing.Point(439, 32);
+            this.btnViotileFlags.Location = new System.Drawing.Point(439, 53);
             this.btnViotileFlags.Name = "btnViotileFlags";
             this.btnViotileFlags.Size = new System.Drawing.Size(75, 23);
             this.btnViotileFlags.TabIndex = 45;
@@ -319,7 +319,7 @@
             // stButton1
             // 
             this.stButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.stButton1.Location = new System.Drawing.Point(439, 74);
+            this.stButton1.Location = new System.Drawing.Point(439, 82);
             this.stButton1.Name = "stButton1";
             this.stButton1.Size = new System.Drawing.Size(75, 23);
             this.stButton1.TabIndex = 51;
@@ -329,7 +329,7 @@
             // stLabel4
             // 
             this.stLabel4.AutoSize = true;
-            this.stLabel4.Location = new System.Drawing.Point(366, 77);
+            this.stLabel4.Location = new System.Drawing.Point(366, 85);
             this.stLabel4.Name = "stLabel4";
             this.stLabel4.Size = new System.Drawing.Size(42, 13);
             this.stLabel4.TabIndex = 50;

@@ -19,6 +19,7 @@ namespace FirstPlugin.Forms
         public FMAT material;
 
         public string SelectedMatParam = "";
+        bool init = false;
 
         public FMATEditor()
         {
@@ -41,6 +42,8 @@ namespace FirstPlugin.Forms
 
         public void LoadMaterial(FMAT mat)
         {
+            init = false;
+
             if (mat.MaterialU != null)
             {
                 TabPage tabPage = null;
@@ -75,7 +78,10 @@ namespace FirstPlugin.Forms
             chkboxVisible.Bind(material, "Enabled");
 
             FillForm();
+
+            init = true;
         }
+
         private UVEditor.ActiveTexture LoadTextureUvMap(STGenericMatTexture texmap, STGenericTexture genericTexture)
         {
             Vector2 scale = new Vector2(1);
