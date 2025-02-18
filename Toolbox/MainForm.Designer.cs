@@ -519,7 +519,6 @@
             // 
             this.stToolStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stToolStrip1.HighlightSelectedTab = false;
-            this.stToolStrip1.ImageScalingSize = new System.Drawing.Size(40, 40);
             this.stToolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.saveToolStripButton,
             this.updateToolstrip});
@@ -536,7 +535,7 @@
             this.saveToolStripButton.Image = global::Toolbox.Properties.Resources.Save;
             this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripButton.Name = "saveToolStripButton";
-            this.saveToolStripButton.Size = new System.Drawing.Size(58, 17);
+            this.saveToolStripButton.Size = new System.Drawing.Size(23, 21);
             this.saveToolStripButton.Text = "saveToolStripButton1";
             this.saveToolStripButton.ToolTipText = "保存文件";
             this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
@@ -548,7 +547,7 @@
             this.updateToolstrip.Image = global::Toolbox.Properties.Resources.UpdateIcon;
             this.updateToolstrip.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.updateToolstrip.Name = "updateToolstrip";
-            this.updateToolstrip.Size = new System.Drawing.Size(58, 17);
+            this.updateToolstrip.Size = new System.Drawing.Size(23, 21);
             this.updateToolstrip.Text = "toolStripButton1";
             this.updateToolstrip.ToolTipText = "更新工具";
             this.updateToolstrip.Visible = false;
